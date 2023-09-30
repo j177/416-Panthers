@@ -1,0 +1,46 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar {
+  background-color: black;
+  height: 12vh;
+  width: 100%;
+}
+
+.dropdown {
+  color: white;
+  height: 100%;
+  width: 15vw;
+}
+
+.dropdown-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+}
+
+.dropdown-options {
+  position: absolute;
+  color: white;
+  background-color: black;
+}
+
+.dropdown-options li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12vh;
+  width: 15vw;
+  cursor: pointer;
+}
+
+.dropdown-options li:hover {
+  background-color: green;
+}
