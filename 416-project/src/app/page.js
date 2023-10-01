@@ -2,6 +2,7 @@
 
 import './page.css'
 import { useState } from 'react'
+import Map from './Map';
 
 export default function Home() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
