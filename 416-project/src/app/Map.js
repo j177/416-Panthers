@@ -1,13 +1,15 @@
 "use client"
-import { useEffect } from 'react';
-import L from 'leaflet';
 
+import { useEffect } from 'react';
+
+import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import statesGEO from './stateGeoJSON/states.geo.json'
+import './page.css'
 
-export default function Map() {
+export default function Map( {coordinates, zoom} ) {
     useEffect(() => {
-        const map = L.map('map').setView([37.8, -96], 4);
+        const map = L.map('map').setView(coordinates, zoom);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -31,7 +33,7 @@ export default function Map() {
         return () => {
             map.remove();
         };
-    }, []);
+    }, [coordinates, zoom]);
 
-    return <div id="map" style={{ height: '600px', width: '100%' }}></div>;
+    return <div id = "map"></div>;
 }
