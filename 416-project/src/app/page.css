@@ -10,9 +10,11 @@
 }
 
 .dropdown {
+  position: relative;
   color: white;
   height: 100%;
   width: 15vw;
+  z-index: 1;
 }
 
 .dropdown-button {
@@ -43,4 +45,11 @@
 
 .dropdown-options li:hover {
   background-color: green;
+}
+
+#map {
+  position: relative;
+  height: 88vh;
+  width: 100%;
+  z-index: 0;
 }
