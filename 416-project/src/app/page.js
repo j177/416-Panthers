@@ -1,11 +1,15 @@
 "use client"
 
-import './page.css'
+import './stylesheets/page.css'
+
 import { useState } from 'react'
-import Map from './Map';
+
+import { States } from './constants/stateConstants'
+import Map from './components/map'
 
 export default function Home() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+  const [state, setState] = useState(States.NOT_SELECTED)
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen)
@@ -20,22 +24,14 @@ export default function Home() {
           </div>
           {isDropdownOpen && (
             <ul className = "dropdown-options">
-              <li>Michigan</li>
-              <li>New York</li>
-              <li>Pennsylvania</li>
+              <li onClick = {() => {setState(States.MICHIGAN)}}>Michigan</li>
+              <li onClick = {() => {setState(States.NEW_YORK)}}>New York</li>
+              <li onClick = {() => {setState(States.PENNSYLVANIA)}}>Pennsylvania</li>
             </ul>
           )}
         </div>
       </div>
-      <Map />
-    </div>
-  )
-}
-
-function Map() {
-  return (
-    <div>
-      Map
+      <Map state = {state} zoom = {6} />
     </div>
   )
 }
