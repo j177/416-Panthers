@@ -1,11 +1,11 @@
 "use client"
 
-import './page.css'
+import './stylesheets/page.css'
 
 import { useState } from 'react'
 
-import { States } from './constants/stateConstants';
-import Map from './Map';
+import { States } from './constants/stateConstants'
+import Map from './components/map'
 
 export default function Home() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
@@ -31,7 +31,7 @@ export default function Home() {
           )}
         </div>
       </div>
-      <Map coordinates = {state.coordinates} zoom = {6} />
+      <Map state = {state} zoom = {6} />
     </div>
   )
 }
