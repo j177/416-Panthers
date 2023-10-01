@@ -1,0 +1,14 @@
+.state-page-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100vw;
+    height: 100vh;
+}
+
+.map-container {
+    font-size: 100px;
+}
+
+.data-container {
+    font-size: 100px;
+}
