@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "eslint": "latest",
-    "eslint-config-next": "latest"
+    "eslint-config-next": "latest",
+    "json-loader": "^0.5.7"
   }
 }
