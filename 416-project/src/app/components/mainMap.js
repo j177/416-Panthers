@@ -6,9 +6,9 @@ import { useRouter } from 'next/navigation';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
-import statesGEO from '../stateGeoJSON/states.geo.json';
+import statesGEO from '../geoJSON/state/states.geo.json';
 
-export default function MainMap({ state, zoom }) {
+export default function MainMap() {
   const router = useRouter();
 
   useEffect(() => {
@@ -18,8 +18,10 @@ export default function MainMap({ state, zoom }) {
       const southWest = L.latLng(35, -100);
       const northEast = L.latLng(50, -60);
       const bounds = L.latLngBounds(southWest, northEast);
+      const startCoords = [43.4535, -79.4599];
+      const zoom = 6;
 
-      const map = L.map("main-map", {minZoom: minZoom, maxZoom: maxZoom, maxBounds: bounds}).setView(state.coordinates, zoom);
+      const map = L.map("main-map", {minZoom: minZoom, maxZoom: maxZoom, maxBounds: bounds}).setView(startCoords, zoom);
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -66,7 +68,7 @@ export default function MainMap({ state, zoom }) {
         map.remove();
       };
     }
-  }, [state, zoom, router]);
+  }, [router]);
 
   return (<div id = "main-map"></div>);
 }
