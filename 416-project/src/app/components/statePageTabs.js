@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import StatePageTables from './statePageTables.js';
+import StatePageScatterPlot from './statePageScatterPlot.js';
 
 export default function StatePageTabs({ state }) {
     const [activeTab, setActiveTab] = useState('State Description');
@@ -24,8 +25,7 @@ export default function StatePageTabs({ state }) {
         if (activeTab === 'Graph Clusters') {
             return (
                 <div className={'tabcontent'}>
-                    <p>Graph Clusters</p>
-                    <p>These are the Graph Clusters.</p>
+                    <StatePageScatterPlot />
                 </div>
             );
         }
