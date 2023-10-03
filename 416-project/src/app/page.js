@@ -3,7 +3,6 @@
 import './stylesheets/page.css'
 
 import { useState } from 'react'
-import 'bootstrap-icons/font/bootstrap-icons.css'
 
 import Navbar from './components/navbar'
 import MainMap from './components/mainMap.js'
