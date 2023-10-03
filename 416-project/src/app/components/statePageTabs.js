@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import StatePageTables from './statePageTables.js';
 
-export default function statePageTabs({ state }) {
+export default function StatePageTabs({ state }) {
     const [activeTab, setActiveTab] = useState('State Description');
 
     const openTab = (tab) => {
@@ -33,7 +33,6 @@ export default function statePageTabs({ state }) {
         if (activeTab === 'Table Details') {
             return (
                 <div className={'tabcontent'}>
-
                     <StatePageTables />
                 </div>
             );
@@ -41,7 +40,7 @@ export default function statePageTabs({ state }) {
     };
 
     return (
-        <div>
+        <>
             <div className="tab">
                 <button className={`tablinks ${activeTab === 'State Description' ? 'active' : ''}`} onClick={() => openTab('State Description')}>
                     State Description
@@ -53,8 +52,8 @@ export default function statePageTabs({ state }) {
                     Table Details
                 </button>
             </div>
-
-            <div>{tabContent()}</div>
-        </div>
+            
+            {tabContent()}
+        </>
     );
 }
