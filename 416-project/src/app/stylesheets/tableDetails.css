@@ -1,22 +1,26 @@
 /* taken from w3schools */
 /* Style the tab */
 .tab {
-    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
     border: 1px solid #ccc;
     background-color: #5f78d2;
     font-family: Calibri;
+    height: 10%;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: inherit;
-    float: left;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 30px;
     transition: 0.3s;
     font-size: 20px;
+    width: 33.3%;
 }
 
 /* Change background color of buttons on hover */
@@ -31,12 +35,12 @@
 
 /* Style the tab content */
 .tabcontent {
+    height: 90%;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
-    font-size: 30px;
+    font-size: 25px;
 }
-
 
 .small-text {
     font-size: 15px;
@@ -50,8 +54,6 @@
 
 .make-inline {
     display: flex; /* Use display: flex instead of display: inline-flexbox */
-    justify-content: space-between; /* Add this to separate the divs */
-    align-items: flex-start; /* Add this for vertical alignment */
     width: 100%; /* Add this to take up the full width */
 }
 
@@ -60,37 +62,34 @@
     width: 32%;
     flex: 0 0 auto; /* This ensures the div doesn't grow or shrink */
     font-family: Calibri;
-    font-size:20px;
+    font-size: 20px;
     padding-right: 2%;
 }
 
 /* Table itself */
 .random-table {
     width: 65%; /* Reduce the width a bit to accommodate the space */
-    position: relative;
+    height: 90%;
+    max-height: 75vh;
     overflow-y: auto;
-    height: 650px;
-    flex: 0 0 auto; /* This ensures the div doesn't grow or shrink */
 }
 
-
 table {
-    padding-top: 50px;
     border-collapse: collapse;
     border: none;
     font-family: Calibri;
 }
 
 th {
-    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     text-align: center;
     background-color: #9b9b9b;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .th-title {
     background-color:#4b4b4b;
-
 }
 
 td {
@@ -103,12 +102,11 @@ td {
 .gradient-fade-out {
     filter:blur(1px);
     background: linear-gradient(to bottom, #4b4b4b 1%, #9b9b9b 100%);
-  }
+}
 
-  .dropdown-arrow-div {
+.dropdown-arrow-div {
     width: 100%;
     text-align: center;
-    padding-bottom: 20px;
     background-color: #9b9b9b;
     font-size: 20px;
 }
@@ -128,11 +126,11 @@ td {
 }
 
 .random-table tbody tr:nth-child(odd) {
-    background-color: #4b4b4b;
+    background-color: white;
     /* Background color for odd rows */
 }
 
 .random-table tbody tr:nth-child(even) {
-    background-color: #9b9b9b;
+    background-color: lightgray;
     /* Background color for even rows */
 }

@@ -98,9 +98,6 @@ export default function RandomTable() {
                 <table>
                     <thead>
                         <tr>
-                            <th colSpan="4" className='th-title'>Table Details</th>
-                        </tr>
-                        <tr>
                             <th>Cluster Num</th>
                             <th>Voting Marking</th>
                             <th>Demographic Margin</th>

@@ -17,7 +17,7 @@
 }
 
 .data-container {
-    font-size: 100px;
+    height: 88vh;
 }
 
 .navbar {
@@ -88,4 +88,11 @@
     display: flex;
     align-items: center;
     margin-left: 50vw;
+}
+
+.scatter-plot-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
