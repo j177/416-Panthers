@@ -99,7 +99,7 @@ export default function RandomTable() {
                     <thead>
                         <tr>
                             <th>Cluster Num</th>
-                            <th>Voting Marking</th>
+                            <th>Voting Margin</th>
                             <th>Demographic Margin</th>
                             <th>Income Margin</th>
                         </tr>

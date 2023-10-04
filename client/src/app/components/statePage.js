@@ -5,7 +5,6 @@ import StateMap from './stateMap.js'
 import StatePageTabs from'./statePageTabs.js';
 
 export default function StatePage({ state, zoom }) {
-
     return (
         <>
             <Navbar />
