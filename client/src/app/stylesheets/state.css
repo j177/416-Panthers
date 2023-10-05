@@ -1,0 +1,28 @@
+.state-page-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100vw;
+    height: 88vh;
+}
+
+.map-container {
+    font-size: 100px;
+}
+
+#state-map {
+    position: relative;
+    height: 88vh;
+    width: 100%;
+    z-index: 0;
+}
+
+.data-container {
+    height: 88vh;
+}
+
+.scatter-plot-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
