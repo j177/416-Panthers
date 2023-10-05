@@ -39,27 +39,25 @@ export default function MainMap() {
 
       geoJSONLayer.eachLayer((layer) => {
         layer.setStyle({
-          fillColor: "green",
-          fillOpacity: 0.5,
-          color: "white",
-          weight: 2
+          color: '#9999FF',
+          fillColor: 'transparent',
+          weight: 5
         });
       
         layer.on("mouseover", () => {
           layer.setStyle({
-            fillColor: "red",
+            color: '#9999FF',
+            fillColor: '#9999FF',
             fillOpacity: 0.5,
-            color: "white",
-            weight: 2
+            weight: 5
           });
         });
       
         layer.on("mouseout", () => {
           layer.setStyle({
-            fillColor: "green",
-            color: "white",
-            fillOpacity: 0.5,
-            weight: 2
+            color: '#9999FF',
+            fillColor: 'transparent',
+            weight: 5,
           });
         });
       });

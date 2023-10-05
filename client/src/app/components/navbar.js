@@ -1,35 +1,32 @@
-import { States } from "../constants/stateConstants";
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import "bootstrap-icons/font/bootstrap-icons.css";
 
-import { useState } from "react";
+
+import { States } from "../constants/stateConstants";
 import { useRouter } from "next/navigation";
 
-export default function Navbar() {
+export default function navigation() {
     const router = useRouter();
-
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-    const toggleDropdown = () => {
-        setIsDropdownOpen(!isDropdownOpen);
-    }
-
     return (
-        <div className = "navbar">
-            <div className = "dropdown" onMouseEnter = {toggleDropdown} onMouseLeave = {toggleDropdown}>
-                <div className = "dropdown-button">
-                    States
-                    <div className = {isDropdownOpen ? "up-triangle" : "down-triangle"}></div>
-                </div>
-                {isDropdownOpen && (
-                    <ul className = "dropdown-options">
-                        <li onClick = {() => {router.push('/' + States.MICHIGAN.name)}}>Michigan</li>
-                        <li onClick = {() => {router.push('/' + States.NEW_YORK.name.replace(/ /g, ''))}}>New York</li>
-                        <li onClick = {() => {router.push('/' + States.PENNSYLVANIA.name)}}>Pennsylvania</li>
-                    </ul>
-                )}
-            </div>
-            <div className = "navbar-text">
-                Federal Congressional Plans
-            </div>
-        </div>
+        <Navbar collapseOnSelect expand="sm" className="d-flex p-2 bg-body-tertiary">
+            <Nav>
+                <li class = "nav-item me-3 me-sm-0">
+                    <a class="nav-link" onClick = {() => {router.push('/')}}>
+                        <i class="bi bi-house"></i>
+                    </a>
+                </li>
+              <NavDropdown title="States" id="collapsible-nav-dropdown">
+                <NavDropdown.Item  onClick = {() => {router.push('/' + States.MICHIGAN.name)}}>Michigan</NavDropdown.Item>
+                <NavDropdown.Item  onClick = {() => {router.push('/' + States.NEW_YORK.name.replace(/ /g, ''))}}>
+                  New York
+                </NavDropdown.Item>
+                <NavDropdown.Item onClick = {() => {router.push('/' + States.PENNSYLVANIA.name)}}>Pennsylvania</NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+            <Nav>
+            </Nav>
+      </Navbar>
     )
 }
