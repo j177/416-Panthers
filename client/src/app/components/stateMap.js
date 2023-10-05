@@ -7,8 +7,6 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
 import { States } from '../constants/stateConstants'
-//import statesGEO from '../geoJSON/state/states.geo.json';
-//import conGEO from '../stateGeoJSON/USA_118th_Congressional_Districts.geo.json'
 
 import miStateGEO from '../geoJSON/state/Michigan.geo.json';
 import nyStateGEO from '../geoJSON/state/New_York.geo.json';
@@ -24,7 +22,7 @@ export default function StateMap({ state, zoom }) {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const minZoom = 7;
+      const minZoom = 5;
       const maxZoom = 10;
       const southWest = L.latLng(state.coordinates[0]-5, state.coordinates[1]-5);
       const northEast = L.latLng(state.coordinates[0]+5, state.coordinates[1]+5);
@@ -59,10 +57,9 @@ export default function StateMap({ state, zoom }) {
         style: function (feature) {
           const party = feature.properties.PARTY;
           return {
-            color: party === 'Democrat' ? 'blue' : party === 'Republican' ? 'red' : 'gray',
-            weight: 2,
-            fillColor: party === 'Democrat' ? 'blue' : party === 'Republican' ? 'red' : 'gray',
-            fillOpacity: 0.5
+            color: '#6666FF',
+            weight: 5,
+            fillColor: 'transparent'
           };
         },
       }).addTo(map)
