@@ -9,8 +9,12 @@ export default function ScatterPlot({ data, title, xLabel, yLabel, width, height
                 titlefont: {
                     size: '15'
                 },
-                xaxis: { title: xLabel },
-                yaxis: { title: yLabel },
+                xaxis: { 
+                    title: xLabel
+                },
+                yaxis: {
+                    title: yLabel
+                },
                 width: width,
                 height: height
             }}

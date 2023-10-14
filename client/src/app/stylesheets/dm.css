@@ -1,0 +1,17 @@
+ .dmTable {
+    width:90%;
+    margin:auto;
+}
+
+th, td {
+    font-size: 15px;
+    text-align: left;
+}
+
+.clust-num, .clust-size {
+    width:10%;
+}
+
+.dist-meas {
+    width:20%;
+}

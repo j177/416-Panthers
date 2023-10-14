@@ -5,7 +5,19 @@
 
 #main-map {
 	position: relative;
-	height: 88vh;
+	height: 93vh;
 	width: 100%;
 	z-index: 0;
+}
+
+
+#nav2 {
+	padding-left: 10%;
+	width:80%;
+	text-align: center;
+}
+
+#nav3 {
+	width:10%;
+	text-align: right;
 }
