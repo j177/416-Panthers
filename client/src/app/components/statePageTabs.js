@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import StatePageTables from './statePageTables.js';
+import DistanceMeasureTable from './distanceMeasureTable.js';
+
 import StatePageScatterPlot from './statePageScatterPlot.js';
 
 import Tab from 'react-bootstrap/Tab';
@@ -34,8 +36,8 @@ export default function StatePageTabs({ state }) {
         if (activeTab === 'Distance Measures') {
             return (
                 <div className={'tabcontent'}>
-                    <p>needs to be changed</p>
-                    <StatePageTables />
+                    <p>Comparision of Various Distance Measures Per Cluster</p>
+                    <DistanceMeasureTable />
                 </div>
             );
         }
