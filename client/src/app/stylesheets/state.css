@@ -2,22 +2,18 @@
     display: grid;
     grid-template-columns: 50% 50%;
     width: 100vw;
-    height: 88vh;
-}
-
-.map-container {
-    font-size: 100px;
+    height: 93vh;
 }
 
 #state-map {
     position: relative;
-    height: 88vh;
+    height: 93vh;
     width: 100%;
     z-index: 0;
 }
 
 .data-container {
-    height: 88vh;
+    height: 93vh;
 }
 
 .scatter-plot-container {
@@ -25,4 +21,11 @@
     height: 100%;
     align-items: center;
     justify-content: center;
+}
+
+.max-width-td {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
