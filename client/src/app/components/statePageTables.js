@@ -1,12 +1,9 @@
-import '../stylesheets/tableDetails.css'
-
-import React from 'react';
-import RandomTable from './randomTable.js'
+import ClusterAnalysis from './clusterAnalysis';
 
 export default function StatePageTables() {
     return(
         <>
-            <RandomTable />
+            <ClusterAnalysis />
         </>
     )
 }

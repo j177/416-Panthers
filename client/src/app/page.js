@@ -19,9 +19,9 @@ export default function Home() {
   }
 
   return (
-    <div className = "main">
+    <div className="main">
       <Navbar />
-      <div className = "map-container">
+      <div className="map-container">
         <MainMap />
       </div>
     </div>
