@@ -9,14 +9,14 @@ import MainMap from './components/mainMap.js'
 import { useEffect } from 'react'
 
 export default function Home() {
-  useEffect(() => {
-    loadData();
-  }, [])
+  // useEffect(() => {
+  //   loadData();
+  // }, [])
 
-  const loadData = async () => {
-    const data = await axios.get("http://localhost:8080/clusters");
-    console.log(data);
-  }
+  // const loadData = async () => {
+  //   const data = await axios.get("http://localhost:8080/clusters");
+  //   console.log(data);
+  // }
 
   return (
     <div className="main">

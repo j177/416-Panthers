@@ -1,18 +1,15 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../stylesheets/state.css'
 
 import Navbar from './navbar'
 import StateMap from './stateMap.js'
-import { Button, Modal } from 'react-bootstrap'
+import { Button, Modal, Table } from 'react-bootstrap'
 import EnsembleClusterLineGraph from './ensembleLineGraph'
 import StatePageTabs from'./statePageTabs.js';
 
 export default function StatePage({ state, zoom }) {
     const [ensemble, setEnsemble] = useState()
-    const [displayGraph, setDisplayGraph] = useState(false)
-
-    const handleClose = () => { displayGraph(false) }
-    const handleShow = () => { displayGraph(true) }
+    //const [ensembleSelected, setEnsembleSelected] = useState(false)
 
     const ensembles = [ {name: "Ensemble 1", plans: 500, clusters: 50},
                         {name: "Ensemble 2", plans: 1000, clusters: 80},
@@ -32,18 +29,9 @@ export default function StatePage({ state, zoom }) {
                                :
                         <div className = "ensemble-container">
                             <div><b>Available Ensembles</b></div>
-                            <div>Please select an ensemble size</div>
-                            <div className = "radio-checkbox">
-                                {
-                                    ensembles.map((ensemble, index) => (
-                                        <label key = {index} onClick = {() => {setEnsemble("something")}}>
-                                            <input type = "radio" name = "ensemble" />
-                                            <span><b>{ensemble.name}</b> - {ensemble.plans.toLocaleString()}</span>
-                                        </label>
-                                    ))
-                                }
-                            </div>
-                            <EnsembleClusterModal ensembles = {ensembles} />
+                            <div>Select an ensemble</div>
+                            <EnsembleSelection ensembles = {ensembles} setEnsemble = {setEnsemble}/>
+                            <EnsembleClusterModalLink ensembles = {ensembles} />
                         </div>
                     }
                 </div>
@@ -51,11 +39,98 @@ export default function StatePage({ state, zoom }) {
     )
 }
 
-function EnsembleClusterModal({ ensembles }) {
-    const [displayGraph, setDisplayGraph] = useState(false)
+function EnsembleSelection({ ensembles, setEnsemble }) {
+    return (
+        <div className = "radio-checkbox">
+            {
+                ensembles.map((ensemble, index) => (
+                    <label key = {index} onClick = {() => {setEnsemble(ensemble)}}>
+                        <input type = "radio" name = "ensemble" />
+                        <span><b>{ensemble.name}</b> - {ensemble.plans.toLocaleString() + " district plans"}</span>
+                    </label>
+                ))
+            }
+        </div>
+    )
+}
+
+// function EnsembleModal({ ensemble, setEnsembleSelected }) {
+//     const [display, setDisplay] = useState(false)
       
-    const handleClose = () => { setDisplayGraph(false) }
-    const handleShow = () => { setDisplayGraph(true) }
+//     const handleClose = () => { setDisplay(false) }
+//     const handleSelect = () => { setEnsembleSelected(true) }
+
+//     useEffect(() => {
+//         if (ensemble) {
+//             setDisplay(true)
+//         }
+//     }, [ensemble])
+
+//     if (!ensemble) {
+//         return;
+//     }
+    
+//     return (
+//         <div>
+//             <Modal show = {display} onHide = {handleClose} dialogClassName = "modal-dialog modal-lg">
+//                 <Modal.Header>
+//                     {ensemble.name}
+//                 </Modal.Header>
+//                 <Modal.Body className = "modal-body">
+//                     <EnsembleSummaryTable />
+//                 </Modal.Body>
+//                 <Modal.Footer>
+//                     <Button variant = "primary" onClick = {handleSelect}>
+//                         Select
+//                     </Button>
+//                     <Button variant = "secondary" onClick = {handleClose}>
+//                         Close
+//                     </Button>
+//                 </Modal.Footer>
+//             </Modal>
+//         </div>
+//     );
+// }
+
+// function EnsembleSummaryTable() {
+//     return (
+//         <Table striped bordered hover>
+//             <thead>
+//                 <tr>
+//                     <th>#</th>
+//                     <th></th>
+//                     <th>Last Name</th>
+//                     <th>Username</th>
+//                 </tr>
+//             </thead>
+//             <tbody>
+//                 <tr>
+//                     <td>1</td>
+//                     <td>Mark</td>
+//                     <td>Otto</td>
+//                     <td>@mdo</td>
+//                 </tr>
+//                 <tr>
+//                     <td>2</td>
+//                     <td>Jacob</td>
+//                     <td>Thornton</td>
+//                     <td>@fat</td>
+//                 </tr>
+//                 <tr>
+//                     <td>3</td>
+//                     <td colSpan={2}>Larry the Bird</td>
+//                     <td>@twitter</td>
+//                 </tr>
+//             </tbody>
+//         </Table>
+//     )
+// }
+
+function EnsembleClusterModalLink({ ensembles }) {
+    const [display, setDisplay] = useState(false)
+      
+    const handleClose = () => { setDisplay(false) }
+    const handleShow = () => { setDisplay(true) }
     
     return (
         <div>
@@ -63,12 +138,12 @@ function EnsembleClusterModal({ ensembles }) {
                 Ensemble Size vs # of Clusters
             </span>
         
-            <Modal show = {displayGraph} onHide = {handleClose} dialogClassName = "modal-dialog modal-lg">
+            <Modal show = {display} onHide = {handleClose} dialogClassName = "modal-dialog modal-lg">
                 <Modal.Body className = "modal-body">
                     <EnsembleClusterLineGraph ensembles = {ensembles} />
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick = {handleClose}>
+                    <Button variant = "secondary" onClick = {handleClose}>
                         Close
                     </Button>
                 </Modal.Footer>
