@@ -13,7 +13,7 @@ export default function navigation() {
     <Navbar collapseOnSelect expand="sm" className="d-flex p-2">
       <Container>
         <Navbar.Brand href='/'>
-          <i class='bi bi-house'></i>
+          <i className='bi bi-house'></i>
           <Navbar.Text className='gap-2 px-1'>416 Panthers</Navbar.Text>
         </Navbar.Brand>
         <Navbar.Text>2022 Federal Congressional Plans</Navbar.Text>
