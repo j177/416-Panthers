@@ -43,7 +43,7 @@ const yLabel = 'average AA population percentage';
 return (
   <div className="scatter-plot-container">
       <ScatterPlotPopup className="scatter-plot" data={data} title={title}
-        xLabel={xLabel} yLabel={yLabel} width='495' height='400' />
+        xLabel={xLabel} yLabel={yLabel} />
   </div>
 );
     };
