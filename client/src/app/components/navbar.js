@@ -7,7 +7,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import { States } from "../constants/stateConstants";
 import { useRouter } from "next/navigation";
 
-export default function navigation() {
+export default function Navigation() {
   const router = useRouter();
   return (
     <Navbar collapseOnSelect expand="sm" className="d-flex p-2">

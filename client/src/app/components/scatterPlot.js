@@ -31,7 +31,7 @@ export default function ScatterPlot({ data, title, xLabel, yLabel, width, height
                 config={{ displayModeBar: false }}
                 onClick={handleShow}
             />
-            <Modal show={show} onHide={handleClose}>
+            <Modal show={show} onHide={handleClose} dialogClassName = "modal-dialog modal-lg">
                 <Modal.Header closeButton >
                     <Modal.Title>Modal heading</Modal.Title>
                 </Modal.Header>
