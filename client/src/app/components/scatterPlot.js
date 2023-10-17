@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Plot from 'react-plotly.js';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
-import ClusterAnalysis from './clusterAnalysis';
+import StatePageScatterPlotPopup from './statePageScatterPlotPopup';
 
 export default function ScatterPlot({ data, title, xLabel, yLabel, width, height }) {
     const [show, setShow] = useState(false);
@@ -32,11 +32,11 @@ export default function ScatterPlot({ data, title, xLabel, yLabel, width, height
                 onClick={handleShow}
             />
             <Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
+                <Modal.Header closeButton >
                     <Modal.Title>Modal heading</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <ClusterAnalysis/>
+                    <StatePageScatterPlotPopup/>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
