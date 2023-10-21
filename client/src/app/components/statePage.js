@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import '../stylesheets/state.css'
 
-import Navbar from './navbar'
+import Navigation from './navbar'
 import StateMap from './stateMap.js'
 import { Button, Modal, Table } from 'react-bootstrap'
 import EnsembleClusterLineGraph from './ensembleLineGraph'
@@ -9,6 +9,7 @@ import StatePageTabs from'./statePageTabs.js';
 
 export default function StatePage({ state, zoom }) {
     const [ensemble, setEnsemble] = useState()
+    console.log(state.name)
     //const [ensembleSelected, setEnsembleSelected] = useState(false)
 
     const ensembles = [ {name: "Ensemble 1", plans: 500, clusters: 50},
@@ -21,7 +22,7 @@ export default function StatePage({ state, zoom }) {
 
     return (
         <>
-            <Navbar />
+            <Navigation state={state.name}/>
                 <div className = "state-page-container">
                     <div className = "map-container"><StateMap state = {state} zoom = {zoom} /></div>
                     { ensemble ? 
