@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import StatePageTables from './statePageTables.js';
 import DistanceMeasureTable from './distanceMeasureTable.js';
+import { useRouter } from "next/navigation";
+import StatePage from './statePage.js';
 
 import StatePageScatterPlot from './statePageScatterPlot.js';
 import { TabNames } from '../constants/tabConstants.js';
@@ -8,15 +10,24 @@ import { TabNames } from '../constants/tabConstants.js';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
-export default function StatePageTabs({ state }) {
+export default function StatePageTabs({ state, ensemble, setEnsemble }) {
+    const router = useRouter();
     // Set the default active tab to 'Cluster Analysis'
     const [activeTab, setActiveTab] = useState(TabNames.CLUSTER_ANALYSIS);
+    const stateName = state.name
 
     const openTab = (tab) => {
-        setActiveTab(tab);
-    };
+        if (tab === TabNames.BACK_TAB) {
+            // router.push('/' + stateName.replace(/ /g, ''));
+            setEnsemble(null);
+            router.push('/' + stateName.replace(/ /g, ''));
 
+        } else {
+            setActiveTab(tab);
+        }
+    };
     const tabContent = () => {
+
         if (activeTab === TabNames.CLUSTER_ANALYSIS) {
             return (
                 <div className={'tabcontent'}>
@@ -28,7 +39,6 @@ export default function StatePageTabs({ state }) {
         if (activeTab === TabNames.SCATTER_PLOT) {
             return (
                 <div className={'tabcontent'}>
-                    <p>needs to be changed</p>
                     <StatePageScatterPlot />
                 </div>
             );
@@ -53,6 +63,9 @@ export default function StatePageTabs({ state }) {
                 activeKey={activeTab} // Add this line to reflect the active tab
                 onSelect={openTab} // Add this line to handle tab selection
             >
+                <Tab eventKey={TabNames.BACK_TAB} title='< Back'>
+                    {tabContent()}
+                </Tab>
                 <Tab eventKey={TabNames.CLUSTER_ANALYSIS} title="Cluster Analysis">
                     {tabContent()}
                 </Tab>
