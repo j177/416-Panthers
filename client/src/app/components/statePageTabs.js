@@ -47,7 +47,6 @@ export default function StatePageTabs({ state, ensemble, setEnsemble }) {
         if (activeTab === TabNames.DISTANCE_MEASURES) {
             return (
                 <div className={'tabcontent'}>
-                    <p>Comparision of Various Distance Measures Per Cluster</p>
                     <DistanceMeasureTable />
                 </div>
             );
