@@ -81,7 +81,7 @@ export default function RandomTable() {
     return (
         <div className='dmTable'>
             <div>
-                <Table striped table-condensed>
+                <Table striped>
                     <thead>
                         <tr>
                             <th>Cluster ID</th>
