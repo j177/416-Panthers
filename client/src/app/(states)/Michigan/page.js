@@ -9,6 +9,6 @@ export default function MichiganPage() {
     const [state, setState] = useState(States.MICHIGAN)
 
     return (
-        <StatePage state = {state} zoom = {7} />
+        <StatePage state = {state} zoom = {7}/>
     )
 }

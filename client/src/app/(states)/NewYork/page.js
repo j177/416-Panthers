@@ -8,6 +8,6 @@ export default function NewYorkPage() {
     const [state, setState] = useState(States.NEW_YORK)
 
     return (
-        <StatePage state = {state} zoom = {7} />
+        <StatePage state = {state} zoom = {7}/>
     )
 }

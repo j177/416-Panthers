@@ -4,7 +4,7 @@ import './stylesheets/page.css'
 
 import axios from 'axios'
 
-import Navbar from './components/navbar'
+import Navigation from './components/navbar'
 import MainMap from './components/mainMap.js'
 import { useEffect } from 'react'
 
@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <div className="main">
-      <Navbar />
+      <Navigation state=''/>
       <div className="map-container">
         <MainMap />
       </div>
