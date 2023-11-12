@@ -1,10 +1,11 @@
 "use client"
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import axios from 'axios';
 
 import { States } from '../constants/stateConstants'
 
@@ -16,11 +17,26 @@ import miDistGEO from '../geoJSON/district/Michigan_Congressional_Districts.geo.
 import nyDistGEO from '../geoJSON/district/New_York_Congressional_Districts.geo.json'
 import paDistGEO from '../geoJSON/district/Pennsylvania_Congressional_Districts.geo.json'
 
-
 export default function StateMap({ state, zoom }) {
   const router = useRouter();
 
+  const [center, setCenter] = useState();
+  // useEffect(() => {
+  //   loadStatesData();
+  // }, [])
+
+  const loadStatesData = async () => {
+    const result = await axios.get("http://localhost:8080/states", {
+      params: {
+        state: 'Michigan'
+      }
+    });
+
+    console.log(result);
+  }
+
   useEffect(() => {
+    //loadStatesData();
     if (typeof window !== "undefined") {
       const minZoom = 5;
       const maxZoom = 10;

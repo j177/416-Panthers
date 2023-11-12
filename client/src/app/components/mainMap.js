@@ -1,24 +1,56 @@
 "use client"
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
+import axios from 'axios';
 import statesGEO from '../geoJSON/state/states.geo.json';
 
 export default function MainMap() {
   const router = useRouter();
 
+  const [data, setData] = useState();
+  // useEffect(() => {
+  //   loadStatesData();
+  // }, [])
+
+  const loadStatesData = async () => {
+    const result = await axios.get("http://localhost:8080/states", {
+      params: {
+        param1: 'test1',
+        param2: 'test2'
+      }
+    });
+
+    console.log(result);
+    if (!result) {
+      setCenter({x: 0, y: 0});
+    }
+    else {
+      setCenter(result.data.center);
+    }
+  }
+
+  const test = async () => {
+    const result = await axios.get("http://localhost:8080/state-boundaries", {
+      params: {
+      }
+    })
+    
+    console.log(result.data);
+  }
+
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    if (typeof window !== 'undefined') {
       const minZoom = 5;
       const maxZoom = 8;
       const southWest = L.latLng(35, -100);
       const northEast = L.latLng(50, -60);
       const bounds = L.latLngBounds(southWest, northEast);
-      const startCoords = [43.4535, -79.4599];
+      const startCoords = [43, -79];
       const zoom = 6;
 
       const map = L.map("main-map", {minZoom: minZoom, maxZoom: maxZoom, maxBounds: bounds}).setView(startCoords, zoom);
