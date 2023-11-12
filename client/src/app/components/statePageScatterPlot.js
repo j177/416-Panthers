@@ -1,3 +1,4 @@
+//variables: xValues, yValues
 import ScatterPlot from "./scatterPlot";
 
 export default function StatePageScatterPlot() {

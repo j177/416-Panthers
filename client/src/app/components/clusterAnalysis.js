@@ -1,3 +1,4 @@
+// variables: id (cluster ID), rdSplits, republicanVoters, democraticVoters, asianVoters, blackVoters, whiteVoters
 import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Table from 'react-bootstrap/Table';
