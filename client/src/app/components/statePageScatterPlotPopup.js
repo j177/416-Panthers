@@ -1,3 +1,4 @@
+// variables: xValues, yValues, data
 import ScatterPlotPopup from "./scatterPlotPopup";
 
 export default function StatePageScatterPlotPopup() {
