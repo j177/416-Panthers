@@ -1,3 +1,4 @@
+// variables: title, xasix, yaxis, width, height
 import React, { useState } from 'react';
 import Plot from 'react-plotly.js';
 import Modal from 'react-bootstrap/Modal';
