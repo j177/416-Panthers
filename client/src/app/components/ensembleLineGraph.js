@@ -1,3 +1,4 @@
+// Variables: data, title, xLabel, yLabel, width, height
 import LineGraph from "./lineGraph";
 
 export default function EnsembleClusterLineGraph({ ensembles }) {
