@@ -3,9 +3,9 @@ import Table from 'react-bootstrap/Table';
 import Pagination from 'react-bootstrap/Pagination';
 import '../stylesheets/dm.css'
 
-export default function RandomTable() {
+export default function DistanceMeasureTable() {
     const [clusterNum, setClusterNum] = useState([]);
-    const [clusterSize, setclusterSize] = useState([]);
+    const [clusterSize, setClusterSize] = useState([]);
     const [randNum1, setRandNum1] = useState([]);
     const [randNum2, setRandNum2] = useState([]);
     const [randNum3, setRandNum3] = useState([]);
@@ -31,7 +31,7 @@ export default function RandomTable() {
                 let b = Math.floor(Math.random() * (500 - 80 + 1) + 80);
                 a.push(b);
             }
-            setclusterSize(a);
+            setClusterSize(a);
         };
 
         // generate random numbers for the distance measures

@@ -1,9 +1,9 @@
 // Variables: data, title, xLabel, yLabel, width, height
-import LineGraph from "./lineGraph";
+import LineGraph from "./lineGraph"
 
 export default function EnsembleClusterLineGraph({ ensembles }) {
-    const x = ensembles.map(ensemble => ensemble.plans)
-    const y = ensembles.map(ensemble => ensemble.clusters)
+    const x = ensembles.map(ensemble => ensemble.numPlans)
+    const y = ensembles.map(ensemble => 1)//ensemble.clusterIds.length
     const data = [
         {
             x: x,
@@ -13,7 +13,7 @@ export default function EnsembleClusterLineGraph({ ensembles }) {
             marker: { color: 'blue' },
             name: 'Ensemble Size vs # of Clusters'
         }
-    ];
+    ]
 
     const title = 'Ensemble Size vs # of Clusters'
     const xLabel = 'Ensemble Size'

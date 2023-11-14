@@ -6,7 +6,7 @@ import Modal from 'react-bootstrap/Modal';
 import Pagination from 'react-bootstrap/Pagination';
 import '../stylesheets/state.css';
 
-export default function ClusterAnalysis() {
+export default function ClusterAnalysisTable() {
     const [showModal, setShowModal] = useState(false);
     const [selectedClusterId, setSelectedClusterId] = useState(null);
     const [currentPage, setCurrentPage] = useState(1);
