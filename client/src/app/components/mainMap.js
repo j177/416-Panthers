@@ -1,104 +1,91 @@
 "use client"
 
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useEffect, useState, useContext } from 'react'
+import L from 'leaflet'
+import 'leaflet/dist/leaflet.css'
+import axios from 'axios'
 
-import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
-
-import axios from 'axios';
-import statesGEO from '../geoJSON/state/states.geo.json';
+import { PageData } from '../contexts/context'
 
 export default function MainMap() {
-  const router = useRouter();
+    const { setState } = useContext(PageData)
 
-  const [data, setData] = useState();
-  // useEffect(() => {
-  //   loadStatesData();
-  // }, [])
+    const [stateBoundaries, setStateBoundaries] = useState()
 
-  const loadStatesData = async () => {
-    const result = await axios.get("http://localhost:8080/states", {
-      params: {
-        param1: 'test1',
-        param2: 'test2'
-      }
-    });
+    useEffect(() => {
+        const getStateBoundaries = async () => {
+            try {
+                const result = await axios.get("http://localhost:8080/state-boundaries")
 
-    console.log(result);
-    if (!result) {
-      setCenter({x: 0, y: 0});
-    }
-    else {
-      setCenter(result.data.center);
-    }
-  }
+                setStateBoundaries(result.data)
+            } catch (error) {
+                console.log("Error fetching state boundaries: ", error)
+            }
+        }
 
-  const test = async () => {
-    const result = await axios.get("http://localhost:8080/state-boundaries", {
-      params: {
-      }
-    })
-    
-    console.log(result.data);
-  }
+        getStateBoundaries()
+    }, [])
 
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const minZoom = 5;
-      const maxZoom = 8;
-      const southWest = L.latLng(35, -100);
-      const northEast = L.latLng(50, -60);
-      const bounds = L.latLngBounds(southWest, northEast);
-      const startCoords = [43, -79];
-      const zoom = 6;
+    useEffect(() => {
+        if (typeof window === 'undefined' || !stateBoundaries) {
+            return
+        }
 
-      const map = L.map("main-map", {minZoom: minZoom, maxZoom: maxZoom, maxBounds: bounds}).setView(startCoords, zoom);
+        const minZoom = 5
+        const maxZoom = 8
+        const southWest = L.latLng(35, -100)
+        const northEast = L.latLng(50, -60)
+        const bounds = L.latLngBounds(southWest, northEast)
+        const startCoords = [43, -79]
+        const zoom = 6
 
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      }).addTo(map);
+        const map = L.map("main-map", {minZoom: minZoom, maxZoom: maxZoom, maxBounds: bounds}).setView(startCoords, zoom)
 
-      const geoJSONLayer = L.geoJSON(statesGEO, {
-        onEachFeature: function (feature, layer) {
-          layer.on('click', function (e) {
-            const stateName = feature.properties.name;
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(map)
 
-            router.push('/' + stateName.replace(/ /g, ''));
-          });
-        },
-      }).addTo(map);
+        const geoJSONLayer = L.geoJSON(stateBoundaries, {
+            onEachFeature: function (feature, layer) {
+                layer.on('click', function (e) {
+                    const stateName = feature.properties.name
 
-      geoJSONLayer.eachLayer((layer) => {
-        layer.setStyle({
-          color: '#9999FF',
-          fillColor: 'transparent',
-          weight: 5
-        });
-      
-        layer.on("mouseover", () => {
-          layer.setStyle({
-            color: '#9999FF',
-            fillColor: '#9999FF',
-            fillOpacity: 0.5,
-            weight: 5
-          });
-        });
-      
-        layer.on("mouseout", () => {
-          layer.setStyle({
-            color: '#9999FF',
-            fillColor: 'transparent',
-            weight: 5,
-          });
-        });
-      });
+                    setState({name: stateName})
+                })
+            },
+        }).addTo(map)
 
-      return () => {
-        map.remove();
-      };
-    }
-  }, [router]);
+        geoJSONLayer.eachLayer((layer) => {
+            layer.setStyle({
+                color: '#9999FF',
+                fillColor: 'transparent',
+                weight: 5
+            })
+        
+            layer.on("mouseover", () => {
+                layer.setStyle({
+                    color: '#9999FF',
+                    fillColor: '#9999FF',
+                    fillOpacity: 0.5,
+                    weight: 5
+                })
+            })
+        
+            layer.on("mouseout", () => {
+                layer.setStyle({
+                    color: '#9999FF',
+                    fillColor: 'transparent',
+                    weight: 5,
+                })
+            })
+        })
 
-  return (<div id = "main-map"></div>);
+        return () => {
+            map.remove()
+        }
+    }, [stateBoundaries])
+
+    return (
+        <div id = "main-map"></div>
+    )
 }

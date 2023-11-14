@@ -10,6 +10,9 @@
 	z-index: 0;
 }
 
+.home-btn {
+	cursor: pointer;
+}
 
 #nav2 {
 	padding-left: 10%;
