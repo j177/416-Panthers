@@ -1,48 +1,70 @@
-import { useState } from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import "bootstrap-icons/font/bootstrap-icons.css";
+import { useContext } from 'react'
+import axios from 'axios'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 
-import { States } from "../constants/stateConstants";
-import { useRouter } from "next/navigation";
+import { PageData } from '../contexts/context'
 
-export default function Navigation({state}) {
-  const router = useRouter();
-  const [currentState, setCurrentState] = useState(state);
+import Container from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
+import NavDropdown from 'react-bootstrap/NavDropdown'
 
-  const handleStateClick = (stateName) => {
-    setCurrentState(state);
-    router.push('/' + stateName.replace(/ /g, ''));
-  };
+import { States } from '../constants/stateConstants'
 
-  return (
-    <Navbar collapseOnSelect expand="sm" className="d-flex p-2">
-      <Container>
-        <Navbar.Brand href='/'>
-          <i className='bi bi-house'></i>
-          <Navbar.Text className='gap-2 px-1'>416 Panthers</Navbar.Text>
-        </Navbar.Brand>
-        {currentState == '' ? (
-          <Navbar.Text>2022 Federal Congressional Plans</Navbar.Text>
-        ) : (
-          <Navbar.Text>{currentState}</Navbar.Text>
-        )}
-        <Nav>
-          <NavDropdown title = 'States' id='collapsible-nav-dropdown' className='ml-auto'>
-            <NavDropdown.Item onClick={() => handleStateClick(States.MICHIGAN.name)}>
-              Michigan
-            </NavDropdown.Item>
-            <NavDropdown.Item onClick={() => handleStateClick(States.NEW_YORK.name)}>
-              New York
-            </NavDropdown.Item>
-            <NavDropdown.Item onClick={() => handleStateClick(States.PENNSYLVANIA.name)}>
-              Pennsylvania
-            </NavDropdown.Item>
-          </NavDropdown>
-        </Nav>
-      </Container>
-    </Navbar>
-  );
+export default function Navigation() {
+	const { state, setState } = useContext(PageData)
+	const { setEnsemble } = useContext(PageData)
+
+	const handleMenuClick = () => {
+		setState()
+		setEnsemble()
+	}
+
+	const handleStateClick = (stateName) => {
+		const getState = async (stateName) => {
+            try {
+                const stateData = await axios.get("http://localhost:8080/state", {
+                    params: {
+                        state: stateName
+                    }
+                })
+
+				setState(stateData.data)
+            } catch (error) {
+                console.log("Error fetching state: ", error)
+            }
+        }
+
+		getState(stateName)
+    	setEnsemble()
+	}
+
+	return (
+		<Navbar collapseOnSelect expand = "sm" className = "d-flex p-2">
+			<Container>
+				<Navbar.Brand className = "home-btn" onClick = { handleMenuClick } >
+					<i className = "bi bi-house"></i>
+					<Navbar.Text className = "gap-2 px-1">416 Panthers</Navbar.Text>
+				</Navbar.Brand>
+				{state ? (
+					<Navbar.Text>{ state.name }</Navbar.Text>
+				) : (
+					<Navbar.Text>2022 Federal Congressional Plans</Navbar.Text>
+				)}
+				<Nav>
+					<NavDropdown title = 'States' id = "collapsible-nav-dropdown" className = "ml-auto">
+					{
+						Object.values(States).map((state, index) => {
+							return (
+								<NavDropdown.Item key = { index } onClick = { () => handleStateClick(state) } >
+									{ state }
+								</NavDropdown.Item>
+							)
+						})
+					}
+					</NavDropdown>
+				</Nav>
+    		</Container>
+		</Navbar>
+	)
 }

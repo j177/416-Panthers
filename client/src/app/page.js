@@ -2,28 +2,30 @@
 
 import './stylesheets/page.css'
 
-import axios from 'axios'
+import { useState } from 'react'
+
+import { PageData } from './contexts/context'
 
 import Navigation from './components/navbar'
 import MainMap from './components/mainMap.js'
-import { useEffect } from 'react'
+import StatePage from './components/statePage'
 
 export default function Home() {
-  // useEffect(() => {
-  //   loadData();
-  // }, [])
+    const [state, setState] = useState()
+    const [ensemble, setEnsemble] = useState()
 
-  // const loadData = async () => {
-  //   const data = await axios.get("http://localhost:8080/clusters");
-  //   console.log(data);
-  // }
-
-  return (
-    <div className="main">
-      <Navigation state=''/>
-      <div className="map-container">
-        <MainMap />
-      </div>
-    </div>
-  )
+    return (
+        <PageData.Provider value = {{ state, setState, ensemble, setEnsemble }}>
+            <div className = "main">
+                <Navigation />
+                <div className = "map-container">
+                    {state ? (
+                        <StatePage />
+                        ) : (
+                        <MainMap />
+                    )}
+                </div>
+            </div>
+        </PageData.Provider>
+    )
 }

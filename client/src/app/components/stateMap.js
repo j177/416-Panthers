@@ -1,74 +1,113 @@
+
 "use client"
 
-import { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useEffect, useState, useContext } from 'react'
 
-import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
+import L from 'leaflet'
+import 'leaflet/dist/leaflet.css'
+import axios from 'axios'
 
-import { States } from '../constants/stateConstants'
+import { PageData } from '../contexts/context'
 
-import miStateGEO from '../geoJSON/state/Michigan.geo.json';
-import nyStateGEO from '../geoJSON/state/New_York.geo.json';
-import paStateGEO from '../geoJSON/state/Pennsylvania.geo.json';
+export default function StateMap() {
+    const { state } = useContext(PageData)
 
-import miDistGEO from '../geoJSON/district/Michigan_Congressional_Districts.geo.json'
-import nyDistGEO from '../geoJSON/district/New_York_Congressional_Districts.geo.json'
-import paDistGEO from '../geoJSON/district/Pennsylvania_Congressional_Districts.geo.json'
+    const [defaultPlan, setDefaultPlan] = useState()
+    const [stateBoundary, setStateBoundary] = useState()
 
+    useEffect(() => {
+        if (state.boundaryId === undefined || state.planId === undefined) {
+            return
+        }
 
-export default function StateMap({ state, zoom }) {
-  const router = useRouter();
+        const getStateBoundary = async () => {
+            try {
+                const stateBoundary = await axios.get("http://localhost:8080/state-boundary", {
+                    params: {
+                        id: state.boundaryId
+                    }
+                })
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const minZoom = 5;
-      const maxZoom = 10;
-      const southWest = L.latLng(state.coordinates[0]-5, state.coordinates[1]-5);
-      const northEast = L.latLng(state.coordinates[0]+5, state.coordinates[1]+5);
-      const bounds = L.latLngBounds(southWest, northEast);
+                setStateBoundary(stateBoundary.data)
+            } catch (error) {
+                console.log("Error fetching state boundary: ", error)
+            }
+        }
 
-      const map = L.map("state-map", {minZoom: minZoom, maxZoom: maxZoom, maxBounds: bounds}).setView(state.coordinates, zoom);
+        const getDefaultPlan = async () => {
+            try {
+                const plan = await axios.get("http://localhost:8080/default-plan", {
+                    params: {
+                        id: state.planId
+                    }
+                })
 
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      }).addTo(map);
+                setDefaultPlan(plan.data)
+            } catch (error) {
+                console.log("Error fetching plan: ", error)
+            }
+        }
 
-      let stateGEO;
-      let districtGEO;
-      switch (state.name) {
-        case States.MICHIGAN.name:
-          stateGEO = miStateGEO;
-          districtGEO = miDistGEO;
-          break;
-        case States.NEW_YORK.name:
-          stateGEO = nyStateGEO;
-          districtGEO = nyDistGEO;
-          break;
-        case States.PENNSYLVANIA.name:
-          stateGEO = paStateGEO;
-          districtGEO = paDistGEO;
-          break;
-      }
+        getStateBoundary()
+        getDefaultPlan()
+    }, [state])
 
-      const geoJSONLayer = L.geoJSON(stateGEO).addTo(map);
+    useEffect(() => {
+        if (typeof window == "undefined" || !defaultPlan || !stateBoundary) {
+            return
+        }
 
-      const conDis = L.geoJSON(districtGEO, {
-        style: function (feature) {
-          const party = feature.properties.PARTY;
-          return {
-            color: '#6666FF',
-            weight: 5,
-            fillColor: 'transparent'
-          };
-        },
-      }).addTo(map)
+        const minZoom = 5
+        const maxZoom = 10
+        const center = state.center
+        const southWest = L.latLng(center.x-5, center.y-5)
+        const northEast = L.latLng(center.x+5, center.y+5)
+        const bounds = L.latLngBounds(southWest, northEast)
+        const zoom = 7
 
-      return () => {
-        map.remove();
-      };
-    }
-  }, [state, zoom, router]);
+        const map = L.map("state-map", {minZoom: minZoom, maxZoom: maxZoom, maxBounds: bounds})
+                    .setView([center.x, center.y], zoom)
 
-  return (<div id = "state-map"></div>);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(map)
+
+        const geoJSONLayer = L.geoJSON(stateBoundary).addTo(map)
+
+        const conDis = L.geoJSON(defaultPlan).addTo(map)
+
+        conDis.eachLayer((layer) => {
+            layer.setStyle({
+                color: '#9999FF',
+                fillColor: 'transparent',
+                weight: 5
+            })
+            
+            layer.on("mouseover", () => {
+                layer.setStyle({
+                    color: '#9999FF',
+                    fillColor: '#9999FF',
+                    fillOpacity: 0.5,
+                    weight: 5
+                })
+            })
+            
+            layer.on("mouseout", () => {
+                layer.setStyle({
+                    color: '#9999FF',
+                    fillColor: 'transparent',
+                    weight: 5,
+                })
+            })
+        })
+
+        return () => {
+            map.remove()
+        }
+  }, [state, defaultPlan, stateBoundary])
+
+    return (
+        <div id = "state-map"></div>
+    )
 }
