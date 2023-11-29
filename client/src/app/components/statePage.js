@@ -135,10 +135,8 @@ function EnsembleSummaryTable({ ensembles, setState, setEnsemble, setDistanceMea
                 <tr>
                     <th>Ensemble Name</th>
                     <th># of District Plans</th>
-                    <th>Optimal Transport</th>
-                    <th></th>
-                    <th>Hamming Distance</th>
-                    <th></th>
+                    <th colspan = {2}>Optimal Transport</th>
+                    <th colspan = {2}>Hamming Distance</th>
                 </tr>
             </thead>
             <tbody>
@@ -147,11 +145,11 @@ function EnsembleSummaryTable({ ensembles, setState, setEnsemble, setDistanceMea
                         <td>{ensemble.name}</td>
                         <td>{ensemble.numPlans}</td>
                         <td>{ensemble.optimalTransport.avgDst}</td>
-                        <td>
+                        <td className = "td-centered">
                             <span onClick = {() => {handleSelect(ensemble, DistanceMeasures.OPTIMAL_TRANSPORT)}}>Examine</span>
                         </td>
                         <td>{ensemble.hammingDistance.avgDst}</td>
-                        <td>
+                        <td className = "td-centered">
                             <span onClick = {() => {handleSelect(ensemble, DistanceMeasures.HAMMING_DISTANCE)}}>Examine</span>
                         </td>
                     </tr>
