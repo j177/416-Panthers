@@ -70,17 +70,16 @@ export default function ClusterAnalysisTable() {
     }
 
     return (
-        <Container>
-            <Table striped bordered hover responsive>
+        <Container className = "cluster-table">
+            <Table striped bordered hover>
                 <thead>
                     <tr>
                         <th>Cluster ID</th>
-                        <th>Avg R/D Splits</th>
-                        <th>Avg % of Republican voters</th>
-                        <th>Avg % of Democratic voters</th>
-                        <th>Avg % of Asian voters</th>
-                        <th>Avg % of Black voters</th>
-                        <th>Avg % of White voters</th>
+                        <th>% of Republican voters</th>
+                        <th>% of Democratic voters</th>
+                        <th>% of Asian voters</th>
+                        <th>% of Black voters</th>
+                        <th>% of White voters</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -91,7 +90,6 @@ export default function ClusterAnalysisTable() {
                                     {row.id}
                                 </button>
                             </td>
-                            <td>{row.rdSplits}</td>
                             <td>{row.republicanVoters}</td>
                             <td>{row.democraticVoters}</td>
                             <td>{row.asianVoters}</td>
@@ -113,7 +111,6 @@ export default function ClusterAnalysisTable() {
                             <thead>
                                 <tr>
                                     <th>Plan #</th>
-                                    <th>R/D Splits</th>
                                     <th>% of Republican voters</th>
                                     <th>% of Democratic voters</th>
                                     <th>% of Asian voters</th>
@@ -125,7 +122,6 @@ export default function ClusterAnalysisTable() {
                                 {renderRows(10).map((row) => (
                                     <tr key={row.id}>
                                         <td>{row.id}</td>
-                                        <td>{row.rdSplits}</td>
                                         <td>{row.republicanVoters}</td>
                                         <td>{row.democraticVoters}</td>
                                         <td>{row.asianVoters}</td>
