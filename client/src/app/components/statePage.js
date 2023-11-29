@@ -9,15 +9,39 @@ import { PageData } from '../contexts/context'
 
 import StateMap from './stateMap.js'
 import EnsembleClusterLineGraph from './ensembleClusterLineGraph'
-import EnsembleVisualizations from './ensembleVisualizations'
+import ClustersVisualizations from './clustersVisualizations'
 import ClusterAnalysisTable from './clusterAnalysisTable'
 
 import { DistanceMeasures } from '../constants/distanceMeasureConstants'
 
 export default function StatePage() {
-    const { state, setState } = useContext(PageData)
-    const { ensemble, setEnsemble } = useContext(PageData)
-    const { distanceMeasure, setDistanceMeasure } = useContext(PageData)
+    const { ensemble, distanceMeasure } = useContext(PageData)
+
+    return (
+        <>
+            <div className = "state-page-container">
+                <div className = "left-container">
+                    <StateMap />
+                </div>
+                <div className = "right-container">
+                    {ensemble && distanceMeasure
+                        ?
+                        <div className = "cluster-data-container">
+                            <ClustersVisualizations />
+                        </div>
+                        :
+                        <div className = "ensemble-data-container">
+                            <EnsembleVisualizations />
+                        </div>
+                    }
+                </div>
+            </div>
+        </>
+    )
+}
+
+function EnsembleVisualizations() {
+    const { state, setState, setEnsemble, setDistanceMeasure } = useContext(PageData)
 
     const [ensembles, setEnsembles] = useState() /* Ensemble objects for the state */
     const [visualsFor, setVisualsFor] = useState(DistanceMeasures.OPTIMAL_TRANSPORT) /* The distance measure displayed by the visuals */
@@ -71,42 +95,26 @@ export default function StatePage() {
 
     return (
         <>
-            <div className = "state-page-container">
-                <div className = "left-container">
-                    <StateMap />
+            <div className = "ensemble-table-container">
+                <EnsembleSummaryTable 
+                    ensembles = {ensembles}
+                    setState = {setState}
+                    setEnsemble = {setEnsemble}
+                    setDistanceMeasure = {setDistanceMeasure} />
+            </div>
+            <div>
+                <DistanceMeasureDropdown setVisualsFor = {setVisualsFor} />
+            </div>
+            <div className = "ensemble-cluster-visuals">
+                <div className = "line-graph-container">
+                    <EnsembleClusterLineGraph
+                        ensembles = {ensembles}
+                        distanceMeasure = {visualsFor} />
                 </div>
-                <div className = "right-container">
-                    {ensemble && distanceMeasure 
-                        ?
-                        <div className = "data-container">
-                            <EnsembleVisualizations />
-                        </div>
-                        :
-                        <>
-                            <div className = "ensemble-table-container">
-                                <EnsembleSummaryTable 
-                                    ensembles = {ensembles}
-                                    setState = {setState}
-                                    setEnsemble = {setEnsemble}
-                                    setDistanceMeasure = {setDistanceMeasure} />
-                            </div>
-                            <div>
-                                <DistanceMeasureDropdown setVisualsFor = {setVisualsFor} />
-                            </div>
-                            <div className = "ensemble-cluster-visuals">
-                                <div className = "line-graph-container">
-                                    <EnsembleClusterLineGraph
-                                        ensembles = {ensembles}
-                                        distanceMeasure = {visualsFor} />
-                                </div>
-                                <div className = "table-container">
-                                    <EnsembleClusterTable 
-                                        ensembles = {ensembles}
-                                        distanceMeasure = {visualsFor}/>
-                                </div>
-                            </div>
-                        </>
-                    }
+                <div className = "table-container">
+                    <EnsembleClusterTable 
+                        ensembles = {ensembles}
+                        distanceMeasure = {visualsFor}/>
                 </div>
             </div>
         </>
