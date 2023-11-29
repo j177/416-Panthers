@@ -10,14 +10,15 @@ import DistanceMeasureTable from './distanceMeasureTable.js'
 
 import { TabNames } from '../constants/tabConstants.js'
 
-export default function EnsembleVisualizations() {
-    const { setEnsemble } = useContext(PageData)
+export default function ClustersVisualizations() {
+    const { setEnsemble, setDistanceMeasure } = useContext(PageData)
 
     const [activeTab, setActiveTab] = useState(TabNames.CLUSTER_ANALYSIS)
 
     const handleTabClick = (tab) => {
         if (tab === TabNames.BACK_TAB) {
             setEnsemble()
+            setDistanceMeasure()
         } else {
             setActiveTab(tab)
         }
