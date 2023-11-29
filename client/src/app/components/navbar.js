@@ -14,10 +14,12 @@ import { States } from '../constants/stateConstants'
 export default function Navigation() {
 	const { state, setState } = useContext(PageData)
 	const { setEnsemble } = useContext(PageData)
+	const { setDistanceMeasure } = useContext(PageData)
 
 	const handleMenuClick = () => {
 		setState()
 		setEnsemble()
+		setDistanceMeasure()
 	}
 
 	const handleStateClick = (stateName) => {

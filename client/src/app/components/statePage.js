@@ -1,7 +1,7 @@
 import '../stylesheets/state.css'
 
 import { useContext, useEffect, useState } from 'react'
-import { Button, Modal } from 'react-bootstrap'
+import { Button, Modal, Dropdown, Table } from 'react-bootstrap'
 import axios from 'axios'
 import qs from 'qs'
 
@@ -10,12 +10,17 @@ import { PageData } from '../contexts/context'
 import StateMap from './stateMap.js'
 import EnsembleClusterLineGraph from './ensembleLineGraph'
 import EnsembleVisualizations from './ensembleVisualizations'
+import ClusterAnalysisTable from './clusterAnalysisTable'
+
+import { DistanceMeasures } from '../constants/distanceMeasureConstants'
 
 export default function StatePage() {
     const { state, setState } = useContext(PageData)
     const { ensemble, setEnsemble } = useContext(PageData)
+    const { distanceMeasure, setDistanceMeasure } = useContext(PageData)
 
-    const [ensembles, setEnsembles] = useState()
+    const [ensembles, setEnsembles] = useState() /* Ensemble objects for the state */
+    const [visuals, setVisuals] = useState(DistanceMeasures.OPTIMAL_TRANSPORT) /* The distance measure displayed on the visuals */
 
     useEffect(() => {
         const getState = async () => {
@@ -60,41 +65,101 @@ export default function StatePage() {
         getEnsembles()
     }, [state])
 
+    const toggle = () => {
+        if (visuals === DistanceMeasures.OPTIMAL_TRANSPORT) {
+            setVisuals(DistanceMeasures.HAMMING_DISTANCE)
+        }
+        else {
+            setVisuals(DistanceMeasures.OPTIMAL_TRANSPORT)
+        }
+    }
+
+    if (!ensembles) {
+        return
+    }
+
     return (
         <>
-            {ensembles &&
-                <>
-                    <div className = "state-page-container">
-                        <div className = "map-container"><StateMap /></div>
-                        {ensemble ?
-                            <div className = "data-container"><EnsembleVisualizations /></div>
-                            :
-                            <div className = "ensemble-container">
-                                <div><b>Available Ensembles</b></div>
-                                <div>Select an ensemble</div>
-                                <EnsembleSelection ensembles = {ensembles} setEnsemble = {setEnsemble} />
-                                <EnsembleClusterModalLink ensembles = {ensembles}/>
+            <div className = "state-page-container">
+                <div className = "left-container">
+                    <StateMap />
+                </div>
+                <div className = "right-container">
+                    {ensemble && distanceMeasure 
+                        ?
+                        <div className = "data-container">
+                            <EnsembleVisualizations />
+                        </div>
+                        :
+                        <>
+                            <div className = "ensemble-table-container">
+                                <EnsembleSummaryTable 
+                                    ensembles = {ensembles}
+                                    setState = {setState}
+                                    setEnsemble = {setEnsemble}
+                                    setDistanceMeasure = {setDistanceMeasure} />
                             </div>
-                        }
-                    </div>
-                </>
-            }
+                            <div className = "association-line-graph-container">
+                                <EnsembleClusterLineGraph
+                                    ensembles = {ensembles}
+                                    distanceMeasure = {visuals} />
+                                <div>
+                                    <button onClick = {toggle}>Toggle</button>
+                                </div>
+                            </div>
+                        </>
+                    }
+                </div>
+            </div>
         </>
     )
 }
 
-function EnsembleSelection({ ensembles, setEnsemble }) {
+function EnsembleSummaryTable({ ensembles, setState, setEnsemble, setDistanceMeasure }) {
+    const backToMenu = () => {
+        setState()
+    }
+
+    const handleSelect = (ensemble, distanceMeasure) => {
+        setEnsemble(ensemble)
+        setDistanceMeasure(distanceMeasure)
+    }
+
     return (
-        <div className = "radio-checkbox">
-            {
-                ensembles.map((ensemble, index) => (
-                    <label key = { index } onClick = { () => { setEnsemble(ensemble) }}>
-                        <input type = "radio" name = "ensemble" />
-                        <span><b>Ensemble {index+1}</b> - { ensemble.numPlans.toLocaleString() + ' district plans' }</span>
-                    </label>
-                ))
-            }
-        </div>
+        <Table className = "ensemble-table" striped bordered hover>
+            <thead>
+                <tr>
+                    <th className = "back-button" onClick = {backToMenu} colSpan = {2}>&lt; Back</th>
+                    <th colSpan = {4}>Average distance between pairs of district plans</th>
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+                    <th>Ensemble Name</th>
+                    <th># of District Plans</th>
+                    <th>Optimal Transport</th>
+                    <th></th>
+                    <th>Hamming Distance</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {ensembles.map((ensemble, index) =>
+                    <tr key = {index}>
+                        <td>{ensemble.name}</td>
+                        <td>{ensemble.numPlans}</td>
+                        <td>{ensemble.optimalTransport.avgDst}</td>
+                        <td>
+                            <span onClick = {() => {handleSelect(ensemble, DistanceMeasures.OPTIMAL_TRANSPORT)}}>Examine</span>
+                        </td>
+                        <td>{ensemble.hammingDistance.avgDst}</td>
+                        <td>
+                            <span onClick = {() => {handleSelect(ensemble, DistanceMeasures.HAMMING_DISTANCE)}}>Examine</span>
+                        </td>
+                    </tr>
+                )}
+            </tbody>
+        </Table>
     )
 }
 
@@ -122,4 +187,64 @@ function EnsembleClusterModalLink({ ensembles }) {
             </Modal>
         </div>
     )
+}
+
+function EnsembleDropdown( {ensembles, setEnsemble} ) {
+    const [selectedValue, setSelectedValue] = useState("")
+
+    return (
+        <Dropdown className = "ensemble-dropdown">
+            <Dropdown.Toggle variant = "success" id = "dropdown-basic">
+                {selectedValue}
+            </Dropdown.Toggle>
+    
+            <Dropdown.Menu className = "dropdown-menu">
+                {
+                    ensembles.map((ensemble) => 
+                        <Dropdown.Item 
+                            key = {ensemble._id} 
+                            className = "dropdown-item"
+                            onClick = {() => {setSelectedValue(ensemble.name); setEnsemble(ensemble)}}
+                        >
+                            {ensemble.name}
+                        </Dropdown.Item>
+                    )
+                }
+            </Dropdown.Menu>
+        </Dropdown>
+    );
+}
+
+function DistanceMeasureDropdown( {ensemble, setDistanceMeasure} ) {
+    const [selectedValue, setSelectedValue] = useState("")
+
+    const convertToDisplayString = (name) => {
+        return (name.charAt(0).toUpperCase() + name.slice(1)).replace(/([a-z])([A-Z])/g, '$1 $2')
+    }
+
+    return (
+        <Dropdown className = "dm-dropdown">
+            <Dropdown.Toggle variant = "success" id = "dropdown-basic" disabled = {!ensemble}>
+                {selectedValue}
+            </Dropdown.Toggle>
+  
+            <Dropdown.Menu className = "dropdown-menu">
+                {
+                    ensemble &&
+                    Object.keys(ensemble.distanceMeasures).map((distanceMeasure, index) => 
+                        <Dropdown.Item
+                            key = {index}
+                            className = "dropdown-item"
+                            onClick = {() => {
+                                setSelectedValue(convertToDisplayString(distanceMeasure));
+                                setDistanceMeasure(distanceMeasure)
+                            }}
+                        >
+                            {convertToDisplayString(distanceMeasure)}
+                        </Dropdown.Item>
+                    )
+                }
+            </Dropdown.Menu>
+        </Dropdown>
+    );
 }

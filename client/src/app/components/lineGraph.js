@@ -1,8 +1,9 @@
 // variables: title, xaxis, yaxis, data
 import Plot from "react-plotly.js";
 
-export default function LineGraph({ data, title, xLabel, yLabel, width, height }) {
+export default function LineGraph({ data, title, xLabel, yLabel }) {
     const layout = {
+        hovermode: 'none',
         title: title,
         titlefont: {
             size: '20'
@@ -12,10 +13,8 @@ export default function LineGraph({ data, title, xLabel, yLabel, width, height }
         },
         yaxis: {
             title: yLabel
-        },
-        width: width,
-        height: height
-    };
+        }
+    }
 
     return (
         <Plot
@@ -23,5 +22,5 @@ export default function LineGraph({ data, title, xLabel, yLabel, width, height }
             layout = {layout}
             config = {{ displayModeBar: false }}
         />
-    );
+    )
 }
