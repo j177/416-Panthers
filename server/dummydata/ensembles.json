@@ -1,0 +1,185 @@
+[{
+  "_id": 0,
+  "name": "Ensemble 0",
+  "numPlans": 500,
+  "optimalTransport": {
+    "avgDst": 0.868,
+    "clusterIds": [
+      7,
+      9,
+      6,
+      1,
+      5
+    ]
+  },
+  "hammingDistance": {
+    "avgDst": 0.4756,
+    "clusterIds": [
+      0,
+      0,
+      10,
+      10,
+      1
+    ]
+  },
+  "entropyDistance": {
+    "avgDst": 0.1291,
+    "clusterIds": [
+      8,
+      2,
+      5,
+      8,
+      4
+    ]
+  }
+},
+{
+  "_id": 1,
+  "name": "Ensemble 1",
+  "numPlans": 1000,
+  "optimalTransport": {
+    "avgDst": 0.0763,
+    "clusterIds": [
+      10,
+      10,
+      0,
+      2,
+      10,
+      1
+    ]
+  },
+  "hammingDistance": {
+    "avgDst": 0.4222,
+    "clusterIds": [
+      1,
+      1,
+      7,
+      8,
+      8
+    ]
+  },
+  "entropyDistance": {
+    "avgDst": 0.7711,
+    "clusterIds": [
+      9,
+      3,
+      9,
+      7,
+      7
+    ]
+  }
+},
+{
+  "_id": 2,
+  "name": "Ensemble 2",
+  "numPlans": 1500,
+  "optimalTransport": {
+    "avgDst": 0.2369,
+    "clusterIds": [
+      8,
+      10,
+      2,
+      3,
+      6,
+      1,
+      0
+    ]
+  },
+  "hammingDistance": {
+    "avgDst": 0.806,
+    "clusterIds": [
+      3,
+      8,
+      7,
+      7,
+      8
+    ]
+  },
+  "entropyDistance": {
+    "avgDst": 0.5986,
+    "clusterIds": [
+      6,
+      4,
+      8,
+      10,
+      0
+    ]
+  }
+},
+{
+  "_id": 3,
+  "name": "Ensemble 3",
+  "numPlans": 2000,
+  "optimalTransport": {
+    "avgDst": 0.2381,
+    "clusterIds": [
+      6,
+      0,
+      0,
+      8,
+      2,
+      0,
+      0,
+      0
+    ]
+  },
+  "hammingDistance": {
+    "avgDst": 0.1021,
+    "clusterIds": [
+      1,
+      10,
+      4,
+      3,
+      7
+    ]
+  },
+  "entropyDistance": {
+    "avgDst": 0.8895,
+    "clusterIds": [
+      5,
+      10,
+      9,
+      4,
+      7
+    ]
+  }
+},
+{
+  "_id": 4,
+  "name": "Ensemble 4",
+  "numPlans": 2500,
+  "optimalTransport": {
+    "avgDst": 0.633,
+    "clusterIds": [
+      7,
+      10,
+      9,
+      9,
+      3,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "hammingDistance": {
+    "avgDst": 0.7928,
+    "clusterIds": [
+      0,
+      9,
+      9,
+      8,
+      3
+    ]
+  },
+  "entropyDistance": {
+    "avgDst": 0.3125,
+    "clusterIds": [
+      6,
+      8,
+      7,
+      5,
+      5
+    ]
+  }
+}]

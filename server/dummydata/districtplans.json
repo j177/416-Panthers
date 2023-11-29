@@ -1,0 +1,142 @@
+[
+  {
+    "_id": 0,
+    "measureInfo": {
+      "rDistricts": 5,
+      "dDistricts": 7,
+      "rVoters": 9.057,
+      "dVoters": 0.4668,
+      "white": 1,
+      "black": 2,
+      "asian": 1,
+      "two": 1
+    },
+    "planId": 1
+  },
+  {
+    "_id": 1,
+    "measureInfo": {
+      "rDistricts": 10,
+      "dDistricts": 9,
+      "rVoters": 1.8995,
+      "dVoters": 8.6098,
+      "white": 10,
+      "black": 2,
+      "asian": 4,
+      "two": 3
+    },
+    "planId": 2
+  },
+  {
+    "_id": 2,
+    "measureInfo": {
+      "rDistricts": 9,
+      "dDistricts": 7,
+      "rVoters": 5.6452,
+      "dVoters": 0.5296,
+      "white": 5,
+      "black": 9,
+      "asian": 8,
+      "two": 2
+    },
+    "planId": 6
+  },
+  {
+    "_id": 3,
+    "measureInfo": {
+      "rDistricts": 9,
+      "dDistricts": 10,
+      "rVoters": 8.229,
+      "dVoters": 4.0285,
+      "white": 5,
+      "black": 0,
+      "asian": 5,
+      "two": 7
+    },
+    "planId": 10
+  },
+  {
+    "_id": 4,
+    "measureInfo": {
+      "rDistricts": 6,
+      "dDistricts": 8,
+      "rVoters": 3.089,
+      "dVoters": 8.3891,
+      "white": 7,
+      "black": 0,
+      "asian": 6,
+      "two": 6
+    },
+    "planId": 7
+  },
+  {
+    "_id": 5,
+    "measureInfo": {
+      "rDistricts": 4,
+      "dDistricts": 8,
+      "rVoters": 2.0137,
+      "dVoters": 4.2217,
+      "white": 0,
+      "black": 3,
+      "asian": 5,
+      "two": 0
+    },
+    "planId": 4
+  },
+  {
+    "_id": 6,
+    "measureInfo": {
+      "rDistricts": 1,
+      "dDistricts": 9,
+      "rVoters": 3.5695,
+      "dVoters": 8.5332,
+      "white": 9,
+      "black": 0,
+      "asian": 1,
+      "two": 9
+    },
+    "planId": 4
+  },
+  {
+    "_id": 7,
+    "measureInfo": {
+      "rDistricts": 10,
+      "dDistricts": 10,
+      "rVoters": 8.4097,
+      "dVoters": 1.8153,
+      "white": 10,
+      "black": 1,
+      "asian": 5,
+      "two": 8
+    },
+    "planId": 3
+  },
+  {
+    "_id": 8,
+    "measureInfo": {
+      "rDistricts": 6,
+      "dDistricts": 5,
+      "rVoters": 1.9583,
+      "dVoters": 4.3284,
+      "white": 4,
+      "black": 9,
+      "asian": 9,
+      "two": 3
+    },
+    "planId": 1
+  },
+  {
+    "_id": 9,
+    "measureInfo": {
+      "rDistricts": 5,
+      "dDistricts": 4,
+      "rVoters": 3.1729,
+      "dVoters": 1.1464,
+      "white": 6,
+      "black": 3,
+      "asian": 7,
+      "two": 3
+    },
+    "planId": 6
+  }
+]

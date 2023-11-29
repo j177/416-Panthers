@@ -5,6 +5,9 @@
     height: 93vh;
 }
 
+/* =============================== */
+/* Map */
+
 #state-map {
     position: relative;
     height: 93vh;
@@ -12,42 +15,63 @@
     z-index: 0;
 }
 
-.ensemble-container {
-    height: 100%;
-}
+/* Map */
+/* =============================== */
 
-.ensemble-container div {
+/* =============================== */
+/* Ensemble Table */
+
+.ensemble-table th {
     text-align: center;
-    font-size: 1.5rem;
-    margin-top: 3%;
 }
 
-.radio-checkbox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.radio-checkbox label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    font-size: 1.25rem;
-    gap: 2vw;
+.ensemble-table .back-button {
     cursor: pointer;
 }
 
-.radio-checkbox label input[type="radio"] {
-    width: 20px;
-    height: 20px;
+.ensemble-table span {
+    background-color: rgb(119, 0, 255);
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
 }
 
-.radio-checkbox label:hover {
-    color: navy;
-    background-color: lightgreen;
+/* Ensemble Table */
+/* =============================== */
+
+/* =============================== */
+/* Cluster Ensemble Association Line Graph */
+
+.association-line-graph-container {
+    text-align: center;
+}
+
+.association-line-graph-container button {
+    background-color: rgb(5, 189, 5);
+    color: white;
+    width: 15%;
+}
+
+/* Cluster Ensemble Association Line Graph */
+/* =============================== */
+
+.cluster-table-container div {
+    margin-left: 2%;
+}
+
+.cluster-table-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    margin-top: 5%;
+}
+
+.cluster-table {
+    margin-top: 2%;
 }
 
  #graph-link {

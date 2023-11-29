@@ -1,8 +1,11 @@
 package com.cse416.fcdistricting;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.bson.Document;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
@@ -24,22 +27,28 @@ public class MainController {
     }
 
     @GetMapping("/state-boundaries")
-    ResponseEntity<List<Document>> stateBoundaries() {
-        List<Document> docs = mongoTemplate
-                .findAll(Document.class, "state_boundary");
+    ResponseEntity<String> getStateBoundaries() {
+        List<Document> docs = mongoTemplate.findAll(Document.class, "state_boundary");
 
         if (docs.isEmpty()) {
             System.out.println("No documents found.");
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 
-        return new ResponseEntity<>(docs, HttpStatus.OK);
+        String jsonArray = "";
+        try {
+            ObjectMapper objectMapper = new ObjectMapper();
+            jsonArray = objectMapper.writeValueAsString(docs);
+        } catch (JsonProcessingException e) {
+            System.out.println("Conversion to JSON went wrong");
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
+        return new ResponseEntity<>(jsonArray, HttpStatus.OK);
     }
 
     @GetMapping("/state-boundary")
-    ResponseEntity<Document> stateBoundary(@RequestParam("id") int id) {
-        System.out.println(id);
-
+    ResponseEntity<String> getStateBoundary(@RequestParam("id") int id) {
         Query query = new Query(Criteria.where("_id").is(id));
         Document doc = mongoTemplate.findOne(query, Document.class, "state_boundary");
 
@@ -48,13 +57,13 @@ public class MainController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 
-        return new ResponseEntity<>(doc, HttpStatus.OK);
+        String jsonForm = doc.toJson();
+
+        return new ResponseEntity<>(jsonForm, HttpStatus.OK);
     }
 
     @GetMapping("/state")
-    ResponseEntity<Document> state(@RequestParam("state") String state) {
-        System.out.println(state);
-
+    ResponseEntity<String> getState(@RequestParam("state") String state) {
         Query query = new Query(Criteria.where("name").is(state));
         Document doc = mongoTemplate.findOne(query, Document.class, "state");
 
@@ -63,13 +72,13 @@ public class MainController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 
-        return new ResponseEntity<>(doc, HttpStatus.OK);
+        String jsonForm = doc.toJson();
+
+        return new ResponseEntity<>(jsonForm, HttpStatus.OK);
     }
 
     @GetMapping("/default-plan")
-    ResponseEntity<Document> defaultPlan(@RequestParam("id") int id) {
-        System.out.println(id);
-
+    ResponseEntity<String> getDefaultPlan(@RequestParam("id") int id) {
         Query query = new Query(Criteria.where("_id").is(id));
         Document doc = mongoTemplate.findOne(query, Document.class, "default_plan");
 
@@ -78,15 +87,13 @@ public class MainController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 
-        return new ResponseEntity<>(doc, HttpStatus.OK);
+        String jsonForm = doc.toJson();
+
+        return new ResponseEntity<>(jsonForm, HttpStatus.OK);
     }
 
     @GetMapping("/ensembles")
-    ResponseEntity<List<Document>> ensembles(@RequestParam("ids") List<Integer> ids) {
-        for (int id : ids) {
-            System.out.println(id);
-        }
-
+    ResponseEntity<String> getEnsembles(@RequestParam("ids") List<Integer> ids) {
         Query query = new Query(Criteria.where("_id").in(ids));
         List<Document> docs = mongoTemplate
                 .find(query, Document.class, "ensemble");
@@ -96,25 +103,135 @@ public class MainController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 
-        return new ResponseEntity<>(docs, HttpStatus.OK);
+        String jsonArray = "";
+        try {
+            ObjectMapper objectMapper = new ObjectMapper();
+            jsonArray = objectMapper.writeValueAsString(docs);
+        } catch (JsonProcessingException e) {
+            System.out.println("Conversion to JSON went wrong");
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
+        return new ResponseEntity<>(jsonArray, HttpStatus.OK);
     }
 
     @GetMapping("/clusters")
-    Map<String, Object> clusters(@RequestParam("ids") int[] ids) {
-        org.bson.Document result = mongoTemplate.getCollection("cluster").find().first();
+    ResponseEntity<String> getClusters(@RequestParam("ids") List<Integer> ids) {
+        Query query = new Query(Criteria.where("_id").in(ids));
+        List<Document> docs = mongoTemplate
+                .find(query, Document.class, "cluster");
 
-        return result;
+        if (docs.isEmpty()) {
+            System.out.println("No documents found.");
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+        String jsonArray = "";
+        try {
+            ObjectMapper objectMapper = new ObjectMapper();
+            jsonArray = objectMapper.writeValueAsString(docs);
+        } catch (JsonProcessingException e) {
+            System.out.println("Conversion to JSON went wrong.");
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
+        return new ResponseEntity<>(jsonArray, HttpStatus.OK);
     }
 
-    @GetMapping("/district-plans")
-    Map<String, Object> districtPlans(@RequestParam("ids") int[] ids) {
-        org.bson.Document result = mongoTemplate.getCollection("district_plan").find().first();
+    @GetMapping("/cluster-points")
+    ResponseEntity<String> getClusterPoints(@RequestParam("ids") List<Integer> ids) {
+        Query query = new Query(Criteria.where("_id").in(ids));
+        List<Document> docs = mongoTemplate
+                .find(query, Document.class, "cluster");
 
-        return result;
+        if (docs.isEmpty()) {
+            System.out.println("No documents found.");
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+        int maxDistrictPlans = docs.stream()
+                .mapToInt(doc -> doc.getList("dpIds", Object.class).size())
+                .max()
+                .orElse(0);
+
+        List<Map<String, Object>> points = docs.stream()
+                .map(doc -> {
+                    int id = doc.getInteger("_id");
+                    double x = 0; /* Measure 1 */
+                    double y = 0; /* Measure 2 */
+                    double size = (double)doc.getList("dpIds", Object.class).size() / maxDistrictPlans;
+
+                    Map<String, Object> point = new HashMap<>();
+                    point.put("id", id);
+                    point.put("x", x);
+                    point.put("y", y);
+                    point.put("size", size);
+
+                    return point;
+                })
+                .toList();
+
+        String jsonArray;
+        try {
+            ObjectMapper objectMapper = new ObjectMapper();
+            jsonArray = objectMapper.writeValueAsString(points);
+        } catch (JsonProcessingException e) {
+            System.out.println("Conversion to JSON went wrong.");
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
+        return new ResponseEntity<>(jsonArray, HttpStatus.OK);
+    }
+
+    @GetMapping("/district-plan-points")
+    ResponseEntity<String> getDistrictPlanPoints(@RequestParam("ids") List<Integer> ids) {
+        Query query = new Query(Criteria.where("_id").in(ids));
+        List<Document> docs = mongoTemplate
+                .find(query, Document.class, "district_plan");
+
+        if (docs.isEmpty()) {
+            System.out.println("No documents found.");
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+        List<Map<String, Object>> points = docs.stream()
+                .map(doc -> {
+                    int id = doc.getInteger("_id");
+                    double x = 0; /* Measure 1 */
+                    double y = 0; /* Measure 2 */
+                    boolean availability = false;
+
+                    Map<String, Object> point = new HashMap<>();
+                    point.put("id", id);
+                    point.put("x", x);
+                    point.put("y", y);
+                    point.put("availability", availability);
+
+                    return point;
+                })
+                .toList();
+
+        String jsonArray;
+        try {
+            ObjectMapper objectMapper = new ObjectMapper();
+            jsonArray = objectMapper.writeValueAsString(points);
+        } catch (JsonProcessingException e) {
+            System.out.println("Conversion to JSON went wrong.");
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
+        return new ResponseEntity<>(jsonArray, HttpStatus.OK);
     }
 
     @GetMapping("/plan")
-    Map<String, Object> plan(@RequestParam("id") int[] ids) {
+    Map<String, Object> getPlan(@RequestParam("ids") List<Integer> ids) {
+        org.bson.Document result = mongoTemplate.getCollection("plan").find().first();
+
+        return result;
+    }
+
+    @GetMapping("/plans")
+    Map<String, Object> getPlans(@RequestParam("ids") List<Integer> ids) {
         org.bson.Document result = mongoTemplate.getCollection("plan").find().first();
 
         return result;
