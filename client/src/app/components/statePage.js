@@ -8,7 +8,7 @@ import qs from 'qs'
 import { PageData } from '../contexts/context'
 
 import StateMap from './stateMap.js'
-import EnsembleClusterLineGraph from './ensembleLineGraph'
+import EnsembleClusterLineGraph from './ensembleClusterLineGraph'
 import EnsembleVisualizations from './ensembleVisualizations'
 import ClusterAnalysisTable from './clusterAnalysisTable'
 
@@ -20,7 +20,7 @@ export default function StatePage() {
     const { distanceMeasure, setDistanceMeasure } = useContext(PageData)
 
     const [ensembles, setEnsembles] = useState() /* Ensemble objects for the state */
-    const [visuals, setVisuals] = useState(DistanceMeasures.OPTIMAL_TRANSPORT) /* The distance measure displayed on the visuals */
+    const [visualsFor, setVisualsFor] = useState(DistanceMeasures.OPTIMAL_TRANSPORT) /* The distance measure displayed by the visuals */
 
     useEffect(() => {
         const getState = async () => {
@@ -65,15 +65,6 @@ export default function StatePage() {
         getEnsembles()
     }, [state])
 
-    const toggle = () => {
-        if (visuals === DistanceMeasures.OPTIMAL_TRANSPORT) {
-            setVisuals(DistanceMeasures.HAMMING_DISTANCE)
-        }
-        else {
-            setVisuals(DistanceMeasures.OPTIMAL_TRANSPORT)
-        }
-    }
-
     if (!ensembles) {
         return
     }
@@ -99,12 +90,19 @@ export default function StatePage() {
                                     setEnsemble = {setEnsemble}
                                     setDistanceMeasure = {setDistanceMeasure} />
                             </div>
-                            <div className = "association-line-graph-container">
-                                <EnsembleClusterLineGraph
-                                    ensembles = {ensembles}
-                                    distanceMeasure = {visuals} />
-                                <div>
-                                    <button onClick = {toggle}>Toggle</button>
+                            <div>
+                                <DistanceMeasureDropdown setVisualsFor = {setVisualsFor} />
+                            </div>
+                            <div className = "ensemble-cluster-visuals">
+                                <div className = "line-graph-container">
+                                    <EnsembleClusterLineGraph
+                                        ensembles = {ensembles}
+                                        distanceMeasure = {visualsFor} />
+                                </div>
+                                <div className = "table-container">
+                                    <EnsembleClusterTable 
+                                        ensembles = {ensembles}
+                                        distanceMeasure = {visualsFor}/>
                                 </div>
                             </div>
                         </>
@@ -156,6 +154,27 @@ function EnsembleSummaryTable({ ensembles, setState, setEnsemble, setDistanceMea
                         <td>
                             <span onClick = {() => {handleSelect(ensemble, DistanceMeasures.HAMMING_DISTANCE)}}>Examine</span>
                         </td>
+                    </tr>
+                )}
+            </tbody>
+        </Table>
+    )
+}
+
+function EnsembleClusterTable({ ensembles, distanceMeasure }) {
+    return (
+        <Table className = "ensemble-cluster-table" striped bordered hover>
+            <thead>
+                <tr>
+                    <th>Ensemble Size</th>
+                    <th># of Clusters</th>
+                </tr>
+            </thead>
+            <tbody>
+                {ensembles.map((ensemble, index) =>
+                    <tr key = {index}>
+                        <td>{ensemble.numPlans}</td>
+                        <td>{ensemble[distanceMeasure].clusterIds.length}</td>
                     </tr>
                 )}
             </tbody>
@@ -215,35 +234,38 @@ function EnsembleDropdown( {ensembles, setEnsemble} ) {
     );
 }
 
-function DistanceMeasureDropdown( {ensemble, setDistanceMeasure} ) {
-    const [selectedValue, setSelectedValue] = useState("")
+function DistanceMeasureDropdown({ setVisualsFor }) {
+    const [selectedValue, setSelectedValue] = useState(DistanceMeasures.OPTIMAL_TRANSPORT)
 
-    const convertToDisplayString = (name) => {
+    const convertToDisplay = (name) => {
         return (name.charAt(0).toUpperCase() + name.slice(1)).replace(/([a-z])([A-Z])/g, '$1 $2')
+    }
+
+    const handleClick = (distanceMeasure) => {
+        setSelectedValue(distanceMeasure)
+        setVisualsFor(distanceMeasure)
     }
 
     return (
         <Dropdown className = "dm-dropdown">
-            <Dropdown.Toggle variant = "success" id = "dropdown-basic" disabled = {!ensemble}>
-                {selectedValue}
+            <Dropdown.Toggle variant = "success" id = "dropdown-basic">
+                {convertToDisplay(selectedValue)}
             </Dropdown.Toggle>
   
             <Dropdown.Menu className = "dropdown-menu">
-                {
-                    ensemble &&
-                    Object.keys(ensemble.distanceMeasures).map((distanceMeasure, index) => 
-                        <Dropdown.Item
-                            key = {index}
-                            className = "dropdown-item"
-                            onClick = {() => {
-                                setSelectedValue(convertToDisplayString(distanceMeasure));
-                                setDistanceMeasure(distanceMeasure)
-                            }}
-                        >
-                            {convertToDisplayString(distanceMeasure)}
-                        </Dropdown.Item>
-                    )
-                }
+                    {
+                        Object.values(DistanceMeasures).map((distanceMeasure, index) => 
+                            <Dropdown.Item
+                                key = {index}
+                                className = "dropdown-item"
+                                onClick = {() => {
+                                    handleClick(distanceMeasure)
+                                }}
+                            >
+                                {convertToDisplay(distanceMeasure)}
+                            </Dropdown.Item>
+                        )
+                    }
             </Dropdown.Menu>
         </Dropdown>
     );

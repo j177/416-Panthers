@@ -18,6 +18,8 @@ export default function EnsembleClusterLineGraph({ ensembles, distanceMeasure })
     const title = 'Ensemble Size vs # of Clusters <br> (' + distanceMeasureName + ')'
     const xLabel = 'Ensemble Size'
     const yLabel = '# of Clusters'
+    const width = '500'
+    const height = '450'
 
     return (
         <LineGraph
@@ -25,6 +27,8 @@ export default function EnsembleClusterLineGraph({ ensembles, distanceMeasure })
             title = {title}
             xLabel = {xLabel}
             yLabel = {yLabel}
+            width = {width}
+            height = {height}
         />
     )
 }
