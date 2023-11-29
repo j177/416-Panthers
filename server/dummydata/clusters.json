@@ -1,686 +1,671 @@
 [
   {
     "_id": 0,
-    "measureInfo": {
-      "rdSplits": [
-        {
-          "rDistricts": 2,
-          "dDistricts": 8,
-          "quantity": 8
-        },
-        {
-          "rDistricts": 10,
-          "dDistricts": 4,
-          "quantity": 10
-        },
-        {
-          "rDistricts": 10,
-          "dDistricts": 9,
-          "quantity": 3
-        },
-        {
-          "rDistricts": 6,
-          "dDistricts": 1,
-          "quantity": 5
-        },
-        {
-          "rDistricts": 8,
-          "dDistricts": 3,
-          "quantity": 8
-        }
-      ],
-      "oppDistricts": [
-        {
-          "num": 0,
-          "quantity": 9
-        },
-        {
-          "num": 5,
-          "quantity": 8
-        },
-        {
-          "num": 7,
-          "quantity": 6
-        },
-        {
-          "num": 10,
-          "quantity": 10
-        },
-        {
-          "num": 6,
-          "quantity": 10
-        }
-      ],
-      "rVoters": 4.8623,
-      "dVoters": 9.5312,
-      "white": 1,
-      "black": 8,
-      "asian": 9,
-      "two": 2
-    },
+    "rdSplits": [
+      {
+        "rSeats": 6,
+        "dSeats": 5,
+        "quantity": 6
+      },
+      {
+        "rSeats": 5,
+        "dSeats": 9,
+        "quantity": 1
+      },
+      {
+        "rSeats": 1,
+        "dSeats": 4,
+        "quantity": 4
+      },
+      {
+        "rSeats": 5,
+        "dSeats": 2,
+        "quantity": 1
+      },
+      {
+        "rSeats": 4,
+        "dSeats": 7,
+        "quantity": 8
+      }
+    ],
+    "oppDistricts": [
+      {
+        "num": 7,
+        "quantity": 9
+      },
+      {
+        "num": 3,
+        "quantity": 1
+      },
+      {
+        "num": 0,
+        "quantity": 10
+      },
+      {
+        "num": 3,
+        "quantity": 9
+      },
+      {
+        "num": 3,
+        "quantity": 3
+      }
+    ],
+    "rVoters": 76.6458,
+    "dVoters": 87.8178,
+    "white": 17.5921,
+    "black": 69.4801,
+    "asian": 18.3598,
+    "two": 97.5942,
     "dpIds": [
-      8,
+      2,
+      3,
       1,
-      0,
-      5
-    ]
-  },
-  {
-    "_id": 1,
-    "measureInfo": {
-      "rdSplits": [
-        {
-          "rDistricts": 9,
-          "dDistricts": 10,
-          "quantity": 8
-        },
-        {
-          "rDistricts": 5,
-          "dDistricts": 8,
-          "quantity": 7
-        },
-        {
-          "rDistricts": 6,
-          "dDistricts": 2,
-          "quantity": 9
-        },
-        {
-          "rDistricts": 9,
-          "dDistricts": 5,
-          "quantity": 1
-        },
-        {
-          "rDistricts": 9,
-          "dDistricts": 9,
-          "quantity": 7
-        }
-      ],
-      "oppDistricts": [
-        {
-          "num": 3,
-          "quantity": 4
-        },
-        {
-          "num": 7,
-          "quantity": 10
-        },
-        {
-          "num": 5,
-          "quantity": 4
-        },
-        {
-          "num": 10,
-          "quantity": 0
-        },
-        {
-          "num": 6,
-          "quantity": 8
-        }
-      ],
-      "rVoters": 8.0952,
-      "dVoters": 3.5255,
-      "white": 6,
-      "black": 2,
-      "asian": 5,
-      "two": 1
-    },
-    "dpIds": [
-      5,
-      5,
-      4,
-      6,
+      3,
+      8,
       9
     ]
   },
   {
-    "_id": 2,
-    "measureInfo": {
-      "rdSplits": [
-        {
-          "rDistricts": 10,
-          "dDistricts": 5,
-          "quantity": 4
-        },
-        {
-          "rDistricts": 5,
-          "dDistricts": 0,
-          "quantity": 5
-        },
-        {
-          "rDistricts": 6,
-          "dDistricts": 2,
-          "quantity": 2
-        },
-        {
-          "rDistricts": 9,
-          "dDistricts": 10,
-          "quantity": 3
-        },
-        {
-          "rDistricts": 0,
-          "dDistricts": 10,
-          "quantity": 8
-        }
-      ],
-      "oppDistricts": [
-        {
-          "num": 1,
-          "quantity": 1
-        },
-        {
-          "num": 10,
-          "quantity": 9
-        },
-        {
-          "num": 9,
-          "quantity": 8
-        },
-        {
-          "num": 8,
-          "quantity": 0
-        },
-        {
-          "num": 8,
-          "quantity": 8
-        }
-      ],
-      "rVoters": 5.9365,
-      "dVoters": 7.0189,
-      "white": 9,
-      "black": 1,
-      "asian": 0,
-      "two": 6
-    },
+    "_id": 1,
+    "rdSplits": [
+      {
+        "rSeats": 7,
+        "dSeats": 6,
+        "quantity": 1
+      },
+      {
+        "rSeats": 4,
+        "dSeats": 3,
+        "quantity": 10
+      },
+      {
+        "rSeats": 1,
+        "dSeats": 8,
+        "quantity": 10
+      },
+      {
+        "rSeats": 7,
+        "dSeats": 2,
+        "quantity": 2
+      },
+      {
+        "rSeats": 0,
+        "dSeats": 6,
+        "quantity": 6
+      }
+    ],
+    "oppDistricts": [
+      {
+        "num": 1,
+        "quantity": 1
+      },
+      {
+        "num": 7,
+        "quantity": 8
+      },
+      {
+        "num": 1,
+        "quantity": 6
+      },
+      {
+        "num": 8,
+        "quantity": 10
+      },
+      {
+        "num": 5,
+        "quantity": 2
+      }
+    ],
+    "rVoters": 75.1853,
+    "dVoters": 58.9089,
+    "white": 16.7095,
+    "black": 86.9161,
+    "asian": 27.7153,
+    "two": 35.0092,
     "dpIds": [
       9,
-      8,
-      3,
-      6,
-      6,
+      9,
+      7,
+      2,
+      1,
+      9,
+      9,
       3
     ]
   },
   {
-    "_id": 3,
-    "measureInfo": {
-      "rdSplits": [
-        {
-          "rDistricts": 6,
-          "dDistricts": 4,
-          "quantity": 8
-        },
-        {
-          "rDistricts": 10,
-          "dDistricts": 3,
-          "quantity": 8
-        },
-        {
-          "rDistricts": 4,
-          "dDistricts": 9,
-          "quantity": 3
-        },
-        {
-          "rDistricts": 3,
-          "dDistricts": 5,
-          "quantity": 5
-        },
-        {
-          "rDistricts": 5,
-          "dDistricts": 0,
-          "quantity": 6
-        }
-      ],
-      "oppDistricts": [
-        {
-          "num": 1,
-          "quantity": 9
-        },
-        {
-          "num": 6,
-          "quantity": 6
-        },
-        {
-          "num": 8,
-          "quantity": 0
-        },
-        {
-          "num": 0,
-          "quantity": 4
-        },
-        {
-          "num": 9,
-          "quantity": 7
-        }
-      ],
-      "rVoters": 5.7127,
-      "dVoters": 9.5129,
-      "white": 8,
-      "black": 7,
-      "asian": 7,
-      "two": 5
-    },
+    "_id": 2,
+    "rdSplits": [
+      {
+        "rSeats": 10,
+        "dSeats": 1,
+        "quantity": 6
+      },
+      {
+        "rSeats": 5,
+        "dSeats": 10,
+        "quantity": 2
+      },
+      {
+        "rSeats": 1,
+        "dSeats": 3,
+        "quantity": 4
+      },
+      {
+        "rSeats": 4,
+        "dSeats": 6,
+        "quantity": 4
+      },
+      {
+        "rSeats": 0,
+        "dSeats": 7,
+        "quantity": 1
+      }
+    ],
+    "oppDistricts": [
+      {
+        "num": 6,
+        "quantity": 5
+      },
+      {
+        "num": 9,
+        "quantity": 1
+      },
+      {
+        "num": 1,
+        "quantity": 5
+      },
+      {
+        "num": 7,
+        "quantity": 0
+      },
+      {
+        "num": 6,
+        "quantity": 10
+      }
+    ],
+    "rVoters": 86.4472,
+    "dVoters": 82.8444,
+    "white": 38.6873,
+    "black": 98.7297,
+    "asian": 81.1793,
+    "two": 94.0602,
     "dpIds": [
+      8,
+      6,
+      0,
       6,
       6,
-      5,
-      2,
-      2
+      10,
+      4,
+      8,
+      0
+    ]
+  },
+  {
+    "_id": 3,
+    "rdSplits": [
+      {
+        "rSeats": 10,
+        "dSeats": 2,
+        "quantity": 9
+      },
+      {
+        "rSeats": 9,
+        "dSeats": 7,
+        "quantity": 7
+      },
+      {
+        "rSeats": 1,
+        "dSeats": 2,
+        "quantity": 3
+      },
+      {
+        "rSeats": 10,
+        "dSeats": 1,
+        "quantity": 3
+      },
+      {
+        "rSeats": 8,
+        "dSeats": 8,
+        "quantity": 7
+      }
+    ],
+    "oppDistricts": [
+      {
+        "num": 6,
+        "quantity": 10
+      },
+      {
+        "num": 2,
+        "quantity": 5
+      },
+      {
+        "num": 3,
+        "quantity": 6
+      },
+      {
+        "num": 8,
+        "quantity": 0
+      },
+      {
+        "num": 2,
+        "quantity": 9
+      }
+    ],
+    "rVoters": 34.3174,
+    "dVoters": 89.9226,
+    "white": 73.8082,
+    "black": 59.2888,
+    "asian": 80.5236,
+    "two": 76.5718,
+    "dpIds": [
+      4,
+      6,
+      1,
+      9,
+      9,
+      9
     ]
   },
   {
     "_id": 4,
-    "measureInfo": {
-      "rdSplits": [
-        {
-          "rDistricts": 8,
-          "dDistricts": 5,
-          "quantity": 4
-        },
-        {
-          "rDistricts": 7,
-          "dDistricts": 8,
-          "quantity": 7
-        },
-        {
-          "rDistricts": 5,
-          "dDistricts": 5,
-          "quantity": 10
-        },
-        {
-          "rDistricts": 3,
-          "dDistricts": 5,
-          "quantity": 5
-        },
-        {
-          "rDistricts": 5,
-          "dDistricts": 10,
-          "quantity": 10
-        }
-      ],
-      "oppDistricts": [
-        {
-          "num": 4,
-          "quantity": 4
-        },
-        {
-          "num": 2,
-          "quantity": 9
-        },
-        {
-          "num": 7,
-          "quantity": 10
-        },
-        {
-          "num": 3,
-          "quantity": 6
-        },
-        {
-          "num": 0,
-          "quantity": 8
-        }
-      ],
-      "rVoters": 3.7755,
-      "dVoters": 7.5955,
-      "white": 9,
-      "black": 4,
-      "asian": 6,
-      "two": 10
-    },
+    "rdSplits": [
+      {
+        "rSeats": 3,
+        "dSeats": 8,
+        "quantity": 2
+      },
+      {
+        "rSeats": 7,
+        "dSeats": 10,
+        "quantity": 1
+      },
+      {
+        "rSeats": 1,
+        "dSeats": 6,
+        "quantity": 0
+      },
+      {
+        "rSeats": 8,
+        "dSeats": 7,
+        "quantity": 7
+      },
+      {
+        "rSeats": 10,
+        "dSeats": 6,
+        "quantity": 4
+      }
+    ],
+    "oppDistricts": [
+      {
+        "num": 7,
+        "quantity": 9
+      },
+      {
+        "num": 10,
+        "quantity": 6
+      },
+      {
+        "num": 4,
+        "quantity": 7
+      },
+      {
+        "num": 3,
+        "quantity": 0
+      },
+      {
+        "num": 2,
+        "quantity": 2
+      }
+    ],
+    "rVoters": 80.0371,
+    "dVoters": 61.6873,
+    "white": 53.1021,
+    "black": 77.6235,
+    "asian": 38.4759,
+    "two": 98.7076,
     "dpIds": [
-      9,
-      5,
-      9,
-      0,
       6,
+      10,
       5,
-      5,
-      10
+      7
     ]
   },
   {
     "_id": 5,
-    "measureInfo": {
-      "rdSplits": [
-        {
-          "rDistricts": 2,
-          "dDistricts": 0,
-          "quantity": 9
-        },
-        {
-          "rDistricts": 9,
-          "dDistricts": 9,
-          "quantity": 6
-        },
-        {
-          "rDistricts": 3,
-          "dDistricts": 3,
-          "quantity": 5
-        },
-        {
-          "rDistricts": 2,
-          "dDistricts": 3,
-          "quantity": 2
-        },
-        {
-          "rDistricts": 3,
-          "dDistricts": 2,
-          "quantity": 1
-        }
-      ],
-      "oppDistricts": [
-        {
-          "num": 5,
-          "quantity": 7
-        },
-        {
-          "num": 4,
-          "quantity": 4
-        },
-        {
-          "num": 6,
-          "quantity": 4
-        },
-        {
-          "num": 8,
-          "quantity": 8
-        },
-        {
-          "num": 0,
-          "quantity": 2
-        }
-      ],
-      "rVoters": 3.4641,
-      "dVoters": 9.9309,
-      "white": 6,
-      "black": 6,
-      "asian": 9,
-      "two": 0
-    },
+    "rdSplits": [
+      {
+        "rSeats": 5,
+        "dSeats": 0,
+        "quantity": 4
+      },
+      {
+        "rSeats": 3,
+        "dSeats": 0,
+        "quantity": 8
+      },
+      {
+        "rSeats": 8,
+        "dSeats": 6,
+        "quantity": 3
+      },
+      {
+        "rSeats": 4,
+        "dSeats": 9,
+        "quantity": 10
+      },
+      {
+        "rSeats": 9,
+        "dSeats": 4,
+        "quantity": 8
+      }
+    ],
+    "oppDistricts": [
+      {
+        "num": 3,
+        "quantity": 8
+      },
+      {
+        "num": 7,
+        "quantity": 10
+      },
+      {
+        "num": 2,
+        "quantity": 4
+      },
+      {
+        "num": 2,
+        "quantity": 1
+      },
+      {
+        "num": 0,
+        "quantity": 7
+      }
+    ],
+    "rVoters": 52.4175,
+    "dVoters": 44.8256,
+    "white": 53.2943,
+    "black": 82.5954,
+    "asian": 17.4102,
+    "two": 66.9614,
     "dpIds": [
-      3,
       8,
-      10,
+      2,
+      6,
+      1,
       0,
-      9,
-      0,
+      1,
       3,
       3,
-      8,
       3
     ]
   },
   {
     "_id": 6,
-    "measureInfo": {
-      "rdSplits": [
-        {
-          "rDistricts": 9,
-          "dDistricts": 4,
-          "quantity": 8
-        },
-        {
-          "rDistricts": 8,
-          "dDistricts": 9,
-          "quantity": 1
-        },
-        {
-          "rDistricts": 7,
-          "dDistricts": 0,
-          "quantity": 5
-        },
-        {
-          "rDistricts": 0,
-          "dDistricts": 4,
-          "quantity": 6
-        },
-        {
-          "rDistricts": 3,
-          "dDistricts": 10,
-          "quantity": 8
-        }
-      ],
-      "oppDistricts": [
-        {
-          "num": 6,
-          "quantity": 1
-        },
-        {
-          "num": 8,
-          "quantity": 1
-        },
-        {
-          "num": 8,
-          "quantity": 7
-        },
-        {
-          "num": 8,
-          "quantity": 2
-        },
-        {
-          "num": 7,
-          "quantity": 9
-        }
-      ],
-      "rVoters": 3.512,
-      "dVoters": 7.4584,
-      "white": 1,
-      "black": 4,
-      "asian": 7,
-      "two": 5
-    },
+    "rdSplits": [
+      {
+        "rSeats": 6,
+        "dSeats": 10,
+        "quantity": 5
+      },
+      {
+        "rSeats": 4,
+        "dSeats": 6,
+        "quantity": 4
+      },
+      {
+        "rSeats": 8,
+        "dSeats": 8,
+        "quantity": 3
+      },
+      {
+        "rSeats": 0,
+        "dSeats": 7,
+        "quantity": 8
+      },
+      {
+        "rSeats": 10,
+        "dSeats": 10,
+        "quantity": 6
+      }
+    ],
+    "oppDistricts": [
+      {
+        "num": 3,
+        "quantity": 2
+      },
+      {
+        "num": 2,
+        "quantity": 5
+      },
+      {
+        "num": 5,
+        "quantity": 7
+      },
+      {
+        "num": 6,
+        "quantity": 8
+      },
+      {
+        "num": 0,
+        "quantity": 8
+      }
+    ],
+    "rVoters": 71.0103,
+    "dVoters": 38.3462,
+    "white": 88.3088,
+    "black": 22.0429,
+    "asian": 12.6777,
+    "two": 93.7339,
     "dpIds": [
-      5,
+      8,
+      3,
+      7,
       9,
-      8
+      4
     ]
   },
   {
     "_id": 7,
-    "measureInfo": {
-      "rdSplits": [
-        {
-          "rDistricts": 4,
-          "dDistricts": 8,
-          "quantity": 2
-        },
-        {
-          "rDistricts": 9,
-          "dDistricts": 4,
-          "quantity": 0
-        },
-        {
-          "rDistricts": 7,
-          "dDistricts": 6,
-          "quantity": 1
-        },
-        {
-          "rDistricts": 8,
-          "dDistricts": 0,
-          "quantity": 9
-        },
-        {
-          "rDistricts": 7,
-          "dDistricts": 10,
-          "quantity": 3
-        }
-      ],
-      "oppDistricts": [
-        {
-          "num": 8,
-          "quantity": 2
-        },
-        {
-          "num": 4,
-          "quantity": 3
-        },
-        {
-          "num": 8,
-          "quantity": 7
-        },
-        {
-          "num": 9,
-          "quantity": 0
-        },
-        {
-          "num": 8,
-          "quantity": 9
-        }
-      ],
-      "rVoters": 2.6054,
-      "dVoters": 5.8836,
-      "white": 2,
-      "black": 4,
-      "asian": 3,
-      "two": 9
-    },
+    "rdSplits": [
+      {
+        "rSeats": 9,
+        "dSeats": 2,
+        "quantity": 3
+      },
+      {
+        "rSeats": 6,
+        "dSeats": 0,
+        "quantity": 1
+      },
+      {
+        "rSeats": 2,
+        "dSeats": 6,
+        "quantity": 9
+      },
+      {
+        "rSeats": 1,
+        "dSeats": 9,
+        "quantity": 7
+      },
+      {
+        "rSeats": 3,
+        "dSeats": 2,
+        "quantity": 10
+      }
+    ],
+    "oppDistricts": [
+      {
+        "num": 2,
+        "quantity": 10
+      },
+      {
+        "num": 1,
+        "quantity": 8
+      },
+      {
+        "num": 3,
+        "quantity": 7
+      },
+      {
+        "num": 8,
+        "quantity": 0
+      },
+      {
+        "num": 9,
+        "quantity": 4
+      }
+    ],
+    "rVoters": 83.3351,
+    "dVoters": 40.1323,
+    "white": 77.3785,
+    "black": 84.2545,
+    "asian": 95.7291,
+    "two": 85.7237,
     "dpIds": [
+      10,
+      5,
+      6,
+      0,
       4,
-      1,
-      9,
-      5,
-      5,
-      8,
-      5,
+      10,
+      2,
       4
     ]
   },
   {
     "_id": 8,
-    "measureInfo": {
-      "rdSplits": [
-        {
-          "rDistricts": 10,
-          "dDistricts": 2,
-          "quantity": 9
-        },
-        {
-          "rDistricts": 5,
-          "dDistricts": 0,
-          "quantity": 0
-        },
-        {
-          "rDistricts": 4,
-          "dDistricts": 8,
-          "quantity": 2
-        },
-        {
-          "rDistricts": 3,
-          "dDistricts": 4,
-          "quantity": 1
-        },
-        {
-          "rDistricts": 10,
-          "dDistricts": 6,
-          "quantity": 5
-        }
-      ],
-      "oppDistricts": [
-        {
-          "num": 10,
-          "quantity": 5
-        },
-        {
-          "num": 7,
-          "quantity": 1
-        },
-        {
-          "num": 7,
-          "quantity": 6
-        },
-        {
-          "num": 7,
-          "quantity": 9
-        },
-        {
-          "num": 7,
-          "quantity": 5
-        }
-      ],
-      "rVoters": 4.587,
-      "dVoters": 3.1009,
-      "white": 0,
-      "black": 0,
-      "asian": 9,
-      "two": 8
-    },
+    "rdSplits": [
+      {
+        "rSeats": 1,
+        "dSeats": 5,
+        "quantity": 2
+      },
+      {
+        "rSeats": 10,
+        "dSeats": 7,
+        "quantity": 8
+      },
+      {
+        "rSeats": 10,
+        "dSeats": 3,
+        "quantity": 0
+      },
+      {
+        "rSeats": 5,
+        "dSeats": 6,
+        "quantity": 7
+      },
+      {
+        "rSeats": 1,
+        "dSeats": 1,
+        "quantity": 7
+      }
+    ],
+    "oppDistricts": [
+      {
+        "num": 7,
+        "quantity": 7
+      },
+      {
+        "num": 5,
+        "quantity": 7
+      },
+      {
+        "num": 2,
+        "quantity": 6
+      },
+      {
+        "num": 3,
+        "quantity": 7
+      },
+      {
+        "num": 8,
+        "quantity": 9
+      }
+    ],
+    "rVoters": 35.6859,
+    "dVoters": 84.7246,
+    "white": 12.8483,
+    "black": 48.1528,
+    "asian": 38.1468,
+    "two": 27.4853,
     "dpIds": [
-      5,
-      8,
-      5,
+      6,
+      1,
+      4,
       3,
-      7,
-      10
+      1,
+      9,
+      10,
+      10,
+      4
     ]
   },
   {
     "_id": 9,
-    "measureInfo": {
-      "rdSplits": [
-        {
-          "rDistricts": 3,
-          "dDistricts": 6,
-          "quantity": 1
-        },
-        {
-          "rDistricts": 10,
-          "dDistricts": 0,
-          "quantity": 1
-        },
-        {
-          "rDistricts": 1,
-          "dDistricts": 1,
-          "quantity": 10
-        },
-        {
-          "rDistricts": 6,
-          "dDistricts": 4,
-          "quantity": 6
-        },
-        {
-          "rDistricts": 5,
-          "dDistricts": 1,
-          "quantity": 5
-        }
-      ],
-      "oppDistricts": [
-        {
-          "num": 3,
-          "quantity": 0
-        },
-        {
-          "num": 2,
-          "quantity": 4
-        },
-        {
-          "num": 2,
-          "quantity": 0
-        },
-        {
-          "num": 2,
-          "quantity": 10
-        },
-        {
-          "num": 7,
-          "quantity": 1
-        }
-      ],
-      "rVoters": 1.3425,
-      "dVoters": 4.4039,
-      "white": 10,
-      "black": 9,
-      "asian": 3,
-      "two": 1
-    },
+    "rdSplits": [
+      {
+        "rSeats": 1,
+        "dSeats": 0,
+        "quantity": 3
+      },
+      {
+        "rSeats": 0,
+        "dSeats": 1,
+        "quantity": 4
+      },
+      {
+        "rSeats": 8,
+        "dSeats": 1,
+        "quantity": 9
+      },
+      {
+        "rSeats": 8,
+        "dSeats": 6,
+        "quantity": 1
+      },
+      {
+        "rSeats": 2,
+        "dSeats": 5,
+        "quantity": 7
+      }
+    ],
+    "oppDistricts": [
+      {
+        "num": 10,
+        "quantity": 7
+      },
+      {
+        "num": 10,
+        "quantity": 6
+      },
+      {
+        "num": 4,
+        "quantity": 0
+      },
+      {
+        "num": 7,
+        "quantity": 6
+      },
+      {
+        "num": 5,
+        "quantity": 3
+      }
+    ],
+    "rVoters": 76.4072,
+    "dVoters": 47.3276,
+    "white": 15.2586,
+    "black": 23.8643,
+    "asian": 54.7353,
+    "two": 44.6251,
     "dpIds": [
-      3,
-      5,
       8,
       7,
-      0,
-      3,
-      1,
-      10,
-      3
+      2,
+      6,
+      10
     ]
   }
 ]

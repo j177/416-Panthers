@@ -8,19 +8,43 @@ import qs from 'qs'
 import { PageData } from '../contexts/context'
 
 import StateMap from './stateMap.js'
-import EnsembleClusterLineGraph from './ensembleLineGraph'
-import EnsembleVisualizations from './ensembleVisualizations'
+import EnsembleClusterLineGraph from './ensembleClusterLineGraph'
+import ClustersVisualizations from './clustersVisualizations'
 import ClusterAnalysisTable from './clusterAnalysisTable'
 
 import { DistanceMeasures } from '../constants/distanceMeasureConstants'
 
 export default function StatePage() {
-    const { state, setState } = useContext(PageData)
-    const { ensemble, setEnsemble } = useContext(PageData)
-    const { distanceMeasure, setDistanceMeasure } = useContext(PageData)
+    const { ensemble, distanceMeasure } = useContext(PageData)
+
+    return (
+        <>
+            <div className = "state-page-container">
+                <div className = "left-container">
+                    <StateMap />
+                </div>
+                <div className = "right-container">
+                    {ensemble && distanceMeasure
+                        ?
+                        <div className = "cluster-data-container">
+                            <ClustersVisualizations />
+                        </div>
+                        :
+                        <div className = "ensemble-data-container">
+                            <EnsembleVisualizations />
+                        </div>
+                    }
+                </div>
+            </div>
+        </>
+    )
+}
+
+function EnsembleVisualizations() {
+    const { state, setState, setEnsemble, setDistanceMeasure } = useContext(PageData)
 
     const [ensembles, setEnsembles] = useState() /* Ensemble objects for the state */
-    const [visuals, setVisuals] = useState(DistanceMeasures.OPTIMAL_TRANSPORT) /* The distance measure displayed on the visuals */
+    const [visualsFor, setVisualsFor] = useState(DistanceMeasures.OPTIMAL_TRANSPORT) /* The distance measure displayed by the visuals */
 
     useEffect(() => {
         const getState = async () => {
@@ -65,50 +89,32 @@ export default function StatePage() {
         getEnsembles()
     }, [state])
 
-    const toggle = () => {
-        if (visuals === DistanceMeasures.OPTIMAL_TRANSPORT) {
-            setVisuals(DistanceMeasures.HAMMING_DISTANCE)
-        }
-        else {
-            setVisuals(DistanceMeasures.OPTIMAL_TRANSPORT)
-        }
-    }
-
     if (!ensembles) {
         return
     }
 
     return (
         <>
-            <div className = "state-page-container">
-                <div className = "left-container">
-                    <StateMap />
+            <div className = "ensemble-table-container">
+                <EnsembleSummaryTable 
+                    ensembles = {ensembles}
+                    setState = {setState}
+                    setEnsemble = {setEnsemble}
+                    setDistanceMeasure = {setDistanceMeasure} />
+            </div>
+            <div>
+                <DistanceMeasureDropdown setVisualsFor = {setVisualsFor} />
+            </div>
+            <div className = "ensemble-cluster-visuals">
+                <div className = "line-graph-container">
+                    <EnsembleClusterLineGraph
+                        ensembles = {ensembles}
+                        distanceMeasure = {visualsFor} />
                 </div>
-                <div className = "right-container">
-                    {ensemble && distanceMeasure 
-                        ?
-                        <div className = "data-container">
-                            <EnsembleVisualizations />
-                        </div>
-                        :
-                        <>
-                            <div className = "ensemble-table-container">
-                                <EnsembleSummaryTable 
-                                    ensembles = {ensembles}
-                                    setState = {setState}
-                                    setEnsemble = {setEnsemble}
-                                    setDistanceMeasure = {setDistanceMeasure} />
-                            </div>
-                            <div className = "association-line-graph-container">
-                                <EnsembleClusterLineGraph
-                                    ensembles = {ensembles}
-                                    distanceMeasure = {visuals} />
-                                <div>
-                                    <button onClick = {toggle}>Toggle</button>
-                                </div>
-                            </div>
-                        </>
-                    }
+                <div className = "table-container">
+                    <EnsembleClusterTable 
+                        ensembles = {ensembles}
+                        distanceMeasure = {visualsFor}/>
                 </div>
             </div>
         </>
@@ -137,10 +143,8 @@ function EnsembleSummaryTable({ ensembles, setState, setEnsemble, setDistanceMea
                 <tr>
                     <th>Ensemble Name</th>
                     <th># of District Plans</th>
-                    <th>Optimal Transport</th>
-                    <th></th>
-                    <th>Hamming Distance</th>
-                    <th></th>
+                    <th colspan = {2}>Optimal Transport</th>
+                    <th colspan = {2}>Hamming Distance</th>
                 </tr>
             </thead>
             <tbody>
@@ -149,13 +153,34 @@ function EnsembleSummaryTable({ ensembles, setState, setEnsemble, setDistanceMea
                         <td>{ensemble.name}</td>
                         <td>{ensemble.numPlans}</td>
                         <td>{ensemble.optimalTransport.avgDst}</td>
-                        <td>
+                        <td className = "td-centered">
                             <span onClick = {() => {handleSelect(ensemble, DistanceMeasures.OPTIMAL_TRANSPORT)}}>Examine</span>
                         </td>
                         <td>{ensemble.hammingDistance.avgDst}</td>
-                        <td>
+                        <td className = "td-centered">
                             <span onClick = {() => {handleSelect(ensemble, DistanceMeasures.HAMMING_DISTANCE)}}>Examine</span>
                         </td>
+                    </tr>
+                )}
+            </tbody>
+        </Table>
+    )
+}
+
+function EnsembleClusterTable({ ensembles, distanceMeasure }) {
+    return (
+        <Table className = "ensemble-cluster-table" striped bordered hover>
+            <thead>
+                <tr>
+                    <th>Ensemble Size</th>
+                    <th># of Clusters</th>
+                </tr>
+            </thead>
+            <tbody>
+                {ensembles.map((ensemble, index) =>
+                    <tr key = {index}>
+                        <td>{ensemble.numPlans}</td>
+                        <td>{ensemble[distanceMeasure].clusterIds.length}</td>
                     </tr>
                 )}
             </tbody>
@@ -215,35 +240,38 @@ function EnsembleDropdown( {ensembles, setEnsemble} ) {
     );
 }
 
-function DistanceMeasureDropdown( {ensemble, setDistanceMeasure} ) {
-    const [selectedValue, setSelectedValue] = useState("")
+function DistanceMeasureDropdown({ setVisualsFor }) {
+    const [selectedValue, setSelectedValue] = useState(DistanceMeasures.OPTIMAL_TRANSPORT)
 
-    const convertToDisplayString = (name) => {
+    const convertToDisplay = (name) => {
         return (name.charAt(0).toUpperCase() + name.slice(1)).replace(/([a-z])([A-Z])/g, '$1 $2')
+    }
+
+    const handleClick = (distanceMeasure) => {
+        setSelectedValue(distanceMeasure)
+        setVisualsFor(distanceMeasure)
     }
 
     return (
         <Dropdown className = "dm-dropdown">
-            <Dropdown.Toggle variant = "success" id = "dropdown-basic" disabled = {!ensemble}>
-                {selectedValue}
+            <Dropdown.Toggle variant = "success" id = "dropdown-basic">
+                {convertToDisplay(selectedValue)}
             </Dropdown.Toggle>
   
             <Dropdown.Menu className = "dropdown-menu">
-                {
-                    ensemble &&
-                    Object.keys(ensemble.distanceMeasures).map((distanceMeasure, index) => 
-                        <Dropdown.Item
-                            key = {index}
-                            className = "dropdown-item"
-                            onClick = {() => {
-                                setSelectedValue(convertToDisplayString(distanceMeasure));
-                                setDistanceMeasure(distanceMeasure)
-                            }}
-                        >
-                            {convertToDisplayString(distanceMeasure)}
-                        </Dropdown.Item>
-                    )
-                }
+                    {
+                        Object.values(DistanceMeasures).map((distanceMeasure, index) => 
+                            <Dropdown.Item
+                                key = {index}
+                                className = "dropdown-item"
+                                onClick = {() => {
+                                    handleClick(distanceMeasure)
+                                }}
+                            >
+                                {convertToDisplay(distanceMeasure)}
+                            </Dropdown.Item>
+                        )
+                    }
             </Dropdown.Menu>
         </Dropdown>
     );

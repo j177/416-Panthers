@@ -27,6 +27,7 @@
 
 .ensemble-table .back-button {
     cursor: pointer;
+    color: blue;
 }
 
 .ensemble-table span {
@@ -41,19 +42,38 @@
 /* =============================== */
 
 /* =============================== */
-/* Cluster Ensemble Association Line Graph */
+/* Ensemble Cluster Visuals  */
 
-.association-line-graph-container {
+.dm-dropdown {
+    margin-left: 70%;
+}
+
+.dm-dropdown .dropdown-toggle {
+    background-color: white;
+    color: black;
+}
+
+.ensemble-cluster-visuals {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.ensemble-cluster-visuals .line-graph-container {
     text-align: center;
 }
 
-.association-line-graph-container button {
-    background-color: rgb(5, 189, 5);
-    color: white;
-    width: 15%;
+.ensemble-cluster-visuals .table-container {
+    width: 40%;
 }
 
-/* Cluster Ensemble Association Line Graph */
+.td-centered {
+    text-align: center;
+}
+
+/* Ensemble Cluster Visuals */
 /* =============================== */
 
 .cluster-table-container div {
@@ -88,7 +108,7 @@
     justify-content: center;
 }
 
-.data-container {
+.cluster-data-container {
     height: 93vh;
 }
 
