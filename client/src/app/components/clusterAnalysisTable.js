@@ -10,41 +10,15 @@ import qs from 'qs'
 
 import { PageData } from '../contexts/context'
 
-export default function ClusterAnalysisTable() {
-    const { ensemble, distanceMeasure } = useContext(PageData)
+export default function ClusterAnalysisTable({ clusters }) {
+    const { setCluster } = useContext(PageData)
 
-    const [clusters, setClusters] = useState()
     const [currentPage, setCurrentPage] = useState(1)
 
     const [showModal, setShowModal] = useState(false);
     const [selectedClusterId, setSelectedClusterId] = useState(null);
     const [currentModalPage, setCurrentModalPage] = useState(1);
-    const itemsPerPage = 10;
-
-    useEffect(() => {
-        const getClusters = async () => {
-            try {
-                const clusters = await axios.get("http://localhost:8080/clusters", {
-                    params: {
-                        ids: ensemble[distanceMeasure].clusterIds
-                    },
-                    paramsSerializer: params => {
-                        return qs.stringify(params, { arrayFormat: 'repeat' })
-                    }
-                })
-
-                setClusters(clusters.data)
-            } catch (error) {
-                console.log("Error fetching clusters: ", error)
-            }
-        }
-    
-        getClusters()
-    }, [])
-
-    if (!clusters) {
-        return
-    }
+    const itemsPerPage = 14;
 
     const handleOpenModal = (clusterId) => {
         setSelectedClusterId(clusterId);
@@ -82,38 +56,36 @@ export default function ClusterAnalysisTable() {
             <Table striped bordered hover>
                 <thead>
                     <tr>
-                        <th></th>
-                        <th className = "td-centered" colSpan = {2}>% of voters</th>
-                        <th className = "td-centered" colSpan = {5}>% of total population</th>
+                        <th colSpan = {1}>Cluster</th>
+                        <th colSpan = {2}>Avg % of voters</th>
+                        <th colSpan = {5}>Avg % of population</th>
                     </tr>
                 </thead>
                 <thead>
                     <tr>
-                        <th className = "td-centered">Cluster Id</th>
-                        <th className = "td-centered">Republican</th>
-                        <th className = "td-centered">Democrat</th>
-                        <th className = "td-centered">White</th>
-                        <th className = "td-centered">Black</th>
-                        <th className = "td-centered">Hispanic</th>
-                        <th className = "td-centered">Asian</th>
-                        <th className = "td-centered">Other</th>
+                        <th>Id</th>
+                        <th>Republican</th>
+                        <th>Democrat</th>
+                        <th>White</th>
+                        <th>Black</th>
+                        <th>Hispanic</th>
+                        <th>Asian</th>
+                        <th>Other</th>
                     </tr>
                 </thead>
                 <tbody>
                     {clusters.slice(indexOfFirstItem, indexOfLastItem).map((cluster, index) => (
                         <tr key = {index}>
-                            <td>
-                                <button className = 'btn btn-link' onClick = {() => handleOpenModal(cluster._id)}>
-                                    {cluster._id}
-                                </button>
+                            <td onClick = {() => setCluster(cluster)}>
+                                <span>{cluster._id}</span>
                             </td>
-                            <td>{cluster.rVoters}</td>
-                            <td>{cluster.dVoters}</td>
-                            <td>{cluster.white}</td>
-                            <td>{cluster.black}</td>
-                            <td>{cluster.hispanic}</td>
-                            <td>{cluster.asian}</td>
-                            <td>{cluster.other}</td>
+                            <td>{cluster.republican}%</td>
+                            <td>{cluster.democrat}%</td>
+                            <td>{cluster.white}%</td>
+                            <td>{cluster.black}%</td>
+                            <td>{cluster.hispanic}%</td>
+                            <td>{cluster.asian}%</td>
+                            <td>{cluster.other}%</td>
                         </tr>
                     ))}
                 </tbody>

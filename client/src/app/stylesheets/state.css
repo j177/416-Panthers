@@ -5,6 +5,10 @@
     height: 93vh;
 }
 
+.td-centered {
+    text-align: center;
+}
+
 /* =============================== */
 /* Map */
 
@@ -69,15 +73,25 @@
     width: 40%;
 }
 
-.td-centered {
-    text-align: center;
-}
-
 /* Ensemble Cluster Visuals */
 /* =============================== */
 
 /* =============================== */
 /* Cluster Table Visuals  */
+
+.cluster-table span {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cluster-table th {
+    text-align: center;
+}
+
+.cluster-table td {
+    text-align: center;
+}
 
 .location-marker {
     display: flex;
@@ -87,6 +101,21 @@
 }
 
 /* Cluster Table Visuals */
+/* =============================== */
+
+/* =============================== */
+/* RD Splits Bar Graph */
+
+.cluster-dropdown {
+    margin-left: 75%;
+}
+
+.cluster-dropdown .dropdown-toggle {
+    background-color: white;
+    color: black;
+}
+
+/* RD Splits Bar Graph */
 /* =============================== */
 
 .cluster-table-container div {

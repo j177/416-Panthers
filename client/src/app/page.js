@@ -14,9 +14,13 @@ export default function Home() {
     const [state, setState] = useState()
     const [ensemble, setEnsemble] = useState()
     const [distanceMeasure, setDistanceMeasure] = useState()
+    const [cluster, setCluster] = useState()
 
     return (
-        <PageData.Provider value = {{ state, setState, ensemble, setEnsemble, distanceMeasure, setDistanceMeasure }}>
+        <PageData.Provider value = {{ state, setState,
+                                        ensemble, setEnsemble,
+                                        distanceMeasure, setDistanceMeasure,
+                                        cluster, setCluster}}>
             <div className = "main">
                 <Navigation />
                 <div className = "map-container">

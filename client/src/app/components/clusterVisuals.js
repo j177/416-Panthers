@@ -1,22 +1,44 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
+import axios from 'axios'
+import qs from 'qs'
 
 import { PageData } from '../contexts/context.js'
 
 import ClusterAnalysisTable from './clusterAnalysisTable.js'
 import StatePageScatterPlot from './statePageScatterPlot.js'
 import DistanceMeasureTable from './distanceMeasureTable.js'
+import RDSplitsBarGraph from './rdSplitsBarGraph.js'
 
 import { TabNames } from '../constants/tabConstants.js'
 
-import BarGraph from './BarGraph';
-
-
-export default function ClustersVisualizations() {
+export default function ClusterVisuals() {
     const { ensemble, setEnsemble, distanceMeasure, setDistanceMeasure } = useContext(PageData)
 
+    const [clusters, setClusters] = useState()
     const [activeTab, setActiveTab] = useState(TabNames.CLUSTER_ANALYSIS)
+
+    useEffect(() => {
+        const getClusters = async () => {
+            try {
+                const clusters = await axios.get("http://localhost:8080/clusters", {
+                    params: {
+                        ids: ensemble[distanceMeasure].clusterIds
+                    },
+                    paramsSerializer: params => {
+                        return qs.stringify(params, { arrayFormat: 'repeat' })
+                    }
+                })
+
+                setClusters(clusters.data)
+            } catch (error) {
+                console.log("Error fetching clusters: ", error)
+            }
+        }
+    
+        getClusters()
+    }, [])
 
     const handleTabClick = (tab) => {
         if (tab === TabNames.BACK_TAB) {
@@ -30,15 +52,10 @@ export default function ClustersVisualizations() {
     const convertToDisplay = (name) => {
         return (name.charAt(0).toUpperCase() + name.slice(1)).replace(/([a-z])([A-Z])/g, '$1 $2')
     }
-    
-    const dummyRDSplits = [
-        { rSeats: 6, dSeats: 5, quantity: 6 },
-        { rSeats: 4, dSeats: 7, quantity: 8 },
-        { rSeats: 8, dSeats: 3, quantity: 5 },
-        { rSeats: 5, dSeats: 6, quantity: 7 },
-        { rSeats: 7, dSeats: 4, quantity: 9 },
-        { rSeats: 5, dSeats: 5, quantity: 7 },
-      ];
+
+    if (!clusters) {
+        return
+    }
 
     return (
         <>
@@ -56,18 +73,14 @@ export default function ClustersVisualizations() {
                 <Tab eventKey = { TabNames.BACK_TAB } title = '< Back'>
                 </Tab>
                 <Tab eventKey = { TabNames.CLUSTER_ANALYSIS } title = "Cluster Analysis">
-                    <ClusterAnalysisTable />
+                    <ClusterAnalysisTable clusters = {clusters} />
                 </Tab>
                 <Tab eventKey = { TabNames.SCATTER_PLOT } title = "Scatter Plot">
                     <StatePageScatterPlot />
                 </Tab>
-                <Tab eventKey = { TabNames.DISTANCE_MEASURES } title = "Distance Measures">
-                    <DistanceMeasureTable />
+                <Tab eventKey = { TabNames.RD_SPLITS } title = "RD Splits">
+                    <RDSplitsBarGraph clusters = {clusters} />
                 </Tab>
-                <Tab eventKey = { TabNames.BAR_GRAPH } title="Bar Graph">
-                    <BarGraph rdSplits={dummyRDSplits} />
-                </Tab>
-
             </Tabs>
         </>
     )
