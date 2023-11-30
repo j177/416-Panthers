@@ -10,6 +10,9 @@ import DistanceMeasureTable from './distanceMeasureTable.js'
 
 import { TabNames } from '../constants/tabConstants.js'
 
+import BarGraph from './BarGraph';
+
+
 export default function ClustersVisualizations() {
     const { ensemble, setEnsemble, distanceMeasure, setDistanceMeasure } = useContext(PageData)
 
@@ -27,6 +30,15 @@ export default function ClustersVisualizations() {
     const convertToDisplay = (name) => {
         return (name.charAt(0).toUpperCase() + name.slice(1)).replace(/([a-z])([A-Z])/g, '$1 $2')
     }
+    
+    const dummyRDSplits = [
+        { rSeats: 6, dSeats: 5, quantity: 6 },
+        { rSeats: 4, dSeats: 7, quantity: 8 },
+        { rSeats: 8, dSeats: 3, quantity: 5 },
+        { rSeats: 5, dSeats: 6, quantity: 7 },
+        { rSeats: 7, dSeats: 4, quantity: 9 },
+        { rSeats: 5, dSeats: 5, quantity: 7 },
+      ];
 
     return (
         <>
@@ -52,6 +64,10 @@ export default function ClustersVisualizations() {
                 <Tab eventKey = { TabNames.DISTANCE_MEASURES } title = "Distance Measures">
                     <DistanceMeasureTable />
                 </Tab>
+                <Tab eventKey = { TabNames.BAR_GRAPH } title="Bar Graph">
+                    <BarGraph rdSplits={dummyRDSplits} />
+                </Tab>
+
             </Tabs>
         </>
     )
