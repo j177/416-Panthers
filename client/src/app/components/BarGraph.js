@@ -2,48 +2,64 @@ import React from 'react';
 import { Bar } from 'react-chartjs-2';
 
 const BarGraph = ({ rdSplits }) => {
-  // Extract data for the chart
   const data = {
-    labels: rdSplits.map((split, index) => `Split ${index + 1}`),
-    datasets: [
-      {
-        label: 'Republican Seats',
-        backgroundColor: 'rgba(75, 192, 192, 0.2)',
-        borderColor: 'rgba(75, 192, 192, 1)',
-        borderWidth: 1,
-        data: rdSplits.map((split) => split.rSeats),
-        categoryPercentage: 0.5,
-        barPercentage: 0.33, // Adjust bar width as needed
-      },
-      {
-        label: 'Democratic Seats',
-        backgroundColor: 'rgba(255, 99, 132, 0.2)',
-        borderColor: 'rgba(255, 99, 132, 1)',
-        borderWidth: 1,
-        data: rdSplits.map((split) => split.dSeats),
-        categoryPercentage: 0.5,
-        barPercentage: 0.33,
-      },
-      {
-        label: 'Quantity',
-        backgroundColor: 'rgba(169, 169, 169, 0.2)', // Grey color
-        borderColor: 'rgba(169, 169, 169, 1)', // Grey color
-        borderWidth: 1,
-        data: rdSplits.map((split) => split.quantity),
-        categoryPercentage: 0.5,
-        barPercentage: 0.33,
-      },
-    ],
+    labels: rdSplits.map((split) => `${split.rSeats}/${split.dSeats}`),
+    datasets: [{
+      label: 'Quantity',
+      backgroundColor: rdSplits.map((split) => {
+        // Use red/blue/green based on the split
+        if (split.rSeats > split.dSeats) {
+          return 'rgba(0, 0, 255, 0.8)'; // Blue
+        } else if (split.rSeats < split.dSeats) {
+          return 'rgba(255, 0, 0, 0.8)'; // Red
+        } else {
+          return 'rgba(0, 255, 0, 0.8)'; // Green
+        }
+      }),
+      borderColor: 'rgba(75, 192, 192, 1)',
+      borderWidth: 1,
+      data: rdSplits.map((split) => split.quantity),
+    }],
   };
 
   const options = {
     scales: {
       x: {
-        stacked: false,
+        stacked: true,
+        beginAtZero: true,
+        title: {
+          display: true,
+          text: 'Split Ratio (Republican Seats / Democratic Seats)',
+        },
       },
       y: {
-        stacked: false,
+        stacked: true,
         beginAtZero: true,
+        title: {
+          display: true,
+          text: 'Quantity',
+        },
+      },
+    },
+    plugins: {
+      legend: {
+        display: true,
+        labels: {
+          generateLabels: function (chart) {
+            return [{
+              text: `X-axis: Split Ratio (Republican Seats / Democratic Seats)`,
+              fillStyle: 'rgba(75, 192, 192, 0.5)',
+              strokeStyle: 'rgba(75, 192, 192, 1)',
+              lineWidth: 1,
+            }, {
+              text: `Y-axis: Quantity`,
+              fillStyle: 'rgba(75, 192, 192, 0.5)',
+              strokeStyle: 'rgba(75, 192, 192, 1)',
+              lineWidth: 1,
+            }];
+          },
+          boxWidth: 0,
+        },
       },
     },
   };
