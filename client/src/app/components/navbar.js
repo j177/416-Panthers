@@ -12,14 +12,13 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 import { States } from '../constants/stateConstants'
 
 export default function Navigation() {
-	const { state, setState } = useContext(PageData)
-	const { setEnsemble } = useContext(PageData)
-	const { setDistanceMeasure } = useContext(PageData)
+	const { state, setState, setEnsemble, setDistanceMeasure, setCluster } = useContext(PageData)
 
 	const handleMenuClick = () => {
 		setState()
 		setEnsemble()
 		setDistanceMeasure()
+		setCluster()
 	}
 
 	const handleStateClick = (stateName) => {
