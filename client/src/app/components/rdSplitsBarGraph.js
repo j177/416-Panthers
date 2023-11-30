@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Chart as ChartJS, BarElement, CategoryScale, LinearScale, Tooltip, Legend } from 'chart.js'
 import { Bar } from 'react-chartjs-2';
+import { Dropdown } from 'react-bootstrap';
 
-const BarGraph = ({ rdSplits }) => {
+export default function RDSplitsBarGraph({ clusters }) {
+  const [cluster, setCluster] = useState(clusters[0])
+
+  const rdSplits = cluster.rdSplits
+  ChartJS.register(
+    BarElement,
+    CategoryScale,
+    LinearScale,
+    Tooltip,
+    Legend
+  )
+
   const data = {
     labels: rdSplits.map((split) => `${split.rSeats}/${split.dSeats}`),
     datasets: [{
@@ -66,9 +79,34 @@ const BarGraph = ({ rdSplits }) => {
 
   return (
     <div>
-      <Bar data={data} options={options} />
+      <ClusterDropdown clusters = {clusters} setCluster = {setCluster}/>
+      <Bar data = {data} options = {options} />
     </div>
   );
 };
 
-export default BarGraph;
+function ClusterDropdown({ clusters, setCluster }) {
+  const [selectedValue, setSelectedValue] = useState(0)
+
+  return (
+      <Dropdown className = "cluster-dropdown">
+          <Dropdown.Toggle variant = "success" id = "dropdown-basic">
+              Cluster {selectedValue}
+          </Dropdown.Toggle>
+  
+          <Dropdown.Menu className = "dropdown-menu">
+              {
+                  clusters.map((cluster) => 
+                      <Dropdown.Item 
+                          key = {cluster._id} 
+                          className = "dropdown-item"
+                          onClick = {() => {setSelectedValue(cluster._id); setCluster(cluster)}}
+                      >
+                          Cluster {cluster._id}
+                      </Dropdown.Item>
+                  )
+              }
+          </Dropdown.Menu>
+      </Dropdown>
+  );
+}

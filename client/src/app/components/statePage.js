@@ -9,12 +9,33 @@ import { PageData } from '../contexts/context'
 
 import StateMap from './stateMap.js'
 import EnsembleClusterLineGraph from './ensembleClusterLineGraph'
-import ClustersVisualizations from './clustersVisualizations'
+import ClusterVisuals from './clusterVisuals'
+import DistrictPlanVisuals from './districtPlanVisuals'
 
 import { DistanceMeasures } from '../constants/distanceMeasureConstants'
 
 export default function StatePage() {
-    const { ensemble, distanceMeasure } = useContext(PageData)
+    const { ensemble, distanceMeasure, cluster } = useContext(PageData)
+
+    let visualsToDisplay
+    if (cluster) {
+        visualsToDisplay = 
+            <div className = "dp-data-container">
+                <DistrictPlanVisuals />
+            </div>
+    }
+    else if (ensemble && distanceMeasure) {
+        visualsToDisplay =
+            <div className = "cluster-data-container">
+                <ClusterVisuals />
+            </div>
+    }
+    else {
+        visualsToDisplay = 
+            <div className = "ensemble-data-container">
+                <EnsembleVisuals />
+            </div>
+    }
 
     return (
         <>
@@ -23,23 +44,14 @@ export default function StatePage() {
                     <StateMap />
                 </div>
                 <div className = "right-container">
-                    {ensemble && distanceMeasure
-                        ?
-                        <div className = "cluster-data-container">
-                            <ClustersVisualizations />
-                        </div>
-                        :
-                        <div className = "ensemble-data-container">
-                            <EnsembleVisualizations />
-                        </div>
-                    }
+                    {visualsToDisplay}
                 </div>
             </div>
         </>
     )
 }
 
-function EnsembleVisualizations() {
+function EnsembleVisuals() {
     const { state, setState, setEnsemble, setDistanceMeasure } = useContext(PageData)
 
     const [ensembles, setEnsembles] = useState() /* Ensemble objects for the state */
