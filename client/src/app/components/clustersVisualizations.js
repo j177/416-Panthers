@@ -11,7 +11,7 @@ import DistanceMeasureTable from './distanceMeasureTable.js'
 import { TabNames } from '../constants/tabConstants.js'
 
 export default function ClustersVisualizations() {
-    const { setEnsemble, setDistanceMeasure } = useContext(PageData)
+    const { ensemble, setEnsemble, distanceMeasure, setDistanceMeasure } = useContext(PageData)
 
     const [activeTab, setActiveTab] = useState(TabNames.CLUSTER_ANALYSIS)
 
@@ -24,8 +24,16 @@ export default function ClustersVisualizations() {
         }
     };
 
+    const convertToDisplay = (name) => {
+        return (name.charAt(0).toUpperCase() + name.slice(1)).replace(/([a-z])([A-Z])/g, '$1 $2')
+    }
+
     return (
         <>
+            <div className = "location-marker">
+                <span>Current Ensemble: {ensemble.name}</span>
+                <span>Current Distance Measure: {convertToDisplay(distanceMeasure)}</span>
+            </div>
             <Tabs
                 defaultActiveKey = { TabNames.CLUSTER_ANALYSIS } // Set the default active tab here
                 transition = { false }

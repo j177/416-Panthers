@@ -76,6 +76,19 @@
 /* Ensemble Cluster Visuals */
 /* =============================== */
 
+/* =============================== */
+/* Cluster Table Visuals  */
+
+.location-marker {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    height: 5%;
+}
+
+/* Cluster Table Visuals */
+/* =============================== */
+
 .cluster-table-container div {
     margin-left: 2%;
 }

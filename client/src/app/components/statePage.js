@@ -10,7 +10,6 @@ import { PageData } from '../contexts/context'
 import StateMap from './stateMap.js'
 import EnsembleClusterLineGraph from './ensembleClusterLineGraph'
 import ClustersVisualizations from './clustersVisualizations'
-import ClusterAnalysisTable from './clusterAnalysisTable'
 
 import { DistanceMeasures } from '../constants/distanceMeasureConstants'
 
@@ -143,8 +142,8 @@ function EnsembleSummaryTable({ ensembles, setState, setEnsemble, setDistanceMea
                 <tr>
                     <th>Ensemble Name</th>
                     <th># of District Plans</th>
-                    <th colspan = {2}>Optimal Transport</th>
-                    <th colspan = {2}>Hamming Distance</th>
+                    <th colSpan = {2}>Optimal Transport</th>
+                    <th colSpan = {2}>Hamming Distance</th>
                 </tr>
             </thead>
             <tbody>
