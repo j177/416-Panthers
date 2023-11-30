@@ -3,140 +3,142 @@
     "_id": 0,
     "rdSplits": [
       {
+        "rSeats": 4,
+        "dSeats": 6,
+        "quantity": 6
+      },
+      {
         "rSeats": 2,
         "dSeats": 5,
         "quantity": 4
       },
       {
-        "rSeats": 5,
-        "dSeats": 2,
-        "quantity": 1
+        "rSeats": 4,
+        "dSeats": 1,
+        "quantity": 2
       },
       {
-        "rSeats": 1,
-        "dSeats": 6,
+        "rSeats": 4,
+        "dSeats": 1,
         "quantity": 3
       },
       {
-        "rSeats": 5,
-        "dSeats": 3,
-        "quantity": 4
-      },
-      {
-        "rSeats": 2,
-        "dSeats": 6,
-        "quantity": 7
+        "rSeats": 1,
+        "dSeats": 5,
+        "quantity": 3
       }
     ],
-    "republican": 53.4644,
-    "democrat": 55.6261,
-    "white": 19.7072,
-    "black": 15.9416,
-    "hispanic": 19.7796,
-    "asian": 19.8629,
-    "other": 17.6809,
+    "republican": 43.9018,
+    "democrat": 41.4311,
+    "other": 6.278,
+    "white": 14.2941,
+    "black": 12.2625,
+    "hispanic": 10.5531,
+    "asian": 14.8144,
+    "native": 14.7012,
+    "pacific": 12.1042,
+    "minority": 0.8482,
     "dpIds": [
-      7,
+      5,
       7,
       9,
-      5,
-      8,
-      2,
-      2,
-      2
+      7,
+      9,
+      8
     ]
   },
   {
     "_id": 1,
     "rdSplits": [
       {
-        "rSeats": 1,
+        "rSeats": 6,
+        "dSeats": 4,
+        "quantity": 3
+      },
+      {
+        "rSeats": 2,
         "dSeats": 3,
-        "quantity": 1
+        "quantity": 9
+      },
+      {
+        "rSeats": 2,
+        "dSeats": 6,
+        "quantity": 8
       },
       {
         "rSeats": 4,
-        "dSeats": 2,
-        "quantity": 3
+        "dSeats": 5,
+        "quantity": 8
       },
       {
         "rSeats": 4,
         "dSeats": 1,
-        "quantity": 7
-      },
-      {
-        "rSeats": 6,
-        "dSeats": 2,
-        "quantity": 6
-      },
-      {
-        "rSeats": 4,
-        "dSeats": 3,
-        "quantity": 4
+        "quantity": 3
       }
     ],
-    "republican": 48.9315,
-    "democrat": 57.5259,
-    "white": 19.2886,
-    "black": 16.3774,
-    "hispanic": 17.7282,
-    "asian": 17.4348,
-    "other": 17.8661,
+    "republican": 42.7709,
+    "democrat": 41.3292,
+    "other": 14.3204,
+    "white": 13.4662,
+    "black": 14.641,
+    "hispanic": 13.4807,
+    "asian": 13.0625,
+    "native": 13.9051,
+    "pacific": 14.0638,
+    "minority": 2.0961,
     "dpIds": [
-      0,
       1,
-      7,
-      7,
-      8
+      2,
+      3,
+      3,
+      7
     ]
   },
   {
     "_id": 2,
     "rdSplits": [
       {
-        "rSeats": 3,
+        "rSeats": 6,
         "dSeats": 3,
-        "quantity": 6
+        "quantity": 7
       },
       {
-        "rSeats": 5,
+        "rSeats": 6,
         "dSeats": 4,
         "quantity": 4
       },
       {
-        "rSeats": 2,
-        "dSeats": 4,
-        "quantity": 2
-      },
-      {
-        "rSeats": 3,
+        "rSeats": 4,
         "dSeats": 1,
-        "quantity": 5
+        "quantity": 3
       },
       {
         "rSeats": 4,
-        "dSeats": 1,
-        "quantity": 6
+        "dSeats": 3,
+        "quantity": 5
+      },
+      {
+        "rSeats": 5,
+        "dSeats": 4,
+        "quantity": 1
       }
     ],
-    "republican": 54.0549,
-    "democrat": 57.437,
-    "white": 15.1503,
-    "black": 17.4033,
-    "hispanic": 16.1031,
-    "asian": 19.1664,
-    "other": 17.2008,
+    "republican": 44.3605,
+    "democrat": 41.2626,
+    "other": 6.7413,
+    "white": 12.1474,
+    "black": 10.7795,
+    "hispanic": 13.4504,
+    "asian": 14.7014,
+    "native": 13.6342,
+    "pacific": 11.9939,
+    "minority": 9.3416,
     "dpIds": [
-      6,
-      7,
-      8,
-      6,
-      2,
-      1,
-      4,
-      1,
       5,
-      1
+      1,
+      0,
+      6,
+      2
     ]
   },
   {
@@ -144,178 +146,193 @@
     "rdSplits": [
       {
         "rSeats": 2,
-        "dSeats": 1,
+        "dSeats": 5,
         "quantity": 4
       },
       {
-        "rSeats": 4,
-        "dSeats": 6,
-        "quantity": 9
+        "rSeats": 1,
+        "dSeats": 1,
+        "quantity": 5
       },
       {
-        "rSeats": 3,
-        "dSeats": 1,
+        "rSeats": 4,
+        "dSeats": 4,
+        "quantity": 7
+      },
+      {
+        "rSeats": 2,
+        "dSeats": 6,
         "quantity": 2
       },
       {
-        "rSeats": 3,
-        "dSeats": 2,
-        "quantity": 6
-      },
-      {
-        "rSeats": 6,
-        "dSeats": 1,
-        "quantity": 8
+        "rSeats": 4,
+        "dSeats": 3,
+        "quantity": 5
       }
     ],
-    "republican": 47.6631,
-    "democrat": 55.9024,
-    "white": 19.7631,
-    "black": 16.2669,
-    "hispanic": 19.9948,
-    "asian": 17.7989,
-    "other": 15.9106,
+    "republican": 43.0456,
+    "democrat": 40.0503,
+    "other": 7.2126,
+    "white": 14.8689,
+    "black": 13.5409,
+    "hispanic": 14.9118,
+    "asian": 11.9767,
+    "native": 11.53,
+    "pacific": 12.3648,
+    "minority": 1.5121,
     "dpIds": [
+      5,
+      5,
+      0,
+      1,
       10,
-      4,
-      0
+      9,
+      10,
+      6,
+      3,
+      3
     ]
   },
   {
     "_id": 4,
     "rdSplits": [
       {
-        "rSeats": 4,
-        "dSeats": 2,
+        "rSeats": 2,
+        "dSeats": 4,
         "quantity": 1
       },
       {
-        "rSeats": 2,
-        "dSeats": 2,
-        "quantity": 3
+        "rSeats": 5,
+        "dSeats": 6,
+        "quantity": 9
       },
       {
         "rSeats": 5,
-        "dSeats": 4,
-        "quantity": 8
+        "dSeats": 6,
+        "quantity": 3
       },
       {
-        "rSeats": 1,
-        "dSeats": 3,
-        "quantity": 2
+        "rSeats": 4,
+        "dSeats": 1,
+        "quantity": 4
       },
       {
         "rSeats": 3,
-        "dSeats": 6,
-        "quantity": 6
+        "dSeats": 1,
+        "quantity": 9
       }
     ],
-    "republican": 52.3961,
-    "democrat": 40.597,
-    "white": 19.2501,
-    "black": 18.6641,
-    "hispanic": 16.3847,
-    "asian": 19.3714,
-    "other": 19.829,
+    "republican": 40.7691,
+    "democrat": 42.9995,
+    "other": 14.4883,
+    "white": 11.8651,
+    "black": 11.6359,
+    "hispanic": 10.5781,
+    "asian": 11.7012,
+    "native": 13.2905,
+    "pacific": 12.079,
+    "minority": 9.9464,
     "dpIds": [
-      2,
-      1,
-      2,
+      3,
+      9,
+      3,
+      4,
       6,
       9,
-      6,
-      1,
-      1,
-      7
+      2,
+      6
     ]
   },
   {
     "_id": 5,
     "rdSplits": [
       {
-        "rSeats": 3,
+        "rSeats": 1,
         "dSeats": 5,
         "quantity": 9
       },
       {
-        "rSeats": 6,
-        "dSeats": 2,
-        "quantity": 6
-      },
-      {
         "rSeats": 5,
-        "dSeats": 2,
-        "quantity": 2
-      },
-      {
-        "rSeats": 6,
-        "dSeats": 2,
-        "quantity": 6
+        "dSeats": 3,
+        "quantity": 1
       },
       {
         "rSeats": 4,
         "dSeats": 5,
-        "quantity": 1
+        "quantity": 2
+      },
+      {
+        "rSeats": 3,
+        "dSeats": 5,
+        "quantity": 2
+      },
+      {
+        "rSeats": 3,
+        "dSeats": 6,
+        "quantity": 8
       }
     ],
-    "republican": 49.5965,
-    "democrat": 59.5689,
-    "white": 15.3601,
-    "black": 17.5539,
-    "hispanic": 15.171,
-    "asian": 15.7307,
-    "other": 16.8279,
+    "republican": 42.5125,
+    "democrat": 40.8026,
+    "other": 14.3087,
+    "white": 14.296,
+    "black": 11.854,
+    "hispanic": 14.6381,
+    "asian": 11.1836,
+    "native": 14.5215,
+    "pacific": 14.0932,
+    "minority": 5.9011,
     "dpIds": [
-      3,
-      0,
+      1,
       6,
-      0
+      10,
+      9,
+      3,
+      6
     ]
   },
   {
     "_id": 6,
     "rdSplits": [
       {
-        "rSeats": 5,
+        "rSeats": 4,
+        "dSeats": 4,
+        "quantity": 5
+      },
+      {
+        "rSeats": 1,
         "dSeats": 2,
+        "quantity": 1
+      },
+      {
+        "rSeats": 2,
+        "dSeats": 6,
+        "quantity": 8
+      },
+      {
+        "rSeats": 3,
+        "dSeats": 4,
         "quantity": 3
       },
       {
-        "rSeats": 5,
-        "dSeats": 1,
-        "quantity": 8
-      },
-      {
-        "rSeats": 6,
-        "dSeats": 1,
-        "quantity": 8
-      },
-      {
-        "rSeats": 3,
+        "rSeats": 1,
         "dSeats": 6,
-        "quantity": 9
-      },
-      {
-        "rSeats": 3,
-        "dSeats": 3,
-        "quantity": 4
+        "quantity": 8
       }
     ],
-    "republican": 54.5119,
-    "democrat": 47.3413,
-    "white": 18.8992,
-    "black": 17.2267,
-    "hispanic": 17.4917,
-    "asian": 17.9154,
-    "other": 18.7934,
+    "republican": 44.1007,
+    "democrat": 42.8511,
+    "other": 14.8616,
+    "white": 13.6688,
+    "black": 11.7152,
+    "hispanic": 10.5198,
+    "asian": 10.9398,
+    "native": 11.8374,
+    "pacific": 14.4513,
+    "minority": 5.8044,
     "dpIds": [
-      5,
-      4,
-      7,
-      5,
-      2,
-      3,
-      3,
+      0,
+      10,
       4
     ]
   },
@@ -323,92 +340,98 @@
     "_id": 7,
     "rdSplits": [
       {
-        "rSeats": 5,
+        "rSeats": 6,
+        "dSeats": 2,
+        "quantity": 6
+      },
+      {
+        "rSeats": 1,
         "dSeats": 4,
         "quantity": 2
       },
       {
-        "rSeats": 3,
-        "dSeats": 1,
-        "quantity": 7
-      },
-      {
-        "rSeats": 2,
+        "rSeats": 1,
         "dSeats": 2,
-        "quantity": 1
+        "quantity": 8
+      },
+      {
+        "rSeats": 6,
+        "dSeats": 2,
+        "quantity": 9
       },
       {
         "rSeats": 3,
-        "dSeats": 3,
-        "quantity": 2
-      },
-      {
-        "rSeats": 4,
-        "dSeats": 2,
-        "quantity": 7
+        "dSeats": 6,
+        "quantity": 3
       }
     ],
-    "republican": 53.8392,
-    "democrat": 56.7633,
-    "white": 18.2498,
-    "black": 16.8958,
-    "hispanic": 16.472,
-    "asian": 18.5918,
-    "other": 17.2428,
+    "republican": 44.3887,
+    "democrat": 44.7048,
+    "other": 11.8702,
+    "white": 11.1717,
+    "black": 10.3184,
+    "hispanic": 10.3938,
+    "asian": 11.6014,
+    "native": 12.0392,
+    "pacific": 14.56,
+    "minority": 8.1967,
     "dpIds": [
-      5,
+      6,
       1,
       10,
-      4,
-      5,
-      6,
-      10,
-      4,
-      5,
-      7
+      2,
+      8,
+      0
     ]
   },
   {
     "_id": 8,
     "rdSplits": [
       {
-        "rSeats": 1,
-        "dSeats": 3,
-        "quantity": 1
-      },
-      {
-        "rSeats": 3,
-        "dSeats": 5,
-        "quantity": 8
-      },
-      {
-        "rSeats": 6,
+        "rSeats": 5,
         "dSeats": 1,
         "quantity": 4
       },
       {
         "rSeats": 1,
-        "dSeats": 2,
-        "quantity": 6
+        "dSeats": 4,
+        "quantity": 5
       },
       {
-        "rSeats": 1,
-        "dSeats": 3,
-        "quantity": 7
+        "rSeats": 4,
+        "dSeats": 5,
+        "quantity": 9
+      },
+      {
+        "rSeats": 2,
+        "dSeats": 4,
+        "quantity": 4
+      },
+      {
+        "rSeats": 3,
+        "dSeats": 4,
+        "quantity": 6
       }
     ],
-    "republican": 47.5867,
-    "democrat": 47.5642,
-    "white": 18.4843,
-    "black": 18.9947,
-    "hispanic": 15.7152,
-    "asian": 15.0505,
-    "other": 18.3817,
+    "republican": 42.8299,
+    "democrat": 44.2823,
+    "other": 6.5885,
+    "white": 10.0216,
+    "black": 11.1281,
+    "hispanic": 14.725,
+    "asian": 14.7636,
+    "native": 10.2979,
+    "pacific": 14.1639,
+    "minority": 7.1547,
     "dpIds": [
-      0,
-      1,
+      9,
+      4,
       5,
-      3
+      3,
+      5,
+      10,
+      6,
+      8
     ]
   },
   {
@@ -416,13 +439,116 @@
     "rdSplits": [
       {
         "rSeats": 2,
-        "dSeats": 6,
+        "dSeats": 2,
+        "quantity": 3
+      },
+      {
+        "rSeats": 4,
+        "dSeats": 3,
         "quantity": 2
       },
       {
+        "rSeats": 6,
+        "dSeats": 1,
+        "quantity": 2
+      },
+      {
+        "rSeats": 6,
+        "dSeats": 3,
+        "quantity": 6
+      },
+      {
+        "rSeats": 5,
+        "dSeats": 6,
+        "quantity": 8
+      }
+    ],
+    "republican": 43.6107,
+    "democrat": 40.546,
+    "other": 13.8446,
+    "white": 14.5193,
+    "black": 11.5958,
+    "hispanic": 11.1029,
+    "asian": 14.6126,
+    "native": 12.9262,
+    "pacific": 14.8643,
+    "minority": 4.1124,
+    "dpIds": [
+      9,
+      8,
+      6,
+      1,
+      9,
+      9,
+      0,
+      2,
+      7,
+      8
+    ]
+  },
+  {
+    "_id": 10,
+    "rdSplits": [
+      {
+        "rSeats": 3,
+        "dSeats": 6,
+        "quantity": 1
+      },
+      {
+        "rSeats": 4,
+        "dSeats": 5,
+        "quantity": 7
+      },
+      {
+        "rSeats": 2,
+        "dSeats": 6,
+        "quantity": 8
+      },
+      {
+        "rSeats": 4,
+        "dSeats": 5,
+        "quantity": 9
+      },
+      {
+        "rSeats": 1,
+        "dSeats": 1,
+        "quantity": 7
+      }
+    ],
+    "republican": 43.2099,
+    "democrat": 43.4903,
+    "other": 14.201,
+    "white": 11.2039,
+    "black": 10.5055,
+    "hispanic": 13.191,
+    "asian": 10.7134,
+    "native": 13.465,
+    "pacific": 13.4434,
+    "minority": 2.9215,
+    "dpIds": [
+      2,
+      6,
+      6,
+      6
+    ]
+  },
+  {
+    "_id": 11,
+    "rdSplits": [
+      {
         "rSeats": 2,
         "dSeats": 2,
-        "quantity": 6
+        "quantity": 4
+      },
+      {
+        "rSeats": 3,
+        "dSeats": 2,
+        "quantity": 4
+      },
+      {
+        "rSeats": 2,
+        "dSeats": 4,
+        "quantity": 9
       },
       {
         "rSeats": 2,
@@ -430,125 +556,29 @@
         "quantity": 5
       },
       {
-        "rSeats": 5,
-        "dSeats": 1,
-        "quantity": 9
-      },
-      {
         "rSeats": 6,
-        "dSeats": 2,
-        "quantity": 2
+        "dSeats": 6,
+        "quantity": 5
       }
     ],
-    "republican": 43.1118,
-    "democrat": 43.2679,
-    "white": 16.855,
-    "black": 17.9052,
-    "hispanic": 18.6508,
-    "asian": 15.9632,
-    "other": 17.2562,
+    "republican": 42.9325,
+    "democrat": 43.6284,
+    "other": 12.5077,
+    "white": 11.5234,
+    "black": 12.8099,
+    "hispanic": 14.6057,
+    "asian": 11.3111,
+    "native": 12.6575,
+    "pacific": 13.4781,
+    "minority": 9.196,
     "dpIds": [
       0,
-      6,
-      4,
+      0,
       2,
-      2,
-      5,
-      5
-    ]
-  },
-  {
-    "_id": 10,
-    "rdSplits": [
-      {
-        "rSeats": 1,
-        "dSeats": 4,
-        "quantity": 8
-      },
-      {
-        "rSeats": 3,
-        "dSeats": 5,
-        "quantity": 7
-      },
-      {
-        "rSeats": 2,
-        "dSeats": 5,
-        "quantity": 8
-      },
-      {
-        "rSeats": 4,
-        "dSeats": 4,
-        "quantity": 8
-      },
-      {
-        "rSeats": 4,
-        "dSeats": 4,
-        "quantity": 2
-      }
-    ],
-    "republican": 50.2815,
-    "democrat": 50.6546,
-    "white": 18.5274,
-    "black": 17.9897,
-    "hispanic": 17.208,
-    "asian": 18.8544,
-    "other": 18.0209,
-    "dpIds": [
-      1,
-      2,
-      2,
-      7,
       8,
+      3,
       7,
-      9,
-      8
-    ]
-  },
-  {
-    "_id": 11,
-    "rdSplits": [
-      {
-        "rSeats": 6,
-        "dSeats": 6,
-        "quantity": 4
-      },
-      {
-        "rSeats": 5,
-        "dSeats": 1,
-        "quantity": 2
-      },
-      {
-        "rSeats": 6,
-        "dSeats": 6,
-        "quantity": 3
-      },
-      {
-        "rSeats": 4,
-        "dSeats": 3,
-        "quantity": 9
-      },
-      {
-        "rSeats": 4,
-        "dSeats": 5,
-        "quantity": 7
-      }
-    ],
-    "republican": 57.6529,
-    "democrat": 49.6681,
-    "white": 18.2668,
-    "black": 16.0687,
-    "hispanic": 15.2961,
-    "asian": 19.7882,
-    "other": 17.2526,
-    "dpIds": [
-      1,
       7,
-      9,
-      9,
-      1,
-      2,
-      6,
-      8,
       7
     ]
   },
@@ -556,45 +586,45 @@
     "_id": 12,
     "rdSplits": [
       {
-        "rSeats": 4,
-        "dSeats": 1,
-        "quantity": 5
+        "rSeats": 1,
+        "dSeats": 6,
+        "quantity": 7
       },
       {
-        "rSeats": 2,
+        "rSeats": 4,
+        "dSeats": 2,
+        "quantity": 3
+      },
+      {
+        "rSeats": 1,
+        "dSeats": 1,
+        "quantity": 1
+      },
+      {
+        "rSeats": 3,
         "dSeats": 3,
         "quantity": 7
       },
       {
         "rSeats": 1,
         "dSeats": 2,
-        "quantity": 7
-      },
-      {
-        "rSeats": 4,
-        "dSeats": 5,
-        "quantity": 3
-      },
-      {
-        "rSeats": 5,
-        "dSeats": 1,
-        "quantity": 1
+        "quantity": 9
       }
     ],
-    "republican": 46.6185,
-    "democrat": 53.8801,
-    "white": 16.476,
-    "black": 17.7751,
-    "hispanic": 18.4758,
-    "asian": 16.5635,
-    "other": 15.3731,
+    "republican": 41.3972,
+    "democrat": 44.7705,
+    "other": 7.7886,
+    "white": 12.6731,
+    "black": 12.955,
+    "hispanic": 10.5532,
+    "asian": 14.6274,
+    "native": 13.2454,
+    "pacific": 13.6831,
+    "minority": 3.2954,
     "dpIds": [
-      2,
-      5,
-      8,
-      5,
-      4,
-      0,
+      3,
+      1,
+      6,
       8
     ]
   },
@@ -602,42 +632,48 @@
     "_id": 13,
     "rdSplits": [
       {
-        "rSeats": 4,
-        "dSeats": 1,
-        "quantity": 2
+        "rSeats": 5,
+        "dSeats": 6,
+        "quantity": 8
       },
       {
-        "rSeats": 2,
-        "dSeats": 4,
-        "quantity": 1
+        "rSeats": 3,
+        "dSeats": 2,
+        "quantity": 9
       },
       {
-        "rSeats": 4,
+        "rSeats": 3,
         "dSeats": 2,
         "quantity": 3
       },
       {
-        "rSeats": 3,
-        "dSeats": 5,
-        "quantity": 1
+        "rSeats": 1,
+        "dSeats": 4,
+        "quantity": 5
       },
       {
-        "rSeats": 2,
+        "rSeats": 6,
         "dSeats": 3,
         "quantity": 4
       }
     ],
-    "republican": 41.554,
-    "democrat": 43.6617,
-    "white": 16.354,
-    "black": 15.6138,
-    "hispanic": 17.6725,
-    "asian": 16.4709,
-    "other": 16.0893,
+    "republican": 41.2226,
+    "democrat": 41.7568,
+    "other": 6.0213,
+    "white": 10.931,
+    "black": 12.9805,
+    "hispanic": 14.1441,
+    "asian": 12.5977,
+    "native": 10.2432,
+    "pacific": 12.1914,
+    "minority": 5.7026,
     "dpIds": [
-      3,
-      2,
-      1
+      7,
+      6,
+      1,
+      1,
+      4,
+      4
     ]
   },
   {
@@ -645,134 +681,148 @@
     "rdSplits": [
       {
         "rSeats": 4,
-        "dSeats": 5,
-        "quantity": 5
+        "dSeats": 4,
+        "quantity": 6
       },
       {
-        "rSeats": 3,
-        "dSeats": 1,
-        "quantity": 1
+        "rSeats": 2,
+        "dSeats": 5,
+        "quantity": 4
       },
       {
         "rSeats": 5,
-        "dSeats": 1,
-        "quantity": 1
+        "dSeats": 4,
+        "quantity": 9
       },
       {
-        "rSeats": 1,
-        "dSeats": 2,
-        "quantity": 5
+        "rSeats": 6,
+        "dSeats": 6,
+        "quantity": 3
       },
       {
-        "rSeats": 4,
+        "rSeats": 2,
         "dSeats": 5,
-        "quantity": 1
+        "quantity": 9
       }
     ],
-    "republican": 52.688,
-    "democrat": 54.6144,
-    "white": 15.8598,
-    "black": 17.1982,
-    "hispanic": 18.4399,
-    "asian": 18.0392,
-    "other": 16.7159,
+    "republican": 42.1157,
+    "democrat": 40.3512,
+    "other": 9.7321,
+    "white": 13.5413,
+    "black": 12.9203,
+    "hispanic": 13.7834,
+    "asian": 14.3159,
+    "native": 14.8952,
+    "pacific": 10.3335,
+    "minority": 9.9855,
     "dpIds": [
-      7,
+      2,
       1,
-      3
+      9,
+      5,
+      6
     ]
   },
   {
     "_id": 15,
     "rdSplits": [
       {
-        "rSeats": 1,
+        "rSeats": 6,
         "dSeats": 2,
-        "quantity": 7
-      },
-      {
-        "rSeats": 5,
-        "dSeats": 6,
-        "quantity": 9
+        "quantity": 5
       },
       {
         "rSeats": 6,
-        "dSeats": 1,
-        "quantity": 2
+        "dSeats": 3,
+        "quantity": 8
       },
       {
-        "rSeats": 5,
-        "dSeats": 4,
-        "quantity": 6
+        "rSeats": 4,
+        "dSeats": 3,
+        "quantity": 7
       },
       {
-        "rSeats": 5,
-        "dSeats": 4,
+        "rSeats": 1,
+        "dSeats": 2,
+        "quantity": 3
+      },
+      {
+        "rSeats": 1,
+        "dSeats": 3,
         "quantity": 3
       }
     ],
-    "republican": 46.4288,
-    "democrat": 57.5633,
-    "white": 17.4581,
-    "black": 18.4767,
-    "hispanic": 15.77,
-    "asian": 19.3711,
-    "other": 15.9477,
+    "republican": 40.6474,
+    "democrat": 44.2548,
+    "other": 8.3232,
+    "white": 13.2726,
+    "black": 10.3138,
+    "hispanic": 11.3757,
+    "asian": 10.8047,
+    "native": 14.461,
+    "pacific": 13.5263,
+    "minority": 7.0675,
     "dpIds": [
-      3,
+      8,
+      10,
+      10,
       1,
-      7,
-      7,
       5,
-      10
+      0,
+      7,
+      5
     ]
   },
   {
     "_id": 16,
     "rdSplits": [
       {
-        "rSeats": 3,
+        "rSeats": 1,
         "dSeats": 3,
-        "quantity": 2
-      },
-      {
-        "rSeats": 2,
-        "dSeats": 3,
-        "quantity": 9
-      },
-      {
-        "rSeats": 2,
-        "dSeats": 1,
-        "quantity": 4
+        "quantity": 1
       },
       {
         "rSeats": 1,
-        "dSeats": 2,
+        "dSeats": 5,
+        "quantity": 6
+      },
+      {
+        "rSeats": 5,
+        "dSeats": 5,
+        "quantity": 4
+      },
+      {
+        "rSeats": 5,
+        "dSeats": 3,
         "quantity": 7
       },
       {
-        "rSeats": 6,
-        "dSeats": 5,
-        "quantity": 8
+        "rSeats": 4,
+        "dSeats": 6,
+        "quantity": 5
       }
     ],
-    "republican": 44.8979,
-    "democrat": 58.2563,
-    "white": 15.0183,
-    "black": 18.1471,
-    "hispanic": 17.5861,
-    "asian": 19.0457,
-    "other": 17.4204,
+    "republican": 40.5024,
+    "democrat": 40.1896,
+    "other": 11.0097,
+    "white": 11.1858,
+    "black": 14.2797,
+    "hispanic": 14.2597,
+    "asian": 11.7446,
+    "native": 13.3485,
+    "pacific": 13.4988,
+    "minority": 5.4741,
     "dpIds": [
       10,
-      10,
-      5,
-      8,
-      1,
-      0,
       6,
-      2,
-      4
+      8,
+      4,
+      4,
+      9,
+      8,
+      10,
+      7,
+      7
     ]
   },
   {
@@ -780,132 +830,150 @@
     "rdSplits": [
       {
         "rSeats": 6,
-        "dSeats": 5,
-        "quantity": 6
-      },
-      {
-        "rSeats": 4,
-        "dSeats": 2,
+        "dSeats": 3,
         "quantity": 9
       },
       {
         "rSeats": 2,
-        "dSeats": 3,
+        "dSeats": 2,
         "quantity": 5
-      },
-      {
-        "rSeats": 2,
-        "dSeats": 4,
-        "quantity": 1
       },
       {
         "rSeats": 4,
         "dSeats": 4,
-        "quantity": 1
+        "quantity": 4
+      },
+      {
+        "rSeats": 1,
+        "dSeats": 5,
+        "quantity": 7
+      },
+      {
+        "rSeats": 4,
+        "dSeats": 2,
+        "quantity": 6
       }
     ],
-    "republican": 50.7233,
-    "democrat": 40.1987,
-    "white": 19.2064,
-    "black": 18.3324,
-    "hispanic": 15.045,
-    "asian": 18.9148,
-    "other": 15.9971,
+    "republican": 40.3562,
+    "democrat": 43.4734,
+    "other": 11.708,
+    "white": 12.7328,
+    "black": 13.2906,
+    "hispanic": 14.3796,
+    "asian": 11.4066,
+    "native": 12.5998,
+    "pacific": 14.5147,
+    "minority": 2.138,
     "dpIds": [
-      1,
-      8,
+      9,
+      4,
+      5,
+      2,
       3,
-      1
+      10,
+      10,
+      5,
+      4,
+      6
     ]
   },
   {
     "_id": 18,
     "rdSplits": [
       {
-        "rSeats": 6,
-        "dSeats": 5,
-        "quantity": 8
-      },
-      {
-        "rSeats": 6,
+        "rSeats": 5,
         "dSeats": 1,
+        "quantity": 7
+      },
+      {
+        "rSeats": 1,
+        "dSeats": 3,
         "quantity": 8
       },
       {
         "rSeats": 6,
-        "dSeats": 4,
-        "quantity": 6
-      },
-      {
-        "rSeats": 3,
         "dSeats": 2,
-        "quantity": 3
+        "quantity": 4
       },
       {
         "rSeats": 2,
-        "dSeats": 6,
-        "quantity": 6
+        "dSeats": 5,
+        "quantity": 4
+      },
+      {
+        "rSeats": 2,
+        "dSeats": 4,
+        "quantity": 3
       }
     ],
-    "republican": 42.6151,
-    "democrat": 49.9717,
-    "white": 19.7983,
-    "black": 15.4353,
-    "hispanic": 18.3164,
-    "asian": 16.1312,
-    "other": 16.6582,
+    "republican": 43.1032,
+    "democrat": 44.9431,
+    "other": 10.534,
+    "white": 14.8601,
+    "black": 12.0613,
+    "hispanic": 14.1362,
+    "asian": 14.4068,
+    "native": 11.4871,
+    "pacific": 14.4339,
+    "minority": 9.9092,
     "dpIds": [
+      5,
+      7,
+      10,
+      1,
+      7,
+      5,
       0,
-      7,
-      7,
-      9,
-      3
+      10,
+      3,
+      7
     ]
   },
   {
     "_id": 19,
     "rdSplits": [
       {
-        "rSeats": 3,
-        "dSeats": 3,
-        "quantity": 9
-      },
-      {
         "rSeats": 5,
-        "dSeats": 1,
-        "quantity": 8
+        "dSeats": 3,
+        "quantity": 2
       },
       {
         "rSeats": 1,
-        "dSeats": 5,
-        "quantity": 5
+        "dSeats": 6,
+        "quantity": 8
       },
       {
         "rSeats": 6,
-        "dSeats": 5,
+        "dSeats": 1,
+        "quantity": 3
+      },
+      {
+        "rSeats": 1,
+        "dSeats": 2,
         "quantity": 6
       },
       {
-        "rSeats": 2,
-        "dSeats": 1,
+        "rSeats": 1,
+        "dSeats": 4,
         "quantity": 3
       }
     ],
-    "republican": 55.8851,
-    "democrat": 44.2727,
-    "white": 17.8754,
-    "black": 17.2426,
-    "hispanic": 15.6787,
-    "asian": 17.3361,
-    "other": 18.7292,
+    "republican": 44.6418,
+    "democrat": 41.3295,
+    "other": 9.973,
+    "white": 11.7391,
+    "black": 14.4793,
+    "hispanic": 13.631,
+    "asian": 13.4238,
+    "native": 13.1379,
+    "pacific": 12.5435,
+    "minority": 0.4516,
     "dpIds": [
-      5,
-      8,
       2,
-      9,
-      8,
-      1,
-      1,
+      10,
+      0,
+      5,
+      4,
       6,
       5
     ]
@@ -914,133 +982,148 @@
     "_id": 20,
     "rdSplits": [
       {
-        "rSeats": 5,
-        "dSeats": 5,
-        "quantity": 4
+        "rSeats": 4,
+        "dSeats": 6,
+        "quantity": 1
       },
       {
         "rSeats": 5,
         "dSeats": 6,
-        "quantity": 6
+        "quantity": 7
       },
       {
-        "rSeats": 2,
-        "dSeats": 2,
-        "quantity": 8
+        "rSeats": 6,
+        "dSeats": 1,
+        "quantity": 1
       },
       {
         "rSeats": 2,
         "dSeats": 4,
-        "quantity": 8
+        "quantity": 1
       },
       {
-        "rSeats": 5,
-        "dSeats": 5,
-        "quantity": 8
+        "rSeats": 2,
+        "dSeats": 1,
+        "quantity": 7
       }
     ],
-    "republican": 47.843,
-    "democrat": 57.828,
-    "white": 18.3767,
-    "black": 17.994,
-    "hispanic": 18.2054,
-    "asian": 16.7677,
-    "other": 17.0266,
+    "republican": 40.8092,
+    "democrat": 40.6059,
+    "other": 5.8892,
+    "white": 12.4137,
+    "black": 10.6763,
+    "hispanic": 12.3984,
+    "asian": 10.9072,
+    "native": 10.4422,
+    "pacific": 14.7363,
+    "minority": 7.9559,
     "dpIds": [
-      2,
-      2,
-      8,
-      2,
-      1,
-      10,
-      4,
-      6,
-      6
+      9,
+      3,
+      1
     ]
   },
   {
     "_id": 21,
     "rdSplits": [
       {
-        "rSeats": 4,
+        "rSeats": 3,
         "dSeats": 6,
-        "quantity": 1
-      },
-      {
-        "rSeats": 2,
-        "dSeats": 5,
-        "quantity": 5
+        "quantity": 8
       },
       {
         "rSeats": 5,
-        "dSeats": 4,
+        "dSeats": 2,
+        "quantity": 7
+      },
+      {
+        "rSeats": 1,
+        "dSeats": 1,
+        "quantity": 4
+      },
+      {
+        "rSeats": 4,
+        "dSeats": 3,
         "quantity": 8
       },
       {
         "rSeats": 2,
-        "dSeats": 5,
-        "quantity": 9
-      },
-      {
-        "rSeats": 4,
-        "dSeats": 4,
-        "quantity": 6
+        "dSeats": 6,
+        "quantity": 7
       }
     ],
-    "republican": 46.6329,
-    "democrat": 54.821,
-    "white": 19.742,
-    "black": 15.3911,
-    "hispanic": 18.197,
-    "asian": 19.9333,
-    "other": 18.1168,
+    "republican": 44.8313,
+    "democrat": 42.4546,
+    "other": 9.7952,
+    "white": 14.3788,
+    "black": 10.7852,
+    "hispanic": 11.1083,
+    "asian": 13.9415,
+    "native": 10.4924,
+    "pacific": 12.3134,
+    "minority": 0.9536,
     "dpIds": [
-      1,
-      3,
+      6,
       7,
-      1
+      10,
+      7,
+      5,
+      0,
+      9,
+      4,
+      9,
+      9
     ]
   },
   {
     "_id": 22,
     "rdSplits": [
       {
-        "rSeats": 3,
+        "rSeats": 5,
         "dSeats": 4,
+        "quantity": 7
+      },
+      {
+        "rSeats": 3,
+        "dSeats": 2,
+        "quantity": 3
+      },
+      {
+        "rSeats": 6,
+        "dSeats": 1,
         "quantity": 3
       },
       {
         "rSeats": 5,
-        "dSeats": 3,
-        "quantity": 1
-      },
-      {
-        "rSeats": 3,
-        "dSeats": 6,
-        "quantity": 5
+        "dSeats": 4,
+        "quantity": 7
       },
       {
         "rSeats": 4,
-        "dSeats": 3,
-        "quantity": 8
-      },
-      {
-        "rSeats": 1,
-        "dSeats": 1,
-        "quantity": 5
+        "dSeats": 2,
+        "quantity": 3
       }
     ],
-    "republican": 47.825,
-    "democrat": 41.1061,
-    "white": 17.8047,
-    "black": 18.3933,
-    "hispanic": 18.6258,
-    "asian": 19.7128,
-    "other": 17.3884,
+    "republican": 40.3661,
+    "democrat": 43.9322,
+    "other": 14.1118,
+    "white": 10.0753,
+    "black": 10.5246,
+    "hispanic": 11.8855,
+    "asian": 11.5229,
+    "native": 13.4098,
+    "pacific": 11.5884,
+    "minority": 0.1434,
     "dpIds": [
+      7,
+      2,
       2,
       0,
-      6
+      10,
+      0,
+      10,
+      9,
+      0
     ]
   },
   {
@@ -1048,45 +1131,45 @@
     "rdSplits": [
       {
         "rSeats": 2,
-        "dSeats": 4,
-        "quantity": 7
+        "dSeats": 6,
+        "quantity": 8
       },
       {
         "rSeats": 6,
-        "dSeats": 5,
+        "dSeats": 6,
+        "quantity": 9
+      },
+      {
+        "rSeats": 4,
+        "dSeats": 1,
         "quantity": 3
       },
       {
-        "rSeats": 1,
-        "dSeats": 5,
+        "rSeats": 6,
+        "dSeats": 2,
         "quantity": 6
       },
       {
-        "rSeats": 6,
-        "dSeats": 4,
-        "quantity": 1
-      },
-      {
         "rSeats": 1,
-        "dSeats": 5,
-        "quantity": 3
+        "dSeats": 2,
+        "quantity": 7
       }
     ],
-    "republican": 54.9452,
-    "democrat": 51.8824,
-    "white": 18.9063,
-    "black": 19.8784,
-    "hispanic": 18.9469,
-    "asian": 19.8213,
-    "other": 18.0055,
+    "republican": 44.5014,
+    "democrat": 44.0849,
+    "other": 8.5473,
+    "white": 11.3401,
+    "black": 11.4503,
+    "hispanic": 14.8345,
+    "asian": 12.7829,
+    "native": 13.8322,
+    "pacific": 13.6607,
+    "minority": 2.5465,
     "dpIds": [
-      0,
-      10,
-      8,
-      2,
-      1,
-      1,
-      1,
+      9,
+      9,
+      5,
+      9,
       6
     ]
   },
@@ -1094,44 +1177,52 @@
     "_id": 24,
     "rdSplits": [
       {
-        "rSeats": 2,
-        "dSeats": 2,
-        "quantity": 3
-      },
-      {
-        "rSeats": 5,
+        "rSeats": 4,
         "dSeats": 5,
-        "quantity": 8
+        "quantity": 6
+      },
+      {
+        "rSeats": 1,
+        "dSeats": 3,
+        "quantity": 5
       },
       {
         "rSeats": 6,
-        "dSeats": 4,
-        "quantity": 7
+        "dSeats": 3,
+        "quantity": 4
+      },
+      {
+        "rSeats": 1,
+        "dSeats": 2,
+        "quantity": 4
       },
       {
         "rSeats": 2,
-        "dSeats": 4,
-        "quantity": 2
-      },
-      {
-        "rSeats": 6,
-        "dSeats": 4,
-        "quantity": 1
+        "dSeats": 6,
+        "quantity": 3
       }
     ],
-    "republican": 42.9337,
-    "democrat": 50.518,
-    "white": 17.5601,
-    "black": 16.3086,
-    "hispanic": 19.1229,
-    "asian": 16.1242,
-    "other": 16.5605,
+    "republican": 43.2025,
+    "democrat": 44.3113,
+    "other": 5.9902,
+    "white": 12.0879,
+    "black": 11.7746,
+    "hispanic": 13.1278,
+    "asian": 11.8453,
+    "native": 10.3878,
+    "pacific": 14.523,
+    "minority": 3.1732,
     "dpIds": [
+      9,
+      3,
       6,
+      6,
+      9,
+      3,
+      9,
+      1,
       8,
-      6,
-      4,
-      1
+      0
     ]
   },
   {
@@ -1139,500 +1230,544 @@
     "rdSplits": [
       {
         "rSeats": 5,
-        "dSeats": 5,
+        "dSeats": 3,
         "quantity": 6
       },
       {
-        "rSeats": 1,
+        "rSeats": 2,
+        "dSeats": 3,
+        "quantity": 4
+      },
+      {
+        "rSeats": 3,
         "dSeats": 4,
         "quantity": 8
       },
       {
-        "rSeats": 2,
-        "dSeats": 5,
+        "rSeats": 6,
+        "dSeats": 6,
         "quantity": 5
       },
       {
-        "rSeats": 1,
-        "dSeats": 5,
-        "quantity": 4
-      },
-      {
         "rSeats": 2,
-        "dSeats": 6,
-        "quantity": 2
+        "dSeats": 1,
+        "quantity": 4
       }
     ],
-    "republican": 40.9338,
-    "democrat": 44.9843,
-    "white": 18.0004,
-    "black": 19.3518,
-    "hispanic": 15.9543,
-    "asian": 15.0735,
-    "other": 19.7898,
+    "republican": 41.5364,
+    "democrat": 44.8501,
+    "other": 9.0629,
+    "white": 11.7986,
+    "black": 13.4757,
+    "hispanic": 14.5656,
+    "asian": 11.6621,
+    "native": 14.107,
+    "pacific": 14.232,
+    "minority": 6.3838,
     "dpIds": [
-      3,
-      6,
+      10,
+      2,
       9,
-      6,
-      0
+      7,
+      3,
+      0,
+      1,
+      0,
+      1,
+      1
     ]
   },
   {
     "_id": 26,
     "rdSplits": [
       {
-        "rSeats": 1,
-        "dSeats": 6,
+        "rSeats": 5,
+        "dSeats": 4,
         "quantity": 2
       },
       {
-        "rSeats": 1,
+        "rSeats": 4,
         "dSeats": 3,
-        "quantity": 1
+        "quantity": 9
       },
       {
-        "rSeats": 6,
+        "rSeats": 5,
         "dSeats": 5,
-        "quantity": 1
-      },
-      {
-        "rSeats": 6,
-        "dSeats": 3,
-        "quantity": 5
+        "quantity": 7
       },
       {
         "rSeats": 2,
+        "dSeats": 4,
+        "quantity": 1
+      },
+      {
+        "rSeats": 3,
         "dSeats": 3,
-        "quantity": 9
+        "quantity": 4
       }
     ],
-    "republican": 50.567,
-    "democrat": 55.6263,
-    "white": 15.8406,
-    "black": 19.9632,
-    "hispanic": 17.9582,
-    "asian": 15.9404,
-    "other": 17.2638,
+    "republican": 43.8997,
+    "democrat": 44.2912,
+    "other": 14.2054,
+    "white": 13.5916,
+    "black": 11.1195,
+    "hispanic": 13.6987,
+    "asian": 13.7281,
+    "native": 12.3601,
+    "pacific": 11.6396,
+    "minority": 3.5918,
     "dpIds": [
-      9,
-      7,
-      3,
-      0,
+      10,
       5,
-      1,
-      1
+      5,
+      0,
+      2,
+      6
     ]
   },
   {
     "_id": 27,
     "rdSplits": [
       {
-        "rSeats": 4,
-        "dSeats": 1,
-        "quantity": 6
-      },
-      {
-        "rSeats": 5,
-        "dSeats": 2,
-        "quantity": 2
+        "rSeats": 6,
+        "dSeats": 5,
+        "quantity": 7
       },
       {
         "rSeats": 3,
-        "dSeats": 4,
-        "quantity": 9
-      },
-      {
-        "rSeats": 4,
-        "dSeats": 1,
-        "quantity": 3
+        "dSeats": 3,
+        "quantity": 5
       },
       {
         "rSeats": 5,
         "dSeats": 4,
-        "quantity": 6
+        "quantity": 5
+      },
+      {
+        "rSeats": 4,
+        "dSeats": 3,
+        "quantity": 8
+      },
+      {
+        "rSeats": 1,
+        "dSeats": 3,
+        "quantity": 1
       }
     ],
-    "republican": 44.1958,
-    "democrat": 51.3207,
-    "white": 18.4529,
-    "black": 19.3874,
-    "hispanic": 16.6273,
-    "asian": 18.3661,
-    "other": 16.313,
+    "republican": 44.1731,
+    "democrat": 43.1531,
+    "other": 9.3049,
+    "white": 12.0665,
+    "black": 14.417,
+    "hispanic": 12.9767,
+    "asian": 11.4896,
+    "native": 11.2429,
+    "pacific": 13.1217,
+    "minority": 9.4348,
     "dpIds": [
-      8,
-      2,
-      5,
-      8,
       7,
-      4,
-      8,
-      8,
-      0
+      9,
+      7,
+      10,
+      6,
+      3,
+      1,
+      9,
+      1,
+      8
     ]
   },
   {
     "_id": 28,
     "rdSplits": [
       {
-        "rSeats": 6,
-        "dSeats": 4,
-        "quantity": 8
-      },
-      {
-        "rSeats": 6,
-        "dSeats": 1,
-        "quantity": 7
-      },
-      {
-        "rSeats": 4,
-        "dSeats": 1,
+        "rSeats": 1,
+        "dSeats": 5,
         "quantity": 4
       },
       {
-        "rSeats": 1,
+        "rSeats": 4,
         "dSeats": 6,
-        "quantity": 1
+        "quantity": 8
       },
       {
-        "rSeats": 5,
-        "dSeats": 4,
-        "quantity": 3
+        "rSeats": 4,
+        "dSeats": 3,
+        "quantity": 5
+      },
+      {
+        "rSeats": 4,
+        "dSeats": 6,
+        "quantity": 2
+      },
+      {
+        "rSeats": 2,
+        "dSeats": 5,
+        "quantity": 5
       }
     ],
-    "republican": 40.9815,
-    "democrat": 54.4099,
-    "white": 17.7906,
-    "black": 17.548,
-    "hispanic": 16.0901,
-    "asian": 17.5346,
-    "other": 18.408,
+    "republican": 42.9484,
+    "democrat": 43.8609,
+    "other": 7.3913,
+    "white": 12.9284,
+    "black": 12.3913,
+    "hispanic": 11.8653,
+    "asian": 13.2249,
+    "native": 10.1003,
+    "pacific": 12.3231,
+    "minority": 5.0811,
     "dpIds": [
-      10,
-      9,
       8,
-      10,
-      10,
+      3,
       2,
-      10,
-      2
+      8,
+      8,
+      7,
+      4,
+      8,
+      1
     ]
   },
   {
     "_id": 29,
     "rdSplits": [
       {
+        "rSeats": 1,
+        "dSeats": 3,
+        "quantity": 6
+      },
+      {
+        "rSeats": 4,
+        "dSeats": 6,
+        "quantity": 9
+      },
+      {
         "rSeats": 5,
         "dSeats": 4,
         "quantity": 2
       },
       {
-        "rSeats": 3,
-        "dSeats": 5,
-        "quantity": 5
-      },
-      {
-        "rSeats": 3,
-        "dSeats": 4,
-        "quantity": 8
-      },
-      {
-        "rSeats": 6,
-        "dSeats": 2,
-        "quantity": 8
-      },
-      {
-        "rSeats": 2,
+        "rSeats": 5,
         "dSeats": 6,
-        "quantity": 3
+        "quantity": 4
+      },
+      {
+        "rSeats": 4,
+        "dSeats": 6,
+        "quantity": 9
       }
     ],
-    "republican": 40.5036,
-    "democrat": 56.6721,
-    "white": 16.7958,
-    "black": 18.9336,
-    "hispanic": 17.2727,
-    "asian": 17.6284,
-    "other": 17.4327,
+    "republican": 40.6366,
+    "democrat": 42.7729,
+    "other": 7.5445,
+    "white": 12.1175,
+    "black": 13.5195,
+    "hispanic": 12.5211,
+    "asian": 12.2789,
+    "native": 13.171,
+    "pacific": 14.0111,
+    "minority": 3.9709,
     "dpIds": [
-      3,
-      5,
-      3,
-      1,
+      8,
+      10,
+      10,
+      7,
       9,
+      2,
       0,
-      4,
-      8
+      5,
+      0
     ]
   },
   {
     "_id": 30,
     "rdSplits": [
       {
-        "rSeats": 1,
-        "dSeats": 2,
-        "quantity": 9
-      },
-      {
-        "rSeats": 1,
-        "dSeats": 2,
+        "rSeats": 3,
+        "dSeats": 6,
         "quantity": 5
       },
       {
-        "rSeats": 1,
-        "dSeats": 6,
+        "rSeats": 6,
+        "dSeats": 4,
+        "quantity": 5
+      },
+      {
+        "rSeats": 5,
+        "dSeats": 5,
         "quantity": 8
       },
       {
         "rSeats": 6,
-        "dSeats": 1,
-        "quantity": 7
+        "dSeats": 3,
+        "quantity": 6
       },
       {
-        "rSeats": 4,
-        "dSeats": 5,
-        "quantity": 4
+        "rSeats": 1,
+        "dSeats": 3,
+        "quantity": 9
       }
     ],
-    "republican": 45.5167,
-    "democrat": 41.5297,
-    "white": 18.7617,
-    "black": 17.0888,
-    "hispanic": 17.7568,
-    "asian": 16.5612,
-    "other": 16.5541,
+    "republican": 41.2428,
+    "democrat": 43.7297,
+    "other": 11.3198,
+    "white": 13.6166,
+    "black": 12.9584,
+    "hispanic": 13.1218,
+    "asian": 11.8624,
+    "native": 11.3776,
+    "pacific": 10.8862,
+    "minority": 6.7104,
     "dpIds": [
+      6,
+      1,
       4,
-      5,
       10,
-      2
+      4,
+      4,
+      10
     ]
   },
   {
     "_id": 31,
     "rdSplits": [
       {
-        "rSeats": 3,
-        "dSeats": 4,
-        "quantity": 9
+        "rSeats": 4,
+        "dSeats": 1,
+        "quantity": 2
       },
       {
-        "rSeats": 3,
-        "dSeats": 4,
-        "quantity": 9
+        "rSeats": 4,
+        "dSeats": 2,
+        "quantity": 8
       },
       {
         "rSeats": 1,
         "dSeats": 5,
-        "quantity": 9
+        "quantity": 5
       },
       {
-        "rSeats": 5,
-        "dSeats": 3,
-        "quantity": 9
-      },
-      {
-        "rSeats": 2,
+        "rSeats": 6,
         "dSeats": 2,
+        "quantity": 7
+      },
+      {
+        "rSeats": 4,
+        "dSeats": 6,
         "quantity": 9
       }
     ],
-    "republican": 52.9524,
-    "democrat": 49.3126,
-    "white": 18.0658,
-    "black": 19.7489,
-    "hispanic": 19.0224,
-    "asian": 17.9207,
-    "other": 16.9134,
+    "republican": 40.6629,
+    "democrat": 41.9805,
+    "other": 13.1381,
+    "white": 13.3922,
+    "black": 14.3323,
+    "hispanic": 11.6342,
+    "asian": 13.657,
+    "native": 10.938,
+    "pacific": 11.0833,
+    "minority": 0.8981,
     "dpIds": [
-      7,
-      10,
       3,
-      5
+      2,
+      8,
+      5,
+      4,
+      3,
+      6,
+      9
     ]
   },
   {
     "_id": 32,
     "rdSplits": [
       {
+        "rSeats": 1,
+        "dSeats": 1,
+        "quantity": 8
+      },
+      {
         "rSeats": 6,
-        "dSeats": 3,
-        "quantity": 5
-      },
-      {
-        "rSeats": 1,
-        "dSeats": 1,
-        "quantity": 3
-      },
-      {
-        "rSeats": 1,
         "dSeats": 6,
-        "quantity": 5
+        "quantity": 7
       },
       {
-        "rSeats": 3,
-        "dSeats": 1,
-        "quantity": 5
-      },
-      {
-        "rSeats": 2,
+        "rSeats": 6,
         "dSeats": 4,
         "quantity": 8
+      },
+      {
+        "rSeats": 6,
+        "dSeats": 5,
+        "quantity": 5
+      },
+      {
+        "rSeats": 6,
+        "dSeats": 2,
+        "quantity": 1
       }
     ],
-    "republican": 56.5242,
-    "democrat": 54.9876,
-    "white": 16.6179,
-    "black": 15.9254,
-    "hispanic": 19.3678,
-    "asian": 16.1028,
-    "other": 16.1787,
+    "republican": 41.2709,
+    "democrat": 42.6826,
+    "other": 12.954,
+    "white": 14.1802,
+    "black": 13.2416,
+    "hispanic": 10.004,
+    "asian": 14.5937,
+    "native": 12.6826,
+    "pacific": 11.9243,
+    "minority": 8.7482,
     "dpIds": [
       10,
+      8,
+      7,
       10,
       1,
-      10,
-      5,
-      0
+      6,
+      9,
+      1,
+      5
     ]
   },
   {
     "_id": 33,
     "rdSplits": [
       {
-        "rSeats": 2,
+        "rSeats": 3,
         "dSeats": 6,
+        "quantity": 2
+      },
+      {
+        "rSeats": 2,
+        "dSeats": 2,
         "quantity": 5
       },
       {
-        "rSeats": 6,
-        "dSeats": 6,
-        "quantity": 1
-      },
-      {
-        "rSeats": 3,
-        "dSeats": 2,
-        "quantity": 1
-      },
-      {
-        "rSeats": 6,
-        "dSeats": 3,
-        "quantity": 6
-      },
-      {
-        "rSeats": 2,
+        "rSeats": 4,
         "dSeats": 1,
+        "quantity": 8
+      },
+      {
+        "rSeats": 4,
+        "dSeats": 4,
+        "quantity": 4
+      },
+      {
+        "rSeats": 5,
+        "dSeats": 3,
         "quantity": 2
       }
     ],
-    "republican": 56.603,
-    "democrat": 55.0219,
-    "white": 19.4076,
-    "black": 17.3641,
-    "hispanic": 18.4829,
-    "asian": 19.0604,
-    "other": 17.1541,
+    "republican": 41.3113,
+    "democrat": 43.0978,
+    "other": 9.8073,
+    "white": 14.7674,
+    "black": 12.6985,
+    "hispanic": 13.3483,
+    "asian": 12.029,
+    "native": 12.8636,
+    "pacific": 14.2147,
+    "minority": 0.4075,
     "dpIds": [
-      5,
-      7,
-      3,
+      10,
+      4,
+      4,
+      9,
       0,
-      2,
       8,
-      10
+      5
     ]
   },
   {
     "_id": 34,
     "rdSplits": [
       {
-        "rSeats": 6,
-        "dSeats": 5,
+        "rSeats": 4,
+        "dSeats": 6,
+        "quantity": 9
+      },
+      {
+        "rSeats": 5,
+        "dSeats": 3,
         "quantity": 6
       },
       {
         "rSeats": 6,
-        "dSeats": 2,
+        "dSeats": 4,
         "quantity": 2
       },
       {
-        "rSeats": 1,
-        "dSeats": 4,
-        "quantity": 1
+        "rSeats": 3,
+        "dSeats": 1,
+        "quantity": 2
       },
       {
-        "rSeats": 1,
-        "dSeats": 4,
-        "quantity": 5
-      },
-      {
-        "rSeats": 6,
-        "dSeats": 5,
-        "quantity": 9
+        "rSeats": 4,
+        "dSeats": 6,
+        "quantity": 2
       }
     ],
-    "republican": 54.1561,
-    "democrat": 43.8369,
-    "white": 18.7507,
-    "black": 19.8683,
-    "hispanic": 19.1353,
-    "asian": 17.7371,
-    "other": 17.8672,
+    "republican": 40.52,
+    "democrat": 40.5995,
+    "other": 8.501,
+    "white": 13.4364,
+    "black": 10.8744,
+    "hispanic": 13.9597,
+    "asian": 14.77,
+    "native": 11.4783,
+    "pacific": 12.1041,
+    "minority": 8.9337,
     "dpIds": [
-      0,
+      10,
       5,
-      4,
       7,
-      1
+      8,
+      5
     ]
   },
   {
     "_id": 35,
     "rdSplits": [
       {
-        "rSeats": 3,
+        "rSeats": 6,
+        "dSeats": 5,
+        "quantity": 9
+      },
+      {
+        "rSeats": 2,
         "dSeats": 3,
-        "quantity": 8
+        "quantity": 6
       },
       {
         "rSeats": 3,
-        "dSeats": 4,
+        "dSeats": 5,
         "quantity": 4
       },
       {
-        "rSeats": 5,
-        "dSeats": 4,
-        "quantity": 7
-      },
-      {
-        "rSeats": 5,
-        "dSeats": 1,
-        "quantity": 1
-      },
-      {
-        "rSeats": 5,
+        "rSeats": 6,
         "dSeats": 2,
-        "quantity": 4
+        "quantity": 6
+      },
+      {
+        "rSeats": 3,
+        "dSeats": 5,
+        "quantity": 2
       }
     ],
-    "republican": 51.6667,
-    "democrat": 54.7124,
-    "white": 19.6525,
-    "black": 18.1411,
-    "hispanic": 18.9357,
-    "asian": 15.5204,
-    "other": 18.5698,
+    "republican": 44.9567,
+    "democrat": 44.2585,
+    "other": 9.5345,
+    "white": 10.2982,
+    "black": 10.254,
+    "hispanic": 12.4787,
+    "asian": 10.4969,
+    "native": 10.7072,
+    "pacific": 11.0611,
+    "minority": 7.1912,
     "dpIds": [
       10,
-      4,
-      9,
-      2,
-      1,
-      9,
-      1,
-      8,
-      5
+      10,
+      0
     ]
   },
   {
@@ -1640,232 +1775,241 @@
     "rdSplits": [
       {
         "rSeats": 4,
-        "dSeats": 3,
-        "quantity": 8
+        "dSeats": 6,
+        "quantity": 1
       },
       {
-        "rSeats": 4,
-        "dSeats": 1,
-        "quantity": 4
-      },
-      {
-        "rSeats": 3,
+        "rSeats": 1,
         "dSeats": 4,
         "quantity": 7
       },
       {
-        "rSeats": 5,
+        "rSeats": 6,
         "dSeats": 2,
         "quantity": 8
       },
       {
-        "rSeats": 6,
-        "dSeats": 6,
-        "quantity": 9
+        "rSeats": 3,
+        "dSeats": 3,
+        "quantity": 5
+      },
+      {
+        "rSeats": 3,
+        "dSeats": 4,
+        "quantity": 1
       }
     ],
-    "republican": 45.0544,
-    "democrat": 51.9046,
-    "white": 16.8778,
-    "black": 16.4617,
-    "hispanic": 15.722,
-    "asian": 18.911,
-    "other": 15.2567,
+    "republican": 40.7317,
+    "democrat": 41.4563,
+    "other": 6.7035,
+    "white": 14.4563,
+    "black": 14.2229,
+    "hispanic": 10.1873,
+    "asian": 10.5814,
+    "native": 14.9422,
+    "pacific": 13.5293,
+    "minority": 8.2523,
     "dpIds": [
-      3,
-      4,
-      9,
-      0,
+      7,
+      6,
       1,
-      3,
+      10,
+      2,
       4,
-      1,
-      10
+      3
     ]
   },
   {
     "_id": 37,
     "rdSplits": [
       {
-        "rSeats": 2,
-        "dSeats": 4,
-        "quantity": 3
+        "rSeats": 3,
+        "dSeats": 3,
+        "quantity": 1
       },
       {
-        "rSeats": 2,
-        "dSeats": 3,
+        "rSeats": 4,
+        "dSeats": 4,
+        "quantity": 7
+      },
+      {
+        "rSeats": 4,
+        "dSeats": 5,
+        "quantity": 2
+      },
+      {
+        "rSeats": 6,
+        "dSeats": 1,
         "quantity": 6
       },
       {
-        "rSeats": 5,
-        "dSeats": 2,
-        "quantity": 4
-      },
-      {
-        "rSeats": 5,
-        "dSeats": 5,
-        "quantity": 8
-      },
-      {
-        "rSeats": 2,
-        "dSeats": 6,
-        "quantity": 7
+        "rSeats": 1,
+        "dSeats": 4,
+        "quantity": 1
       }
     ],
-    "republican": 44.6146,
-    "democrat": 42.2701,
-    "white": 17.5523,
-    "black": 18.9693,
-    "hispanic": 16.5733,
-    "asian": 19.6591,
-    "other": 18.6084,
+    "republican": 40.4172,
+    "democrat": 41.6412,
+    "other": 13.6272,
+    "white": 10.0332,
+    "black": 14.5782,
+    "hispanic": 11.926,
+    "asian": 14.255,
+    "native": 11.355,
+    "pacific": 11.2908,
+    "minority": 2.6937,
     "dpIds": [
+      5,
+      1,
+      3,
+      7,
+      3,
       2,
-      0,
-      9,
       4,
-      4,
-      1
+      3
     ]
   },
   {
     "_id": 38,
     "rdSplits": [
       {
-        "rSeats": 3,
-        "dSeats": 6,
+        "rSeats": 6,
+        "dSeats": 5,
         "quantity": 8
       },
       {
-        "rSeats": 4,
-        "dSeats": 4,
+        "rSeats": 6,
+        "dSeats": 2,
+        "quantity": 3
+      },
+      {
+        "rSeats": 2,
+        "dSeats": 2,
         "quantity": 9
       },
       {
-        "rSeats": 4,
-        "dSeats": 6,
-        "quantity": 1
-      },
-      {
-        "rSeats": 3,
+        "rSeats": 2,
         "dSeats": 4,
-        "quantity": 6
+        "quantity": 2
       },
       {
-        "rSeats": 1,
-        "dSeats": 5,
-        "quantity": 7
+        "rSeats": 6,
+        "dSeats": 2,
+        "quantity": 3
       }
     ],
-    "republican": 55.883,
-    "democrat": 48.4165,
-    "white": 16.3257,
-    "black": 18.132,
-    "hispanic": 15.8077,
-    "asian": 17.2251,
-    "other": 19.4271,
+    "republican": 42.7882,
+    "democrat": 42.6927,
+    "other": 14.9753,
+    "white": 12.9108,
+    "black": 11.6731,
+    "hispanic": 14.0315,
+    "asian": 10.2293,
+    "native": 11.9336,
+    "pacific": 12.9825,
+    "minority": 6.7323,
     "dpIds": [
+      7,
+      9,
       0,
-      2,
-      8,
-      5,
-      8
+      0,
+      7
     ]
   },
   {
     "_id": 39,
     "rdSplits": [
       {
-        "rSeats": 2,
-        "dSeats": 3,
+        "rSeats": 4,
+        "dSeats": 6,
         "quantity": 2
       },
       {
-        "rSeats": 3,
-        "dSeats": 4,
-        "quantity": 8
-      },
-      {
-        "rSeats": 6,
-        "dSeats": 4,
-        "quantity": 3
-      },
-      {
         "rSeats": 4,
-        "dSeats": 2,
-        "quantity": 3
+        "dSeats": 1,
+        "quantity": 5
       },
       {
-        "rSeats": 6,
-        "dSeats": 3,
-        "quantity": 8
+        "rSeats": 5,
+        "dSeats": 1,
+        "quantity": 7
+      },
+      {
+        "rSeats": 3,
+        "dSeats": 1,
+        "quantity": 6
+      },
+      {
+        "rSeats": 5,
+        "dSeats": 4,
+        "quantity": 6
       }
     ],
-    "republican": 42.7074,
-    "democrat": 41.6763,
-    "white": 15.6094,
-    "black": 19.3594,
-    "hispanic": 16.8015,
-    "asian": 15.5828,
-    "other": 18.3039,
+    "republican": 42.4925,
+    "democrat": 41.1997,
+    "other": 7.4212,
+    "white": 13.0515,
+    "black": 11.1964,
+    "hispanic": 14.5577,
+    "asian": 11.5843,
+    "native": 12.0026,
+    "pacific": 12.5174,
+    "minority": 6.6839,
     "dpIds": [
-      6,
-      9,
-      8,
-      8,
-      10,
-      10,
-      8,
-      8,
-      6
+      1,
+      5,
+      5,
+      1
     ]
   },
   {
     "_id": 40,
     "rdSplits": [
       {
-        "rSeats": 5,
-        "dSeats": 1,
-        "quantity": 5
-      },
-      {
         "rSeats": 3,
+        "dSeats": 4,
+        "quantity": 4
+      },
+      {
+        "rSeats": 4,
         "dSeats": 2,
-        "quantity": 3
-      },
-      {
-        "rSeats": 5,
-        "dSeats": 3,
-        "quantity": 5
-      },
-      {
-        "rSeats": 2,
-        "dSeats": 1,
-        "quantity": 9
+        "quantity": 7
       },
       {
         "rSeats": 6,
-        "dSeats": 6,
+        "dSeats": 5,
         "quantity": 6
+      },
+      {
+        "rSeats": 5,
+        "dSeats": 6,
+        "quantity": 7
+      },
+      {
+        "rSeats": 1,
+        "dSeats": 6,
+        "quantity": 5
       }
     ],
-    "republican": 52.0585,
-    "democrat": 56.5631,
-    "white": 17.091,
-    "black": 16.7017,
-    "hispanic": 17.022,
-    "asian": 19.681,
-    "other": 18.1959,
+    "republican": 42.2615,
+    "democrat": 40.6767,
+    "other": 12.4946,
+    "white": 10.3565,
+    "black": 10.2783,
+    "hispanic": 10.4912,
+    "asian": 12.8165,
+    "native": 14.1943,
+    "pacific": 11.6916,
+    "minority": 3.5576,
     "dpIds": [
-      7,
       10,
-      2,
       9,
       6,
       6,
+      10,
       7,
-      9,
-      3
+      4,
+      9
     ]
   },
   {
@@ -1873,405 +2017,438 @@
     "rdSplits": [
       {
         "rSeats": 6,
-        "dSeats": 3,
+        "dSeats": 2,
+        "quantity": 1
+      },
+      {
+        "rSeats": 5,
+        "dSeats": 2,
+        "quantity": 3
+      },
+      {
+        "rSeats": 2,
+        "dSeats": 2,
         "quantity": 8
       },
       {
-        "rSeats": 5,
-        "dSeats": 2,
-        "quantity": 1
-      },
-      {
-        "rSeats": 5,
-        "dSeats": 1,
-        "quantity": 7
-      },
-      {
-        "rSeats": 1,
-        "dSeats": 2,
-        "quantity": 7
-      },
-      {
-        "rSeats": 1,
+        "rSeats": 2,
         "dSeats": 3,
-        "quantity": 1
+        "quantity": 6
+      },
+      {
+        "rSeats": 5,
+        "dSeats": 3,
+        "quantity": 3
       }
     ],
-    "republican": 40.6251,
-    "democrat": 41.7339,
-    "white": 16.4533,
-    "black": 18.8211,
-    "hispanic": 19.8768,
-    "asian": 18.0483,
-    "other": 16.5269,
+    "republican": 40.2876,
+    "democrat": 43.6818,
+    "other": 7.0481,
+    "white": 12.5994,
+    "black": 14.6654,
+    "hispanic": 11.8103,
+    "asian": 14.3181,
+    "native": 11.55,
+    "pacific": 12.5659,
+    "minority": 0.3904,
     "dpIds": [
-      5,
-      3,
       4,
-      2,
-      2,
-      6
+      9,
+      1,
+      6,
+      5,
+      0,
+      8,
+      4
     ]
   },
   {
     "_id": 42,
     "rdSplits": [
       {
-        "rSeats": 2,
-        "dSeats": 2,
-        "quantity": 2
-      },
-      {
-        "rSeats": 2,
-        "dSeats": 2,
-        "quantity": 2
+        "rSeats": 1,
+        "dSeats": 5,
+        "quantity": 9
       },
       {
         "rSeats": 6,
-        "dSeats": 5,
-        "quantity": 1
+        "dSeats": 1,
+        "quantity": 3
       },
       {
         "rSeats": 1,
-        "dSeats": 4,
-        "quantity": 8
+        "dSeats": 5,
+        "quantity": 2
       },
       {
-        "rSeats": 4,
-        "dSeats": 3,
-        "quantity": 1
+        "rSeats": 1,
+        "dSeats": 6,
+        "quantity": 6
+      },
+      {
+        "rSeats": 3,
+        "dSeats": 5,
+        "quantity": 8
       }
     ],
-    "republican": 40.6517,
-    "democrat": 45.7821,
-    "white": 16.4853,
-    "black": 16.8569,
-    "hispanic": 18.463,
-    "asian": 16.0721,
-    "other": 16.0452,
+    "republican": 40.0613,
+    "democrat": 41.648,
+    "other": 7.8491,
+    "white": 12.897,
+    "black": 14.1816,
+    "hispanic": 13.869,
+    "asian": 10.1642,
+    "native": 10.3786,
+    "pacific": 10.26,
+    "minority": 4.0749,
     "dpIds": [
-      6,
-      4,
-      8,
-      10
+      5,
+      3,
+      0,
+      1,
+      2,
+      3,
+      5
     ]
   },
   {
     "_id": 43,
     "rdSplits": [
       {
-        "rSeats": 2,
-        "dSeats": 4,
-        "quantity": 5
+        "rSeats": 5,
+        "dSeats": 2,
+        "quantity": 7
       },
       {
-        "rSeats": 6,
-        "dSeats": 6,
+        "rSeats": 3,
+        "dSeats": 3,
         "quantity": 2
       },
       {
-        "rSeats": 1,
-        "dSeats": 1,
-        "quantity": 2
-      },
-      {
-        "rSeats": 1,
-        "dSeats": 6,
+        "rSeats": 3,
+        "dSeats": 5,
         "quantity": 1
       },
       {
+        "rSeats": 2,
+        "dSeats": 1,
+        "quantity": 3
+      },
+      {
         "rSeats": 4,
-        "dSeats": 3,
-        "quantity": 8
+        "dSeats": 1,
+        "quantity": 6
       }
     ],
-    "republican": 54.5036,
-    "democrat": 58.0384,
-    "white": 17.8498,
-    "black": 19.3395,
-    "hispanic": 18.7147,
-    "asian": 15.0737,
-    "other": 16.4006,
+    "republican": 43.3514,
+    "democrat": 43.5102,
+    "other": 14.7271,
+    "white": 10.9894,
+    "black": 11.173,
+    "hispanic": 13.5813,
+    "asian": 11.1838,
+    "native": 10.8033,
+    "pacific": 14.4302,
+    "minority": 6.3818,
     "dpIds": [
       2,
+      5,
+      6,
+      0,
       10,
-      2,
-      4
+      7,
+      6,
+      3,
+      6,
+      1
     ]
   },
   {
     "_id": 44,
     "rdSplits": [
       {
-        "rSeats": 1,
-        "dSeats": 1,
-        "quantity": 5
+        "rSeats": 2,
+        "dSeats": 4,
+        "quantity": 1
+      },
+      {
+        "rSeats": 4,
+        "dSeats": 3,
+        "quantity": 2
       },
       {
         "rSeats": 2,
         "dSeats": 2,
-        "quantity": 6
+        "quantity": 9
       },
       {
-        "rSeats": 1,
-        "dSeats": 3,
-        "quantity": 4
-      },
-      {
-        "rSeats": 5,
+        "rSeats": 6,
         "dSeats": 4,
-        "quantity": 5
+        "quantity": 2
       },
       {
-        "rSeats": 5,
+        "rSeats": 2,
         "dSeats": 6,
-        "quantity": 6
+        "quantity": 1
       }
     ],
-    "republican": 48.0883,
-    "democrat": 56.3737,
-    "white": 16.1056,
-    "black": 16.1911,
-    "hispanic": 18.7018,
-    "asian": 15.7262,
-    "other": 16.6629,
+    "republican": 40.0978,
+    "democrat": 43.3636,
+    "other": 5.6877,
+    "white": 12.5622,
+    "black": 11.6008,
+    "hispanic": 13.4542,
+    "asian": 11.232,
+    "native": 10.053,
+    "pacific": 14.6219,
+    "minority": 3.5077,
     "dpIds": [
-      2,
-      2,
-      10,
       7,
-      3,
-      2,
-      2,
-      5
+      0,
+      7
     ]
   },
   {
     "_id": 45,
     "rdSplits": [
       {
+        "rSeats": 2,
+        "dSeats": 1,
+        "quantity": 5
+      },
+      {
         "rSeats": 6,
-        "dSeats": 2,
+        "dSeats": 4,
         "quantity": 8
       },
       {
-        "rSeats": 1,
-        "dSeats": 6,
-        "quantity": 9
-      },
-      {
-        "rSeats": 3,
+        "rSeats": 2,
         "dSeats": 2,
-        "quantity": 5
+        "quantity": 1
       },
       {
-        "rSeats": 3,
-        "dSeats": 4,
+        "rSeats": 4,
+        "dSeats": 6,
         "quantity": 7
       },
       {
-        "rSeats": 5,
-        "dSeats": 1,
-        "quantity": 5
+        "rSeats": 3,
+        "dSeats": 6,
+        "quantity": 3
       }
     ],
-    "republican": 49.0108,
-    "democrat": 57.9171,
-    "white": 19.0789,
-    "black": 17.9342,
-    "hispanic": 18.4849,
-    "asian": 18.8747,
-    "other": 18.9209,
+    "republican": 43.6189,
+    "democrat": 42.8204,
+    "other": 9.2262,
+    "white": 14.7196,
+    "black": 11.059,
+    "hispanic": 12.37,
+    "asian": 12.6894,
+    "native": 14.6538,
+    "pacific": 13.1178,
+    "minority": 1.5617,
     "dpIds": [
-      8,
+      2,
+      7,
+      7,
+      10,
       4,
-      6
+      5,
+      1
     ]
   },
   {
     "_id": 46,
     "rdSplits": [
       {
-        "rSeats": 3,
-        "dSeats": 2,
-        "quantity": 1
-      },
-      {
-        "rSeats": 5,
-        "dSeats": 2,
-        "quantity": 7
-      },
-      {
-        "rSeats": 5,
-        "dSeats": 3,
-        "quantity": 7
-      },
-      {
         "rSeats": 2,
-        "dSeats": 5,
+        "dSeats": 2,
+        "quantity": 4
+      },
+      {
+        "rSeats": 4,
+        "dSeats": 6,
         "quantity": 2
       },
       {
+        "rSeats": 4,
+        "dSeats": 6,
+        "quantity": 6
+      },
+      {
         "rSeats": 3,
-        "dSeats": 5,
-        "quantity": 5
+        "dSeats": 6,
+        "quantity": 2
+      },
+      {
+        "rSeats": 6,
+        "dSeats": 4,
+        "quantity": 7
       }
     ],
-    "republican": 47.5084,
-    "democrat": 42.725,
-    "white": 16.8286,
-    "black": 18.403,
-    "hispanic": 16.689,
-    "asian": 15.8409,
-    "other": 16.7325,
+    "republican": 40.7085,
+    "democrat": 43.3651,
+    "other": 8.0785,
+    "white": 10.4455,
+    "black": 10.3681,
+    "hispanic": 12.9744,
+    "asian": 10.4252,
+    "native": 14.8914,
+    "pacific": 11.8804,
+    "minority": 5.8674,
     "dpIds": [
-      9,
+      3,
       6,
-      8,
-      10,
-      0,
-      10,
-      9,
-      8,
-      5,
-      4
+      6,
+      7,
+      1,
+      1,
+      2
     ]
   },
   {
     "_id": 47,
     "rdSplits": [
       {
-        "rSeats": 1,
-        "dSeats": 4,
+        "rSeats": 5,
+        "dSeats": 3,
+        "quantity": 9
+      },
+      {
+        "rSeats": 6,
+        "dSeats": 6,
+        "quantity": 8
+      },
+      {
+        "rSeats": 5,
+        "dSeats": 2,
         "quantity": 4
       },
       {
-        "rSeats": 6,
-        "dSeats": 3,
-        "quantity": 7
-      },
-      {
-        "rSeats": 6,
+        "rSeats": 4,
         "dSeats": 5,
-        "quantity": 6
-      },
-      {
-        "rSeats": 4,
-        "dSeats": 6,
-        "quantity": 1
-      },
-      {
-        "rSeats": 4,
-        "dSeats": 2,
         "quantity": 9
+      },
+      {
+        "rSeats": 3,
+        "dSeats": 5,
+        "quantity": 1
       }
     ],
-    "republican": 49.0952,
-    "democrat": 48.052,
-    "white": 16.255,
-    "black": 16.7237,
-    "hispanic": 18.6339,
-    "asian": 19.3853,
-    "other": 16.7093,
+    "republican": 42.9896,
+    "democrat": 40.8218,
+    "other": 9.4496,
+    "white": 14.5285,
+    "black": 14.8384,
+    "hispanic": 10.2735,
+    "asian": 14.2948,
+    "native": 11.5423,
+    "pacific": 13.5613,
+    "minority": 3.1659,
     "dpIds": [
-      3,
-      5,
-      10,
-      2,
       6,
-      9,
-      6
+      1,
+      7,
+      8,
+      5,
+      4,
+      0
     ]
   },
   {
     "_id": 48,
     "rdSplits": [
       {
-        "rSeats": 6,
-        "dSeats": 5,
-        "quantity": 7
-      },
-      {
         "rSeats": 3,
-        "dSeats": 4,
-        "quantity": 8
-      },
-      {
-        "rSeats": 1,
-        "dSeats": 6,
-        "quantity": 8
-      },
-      {
-        "rSeats": 5,
         "dSeats": 3,
-        "quantity": 5
+        "quantity": 2
       },
       {
         "rSeats": 6,
-        "dSeats": 3,
-        "quantity": 7
+        "dSeats": 2,
+        "quantity": 6
+      },
+      {
+        "rSeats": 6,
+        "dSeats": 4,
+        "quantity": 2
+      },
+      {
+        "rSeats": 4,
+        "dSeats": 2,
+        "quantity": 1
+      },
+      {
+        "rSeats": 6,
+        "dSeats": 2,
+        "quantity": 5
       }
     ],
-    "republican": 46.7902,
-    "democrat": 52.9064,
-    "white": 17.9151,
-    "black": 18.0733,
-    "hispanic": 19.5772,
-    "asian": 19.8331,
-    "other": 18.9022,
+    "republican": 41.5261,
+    "democrat": 42.4337,
+    "other": 8.4575,
+    "white": 13.6679,
+    "black": 12.2177,
+    "hispanic": 10.242,
+    "asian": 13.9964,
+    "native": 12.2923,
+    "pacific": 14.5025,
+    "minority": 9.989,
     "dpIds": [
-      8,
-      3,
-      2,
-      6,
-      0,
       5,
-      0,
-      5
+      8,
+      5,
+      5,
+      4
     ]
   },
   {
     "_id": 49,
     "rdSplits": [
       {
-        "rSeats": 1,
-        "dSeats": 2,
+        "rSeats": 2,
+        "dSeats": 3,
         "quantity": 1
       },
       {
-        "rSeats": 3,
-        "dSeats": 5,
+        "rSeats": 4,
+        "dSeats": 1,
+        "quantity": 7
+      },
+      {
+        "rSeats": 4,
+        "dSeats": 3,
         "quantity": 8
       },
       {
-        "rSeats": 1,
-        "dSeats": 1,
-        "quantity": 9
-      },
-      {
-        "rSeats": 6,
+        "rSeats": 2,
         "dSeats": 4,
         "quantity": 9
       },
       {
-        "rSeats": 2,
+        "rSeats": 4,
         "dSeats": 6,
-        "quantity": 7
+        "quantity": 4
       }
     ],
-    "republican": 56.4822,
-    "democrat": 57.8156,
-    "white": 16.1434,
-    "black": 17.6745,
-    "hispanic": 15.4988,
-    "asian": 17.3204,
-    "other": 18.1201,
+    "republican": 41.7302,
+    "democrat": 44.0246,
+    "other": 13.6124,
+    "white": 12.7335,
+    "black": 10.3143,
+    "hispanic": 13.7827,
+    "asian": 12.5452,
+    "native": 12.9984,
+    "pacific": 12.0397,
+    "minority": 7.1065,
     "dpIds": [
-      9,
-      9,
-      6,
       3,
-      3
+      6,
+      0,
+      3,
+      7,
+      2,
+      1
     ]
   }
 ]
