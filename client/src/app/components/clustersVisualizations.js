@@ -33,6 +33,7 @@ export default function ClustersVisualizations() {
         { rSeats: 8, dSeats: 3, quantity: 5 },
         { rSeats: 5, dSeats: 6, quantity: 7 },
         { rSeats: 7, dSeats: 4, quantity: 9 },
+        { rSeats: 5, dSeats: 5, quantity: 7 },
       ];
 
     return (
