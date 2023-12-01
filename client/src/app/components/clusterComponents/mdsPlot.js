@@ -1,6 +1,7 @@
 import { useState } from "react"
 
-import ScatterPlot from "./scatterPlot"
+import ScatterPlot from "../scatterPlot"
+import { MDSPlotData } from "@/app/constants/mdsPlotData"
 
 export default function MDSPlot({ clusters }) {
     const [cluster, setCluster] = useState()
@@ -25,15 +26,18 @@ function MDSClusterPlot({ ids, points }) {
         y: yValues,
         mode: 'markers',
         type: 'scatter',
+        ids: ids,
         marker: {
-            color: 'green',
+            color: '#57fa7b',
             size: sizeValues,
         }
-    }];
+    }]
 
-	const title = '<b>MDS Plot<b>'
-	const xLabel = 'Coord X'
-	const yLabel = 'Coord Y'
+	const title = MDSPlotData.TITLE
+	const xLabel = MDSPlotData.XLABEL
+	const yLabel = MDSPlotData.YLABEL
+    const width = MDSPlotData.WIDTH
+    const height = MDSPlotData.HEIGHT
 
     return (
         <div>
@@ -42,6 +46,8 @@ function MDSClusterPlot({ ids, points }) {
                 title = {title}
                 xLabel = {xLabel}
                 yLabel = {yLabel}
+                width = {width}
+                height = {height}
             />
         </div>
     )

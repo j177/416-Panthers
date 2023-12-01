@@ -74,13 +74,13 @@ export default function Navigation() {
 	return (
 		<Navbar collapseOnSelect expand = "sm" className = "d-flex p-2">
 			<Container>
-				<Navbar.Brand className = "home-btn" onClick = {handleMenuClick} >
+				<Navbar.Brand className = "home-btn" onClick = {handleMenuClick}>
 					<i className = "bi bi-house"></i>
 					<Navbar.Text className = "gap-2 px-1">416 Panthers</Navbar.Text>
 				</Navbar.Brand>
 					<Navbar.Text>{stringToDisplay}</Navbar.Text>
 				<Nav>
-					<NavigationDropdown handleStateClick = {handleStateClick}/>
+					<NavigationDropdown handleStateClick = {handleStateClick} />
 				</Nav>
     		</Container>
 		</Navbar>
@@ -93,7 +93,7 @@ function NavigationDropdown({ handleStateClick }) {
 			{
 				Object.values(States).map((state, index) => {
 					return (
-						<NavDropdown.Item key = {index} onClick = {() => handleStateClick(state)} >
+						<NavDropdown.Item key = {index} onClick = {() => handleStateClick(state)}>
 							{state}
 						</NavDropdown.Item>
 					)

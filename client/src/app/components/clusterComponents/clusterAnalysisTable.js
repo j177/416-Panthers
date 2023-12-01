@@ -1,28 +1,29 @@
-import '../stylesheets/state.css'
+import '../../stylesheets/state.css'
 
-import React, { useContext, useState } from 'react'
 import Container from 'react-bootstrap/Container'
 import Table from 'react-bootstrap/Table'
 import Pagination from 'react-bootstrap/Pagination'
+import { useContext, useState } from 'react'
 
-import { GlobalData } from '../contexts/context'
+import { GlobalData } from '@/app/contexts/context'
+import { TableData } from '@/app/constants/tableData'
 
 export default function ClusterAnalysisTable({ clusters }) {
     const { setCluster } = useContext(GlobalData)
 
     const [currentPage, setCurrentPage] = useState(1)
-    const itemsPerPage = 14;
+    const itemsPerPage = TableData.ITEMS_PER_PAGE
 
-    const indexOfLastItem = currentPage * itemsPerPage;
-    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+    const indexOfLastItem = currentPage * itemsPerPage
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage
 
-    const mainPageNumbers = [];
+    const mainPageNumbers = []
     for (let i = 1; i <= Math.ceil(clusters.length / itemsPerPage); i++) {
         mainPageNumbers.push(
             <Pagination.Item key = {i} active = {i === currentPage} onClick = {() => setCurrentPage(i)}>
                 {i}
             </Pagination.Item>
-        );
+        )
     }
     
     return (
@@ -54,7 +55,9 @@ export default function ClusterAnalysisTable({ clusters }) {
                     {clusters.slice(indexOfFirstItem, indexOfLastItem).map((cluster, index) => (
                         <tr key = {index}>
                             <td>
-                                <span onClick = {() => setCluster(cluster)}>{cluster._id}</span>
+                                <span onClick = {() => setCluster(cluster)}>
+                                    {cluster._id}
+                                </span>
                             </td>
                             <td>{cluster.republican}%</td>
                             <td>{cluster.democrat}%</td>
@@ -72,5 +75,5 @@ export default function ClusterAnalysisTable({ clusters }) {
             </Table>
             <Pagination>{mainPageNumbers}</Pagination>
         </Container>
-    );
+    )
 }

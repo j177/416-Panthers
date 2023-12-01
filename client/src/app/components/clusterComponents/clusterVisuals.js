@@ -1,17 +1,15 @@
-import React, { useContext, useState, useEffect } from 'react'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 import axios from 'axios'
 import qs from 'qs'
-
-import { GlobalData } from '../contexts/context.js'
+import { useContext, useState, useEffect } from 'react'
 
 import ClusterAnalysisTable from './clusterAnalysisTable.js'
 import MDSPlot from './mdsPlot.js'
 import MeasureScatterPlot from './measureScatterPlot.js'
 import RDSplitsBarGraph from './rdSplitsBarGraph.js'
-
-import { TabNames } from '../constants/tabConstants.js'
+import { TabNames } from '@/app/constants/tabConstants.js'
+import { GlobalData } from '@/app/contexts/context.js'
 
 export default function ClusterVisuals() {
     const { ensemble, setEnsemble, distanceMeasure, setDistanceMeasure } = useContext(GlobalData)
@@ -56,23 +54,24 @@ export default function ClusterVisuals() {
     return (
         <>
             <Tabs
-                defaultActiveKey = { TabNames.CLUSTER_ANALYSIS } // Set the default active tab here
-                transition = { false }
+                defaultActiveKey = {TabNames.CLUSTER_ANALYSIS}
+                transition = {false}
                 className = "mb-3"
-                activeKey = { activeTab } // Add this line to reflect the active tab
-                onSelect = { handleTabClick } // Add this line to handle tab selection
+                activeKey = {activeTab}
+                onSelect = {handleTabClick}
             >
-                <Tab eventKey = { TabNames.BACK_TAB } title = '< Back'>
+                <Tab eventKey = {TabNames.BACK_TAB} title = {TabNames.BACK_TAB}>
                 </Tab>
-                <Tab eventKey = { TabNames.CLUSTER_ANALYSIS } title = "Cluster Analysis">
+                <Tab eventKey = {TabNames.CLUSTER_ANALYSIS} title = {TabNames.CLUSTER_ANALYSIS}>
                     <ClusterAnalysisTable clusters = {clusters} />
                 </Tab>
-                <Tab eventKey = { TabNames.MDS } title = "MDS Plot">
+                <Tab eventKey = {TabNames.MDS} title = {TabNames.MDS}>
                     <MDSPlot clusters = {clusters} />
                 </Tab>
-                <Tab eventKey = { TabNames.MEASURE } title = "Measure Plot">
+                <Tab eventKey = {TabNames.MEASURE} title = {TabNames.MEASURE}>
+                    <MeasureScatterPlot />
                 </Tab>
-                <Tab eventKey = { TabNames.RD_SPLITS } title = "RD Splits">
+                <Tab eventKey = {TabNames.RD_SPLITS} title = {TabNames.RD_SPLITS}>
                     <RDSplitsBarGraph clusters = {clusters} />
                 </Tab>
             </Tabs>

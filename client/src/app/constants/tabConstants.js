@@ -1,8 +1,8 @@
 export const TabNames = {
-    BACK_TAB: 'BACK_TAB',
-    CLUSTER_ANALYSIS: 'CLUSTER_ANALYSIS',
-    MDS: 'MDS',
-    MEASURE: 'MEASURE',
-    RD_SPLITS: 'RD_SPLITS',
-    DP_ANALYSIS: 'DP_ANALYSIS'
+    BACK_TAB: '< Back',
+    CLUSTER_ANALYSIS: 'Cluster Analysis',
+    MDS: 'MDS Plot',
+    MEASURE: 'Measure Plot',
+    RD_SPLITS: 'RD Splits',
+    DP_ANALYSIS: 'District Plan Analysis'
 }

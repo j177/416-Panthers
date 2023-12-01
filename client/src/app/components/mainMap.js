@@ -13,6 +13,24 @@ export default function MainMap() {
 
     const [stateBoundaries, setStateBoundaries] = useState()
 
+    const handleSetState = (name) => {
+        const getState = async () => {
+            try {
+                const stateData = await axios.get("http://localhost:8080/state", {
+                    params: {
+                        state: name
+                    }
+                })
+    
+                setState(stateData.data)
+            } catch (error) {
+                console.log("Error fetching state: ", error)
+            }
+        }
+    
+        getState()
+    }
+
     useEffect(() => {
         const getStateBoundaries = async () => {
             try {
@@ -28,7 +46,7 @@ export default function MainMap() {
     }, [])
 
     useEffect(() => {
-        if (typeof window === 'undefined' || !stateBoundaries) {
+        if (!stateBoundaries) {
             return
         }
 
@@ -53,21 +71,20 @@ export default function MainMap() {
                 layer.on('click', function (e) {
                     const stateName = feature.properties.name
 
-                    setState({name: stateName})
+                    handleSetState(stateName)
                 })
             },
         }).addTo(map)
 
         geoJSONLayer.eachLayer((layer) => {
             layer.setStyle({
-                color: '#9999FF',
+                color: '#6054a1',
                 fillColor: 'transparent',
-                weight: 5
+                weight: 3
             })
         
             layer.on("mouseover", () => {
                 layer.setStyle({
-                    color: '#9999FF',
                     fillColor: '#9999FF',
                     fillOpacity: 0.5,
                     weight: 5
@@ -76,9 +93,8 @@ export default function MainMap() {
         
             layer.on("mouseout", () => {
                 layer.setStyle({
-                    color: '#9999FF',
                     fillColor: 'transparent',
-                    weight: 5,
+                    weight: 3,
                 })
             })
         })

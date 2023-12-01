@@ -11,20 +11,22 @@
 }
 
 .home-btn {
+	font-size: 1.25rem;
 	cursor: pointer;
 }
 
 .navbar {
+	font-size: 1.25rem;
 	border-bottom: 1px solid black;
 }
 
 #nav2 {
 	padding-left: 10%;
-	width:80%;
+	width: 80%;
 	text-align: center;
 }
 
 #nav3 {
-	width:10%;
+	width: 10%;
 	text-align: right;
 }
