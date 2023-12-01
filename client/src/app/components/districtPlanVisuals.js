@@ -1,13 +1,13 @@
-import React, { useContext, useState, useEffect } from 'react'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
-import { Container, Table, Pagination } from 'react-bootstrap'
 import axios from 'axios'
 import qs from 'qs'
+import React, { useContext, useState, useEffect } from 'react'
+import { Container, Table, Pagination } from 'react-bootstrap'
 
 import { GlobalData } from '../contexts/context.js'
-
 import { TabNames } from '../constants/tabConstants.js'
+import { TableData } from '../constants/tableData.js'
 
 export default function DistrictPlanVisuals() {
     const { cluster, setCluster, districtPlan, setDistrictPlan } = useContext(GlobalData)
@@ -52,15 +52,15 @@ export default function DistrictPlanVisuals() {
     return (
         <>
             <Tabs
-                defaultActiveKey = { TabNames.DP_ANALYSIS }
-                transition = { false }
+                defaultActiveKey = {TabNames.DP_ANALYSIS}
+                transition = {false}
                 className = "mb-3"
-                activeKey = { activeTab }
-                onSelect = { handleTabClick }
+                activeKey = {activeTab}
+                onSelect = {handleTabClick}
             >
-                <Tab eventKey = { TabNames.BACK_TAB } title = '< Back'>
+                <Tab eventKey = {TabNames.BACK_TAB} title = {TabNames.BACK_TAB}>
                 </Tab>
-                <Tab eventKey = { TabNames.DP_ANALYSIS } title = "District Plan Analysis">
+                <Tab eventKey = {TabNames.DP_ANALYSIS} title = {TabNames.DP_ANALYSIS}>
                     <DistrictPlanAnalysisTable districtPlans = {districtPlans} />
                 </Tab>
             </Tabs>
@@ -72,18 +72,18 @@ function DistrictPlanAnalysisTable({ districtPlans }) {
     const { setDistrictPlan } = useContext(GlobalData)
 
     const [currentPage, setCurrentPage] = useState(1)
-    const itemsPerPage = 14;
+    const itemsPerPage = TableData.ITEMS_PER_PAGE
 
-    const indexOfLastItem = currentPage * itemsPerPage;
-    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+    const indexOfLastItem = currentPage * itemsPerPage
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage
 
-    const mainPageNumbers = [];
+    const mainPageNumbers = []
     for (let i = 1; i <= Math.ceil(districtPlans.length / itemsPerPage); i++) {
         mainPageNumbers.push(
             <Pagination.Item key = {i} active = {i === currentPage} onClick = {() => setCurrentPage(i)}>
                 {i}
             </Pagination.Item>
-        );
+        )
     }
 
     return (
@@ -135,5 +135,5 @@ function DistrictPlanAnalysisTable({ districtPlans }) {
             </Table>
             <Pagination>{mainPageNumbers}</Pagination>
         </Container>
-    );
+    )
 }

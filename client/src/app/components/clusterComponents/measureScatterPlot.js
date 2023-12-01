@@ -1,10 +1,9 @@
-import { useEffect, useState, useContext } from "react"
 import axios from "axios"
 import qs from "qs"
+import { useEffect, useState, useContext } from "react"
 
-import { GlobalData } from "../contexts/context"
-
-import ScatterPlot from "./scatterPlot"
+import ScatterPlot from "../scatterPlot"
+import { GlobalData } from "@/app/contexts/context"
 
 export default function MeasureScatterPlot() {
 	const { ensemble, distanceMeasure } = useContext(GlobalData)
@@ -54,24 +53,23 @@ export default function MeasureScatterPlot() {
         return Math.random() * (b - a) + a;
     }
 
-    const totalPoints = 500; // Total number of points (sum of all clusters and random points)
+    const totalPoints = 100; // Total number of points (sum of all clusters and random points)
 
-	const xValuesC1 = Array.from({ length: 100 }, () => getRandomNumber(0, 3));
-	const yValuesC1 = Array.from({ length: 100 }, () => getRandomNumber(0, 30));
+	const xValuesC1 = Array.from({ length: 10 }, () => getRandomNumber(0, 3));
+	const yValuesC1 = Array.from({ length: 10 }, () => getRandomNumber(0, 30));
 
-	const xValuesC2 = Array.from({ length: 100 }, () => getRandomNumber(3, 6));
-	const yValuesC2 = Array.from({ length: 100 }, () => getRandomNumber(30, 60));
+	const xValuesC2 = Array.from({ length: 10 }, () => getRandomNumber(3, 6));
+	const yValuesC2 = Array.from({ length: 10 }, () => getRandomNumber(30, 60));
 
-	const xValuesC3 = Array.from({ length: 100 }, () => getRandomNumber(6, 9));
-	const yValuesC3 = Array.from({ length: 100 }, () => getRandomNumber(60, 90));
+	const xValuesC3 = Array.from({ length: 10 }, () => getRandomNumber(6, 9));
+	const yValuesC3 = Array.from({ length: 10 }, () => getRandomNumber(60, 90));
 
-	const xValuesRandom = Array.from({ length: 400 }, () => getRandomNumber(0, 10));
-	const yValuesRandom = Array.from({ length: 400 }, () => getRandomNumber(0, 100));
+	const xValuesRandom = Array.from({ length: 10 }, () => getRandomNumber(0, 10));
+	const yValuesRandom = Array.from({ length: 10 }, () => getRandomNumber(0, 100));
 
 	const xValues = [...xValuesC1, ...xValuesC2, ...xValuesC3, ...xValuesRandom];
 	const yValues = [...yValuesC1, ...yValuesC2, ...yValuesC3, ...yValuesRandom];
-	const sizeValues = Array.from({ length: totalPoints }, () => Math.random() * 10); // Generate size values for all points
-	const availableValues = Array.from({ length: totalPoints }, () => Math.random() < 0.5); // true or false
+	const sizeValues = Array.from({ length: totalPoints }, () => Math.random() * 20); // Generate size values for all points
 
 	const data = [
 	{
@@ -80,7 +78,7 @@ export default function MeasureScatterPlot() {
 		mode: 'markers',
 		type: 'scatter',
 		marker: {
-			color: availableValues.map(isAvailable => isAvailable ? 'green' : 'red'), // Green for available, red for not available
+			color: '#57fa7b',
 			size: sizeValues,
 		},
 	},

@@ -1,4 +1,4 @@
-import Plot from "react-plotly.js";
+import Plot from "react-plotly.js"
 
 export default function LineGraph({ data, title, xLabel, yLabel, width, height }) {
     const layout = {
@@ -17,11 +17,15 @@ export default function LineGraph({ data, title, xLabel, yLabel, width, height }
         height: height
     }
 
+    const config = {
+        displayModeBar: false
+    }
+
     return (
         <Plot
             data = {data}
             layout = {layout}
-            config = {{ displayModeBar: false }}
+            config = {config}
         />
     )
 }
