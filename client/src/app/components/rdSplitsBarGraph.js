@@ -43,6 +43,10 @@ export default function RDSplitsBarGraph({ clusters }) {
         title: {
           display: true,
           text: 'Split Ratio (Republican Seats / Democratic Seats)',
+          font: {
+            size: 20, // Increase the font size for the X-axis label
+            weight: "bold", // Make the X-axis label bold
+          },
         },
       },
       y: {
@@ -51,6 +55,10 @@ export default function RDSplitsBarGraph({ clusters }) {
         title: {
           display: true,
           text: 'Quantity',
+          font: {
+            size: 20, // Increase the font size for the X-axis label
+            weight: "bold", // Make the X-axis label bold
+          },
         },
       },
     },
@@ -58,18 +66,18 @@ export default function RDSplitsBarGraph({ clusters }) {
       legend: {
         display: true,
         labels: {
+        font: {
+                          size: 30, // Adjust the font size for labels
+                          weight:900, // Make the labels bold
+                        },
           generateLabels: function (chart) {
             return [{
-              text: `X-axis: Split Ratio (Republican Seats / Democratic Seats)`,
+
+              text: `Republican/Democratic Split`,
               fillStyle: 'rgba(75, 192, 192, 0.5)',
               strokeStyle: 'rgba(75, 192, 192, 1)',
               lineWidth: 1,
-            }, {
-              text: `Y-axis: Quantity`,
-              fillStyle: 'rgba(75, 192, 192, 0.5)',
-              strokeStyle: 'rgba(75, 192, 192, 1)',
-              lineWidth: 1,
-            }];
+            },];
           },
           boxWidth: 0,
         },
