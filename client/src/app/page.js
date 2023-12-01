@@ -4,8 +4,7 @@ import './stylesheets/page.css'
 
 import { useState } from 'react'
 
-import { PageData } from './contexts/context'
-
+import { GlobalData } from './contexts/context'
 import Navigation from './components/navbar'
 import MainMap from './components/mainMap.js'
 import StatePage from './components/statePage'
@@ -15,22 +14,28 @@ export default function Home() {
     const [ensemble, setEnsemble] = useState()
     const [distanceMeasure, setDistanceMeasure] = useState()
     const [cluster, setCluster] = useState()
+    const [districtPlan, setDistrictPlan] = useState()
+
+    let pageToDisplay
+    if (state) {
+        pageToDisplay = <StatePage />
+    }
+    else {
+        pageToDisplay = <MainMap />
+    }
 
     return (
-        <PageData.Provider value = {{ state, setState,
+        <GlobalData.Provider value = {{ state, setState,
                                         ensemble, setEnsemble,
                                         distanceMeasure, setDistanceMeasure,
-                                        cluster, setCluster}}>
+                                        cluster, setCluster,
+                                        districtPlan, setDistrictPlan }}>
             <div className = "main">
                 <Navigation />
                 <div className = "map-container">
-                    {state ? (
-                        <StatePage />
-                        ) : (
-                        <MainMap />
-                    )}
+                    {pageToDisplay}
                 </div>
             </div>
-        </PageData.Provider>
+        </GlobalData.Provider>
     )
 }

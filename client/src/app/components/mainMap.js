@@ -1,14 +1,15 @@
 "use client"
 
-import { useEffect, useState, useContext } from 'react'
-import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
+import L from 'leaflet'
 import axios from 'axios'
+import { useEffect, useState, useContext } from 'react'
 
-import { PageData } from '../contexts/context'
+import { GlobalData } from '../contexts/context'
+import { MainMapData } from '../constants/mainMapData'
 
 export default function MainMap() {
-    const { setState } = useContext(PageData)
+    const { setState } = useContext(GlobalData)
 
     const [stateBoundaries, setStateBoundaries] = useState()
 
@@ -31,19 +32,21 @@ export default function MainMap() {
             return
         }
 
-        const minZoom = 5
-        const maxZoom = 8
-        const southWest = L.latLng(35, -100)
-        const northEast = L.latLng(50, -60)
+        const minZoom = MainMapData.MIN_ZOOM
+        const maxZoom = MainMapData.MAX_ZOOM
+        const southWest = L.latLng(MainMapData.SOUTH_WEST.x, MainMapData.SOUTH_WEST.y)
+        const northEast = L.latLng(MainMapData.NORTH_EAST.x, MainMapData.NORTH_EAST.y)
         const bounds = L.latLngBounds(southWest, northEast)
-        const startCoords = [43, -79]
-        const zoom = 6
+        const startCoords = [MainMapData.START_COORDS.x, MainMapData.START_COORDS.y]
+        const zoom = MainMapData.ZOOM
 
-        const map = L.map("main-map", {minZoom: minZoom, maxZoom: maxZoom, maxBounds: bounds}).setView(startCoords, zoom)
+        const map = L.map("main-map", {
+            minZoom: minZoom,
+            maxZoom: maxZoom,
+            maxBounds: bounds
+        }).setView(startCoords, zoom)
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        }).addTo(map)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map)
 
         const geoJSONLayer = L.geoJSON(stateBoundaries, {
             onEachFeature: function (feature, layer) {

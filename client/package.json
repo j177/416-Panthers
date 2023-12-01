@@ -15,7 +15,7 @@
     "chart.js": "^4.4.0",
     "leaflet": "^1.9.4",
     "next": "^13.5.4",
-    "plotly.js": "^2.26.1",
+    "plotly.js": "^2.27.1",
     "qs": "^6.11.2",
     "react": "latest",
     "react-bootstrap": "^2.9.0",

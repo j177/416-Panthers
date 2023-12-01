@@ -9,6 +9,13 @@
     text-align: center;
 }
 
+.location-marker {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    height: 5%;
+}
+
 /* =============================== */
 /* Map */
 
@@ -93,14 +100,27 @@
     text-align: center;
 }
 
-.location-marker {
-    display: flex;
-    justify-content: space-evenly;
-    font-weight: bold;
-    height: 5%;
+/* Cluster Table Visuals */
+/* =============================== */
+
+/* =============================== */
+/* DP Table Visuals  */
+
+.dp-table span {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
-/* Cluster Table Visuals */
+.dp-table th {
+    text-align: center;
+}
+
+.dp-table td {
+    text-align: center;
+}
+
+/* DP Table Visuals */
 /* =============================== */
 
 /* =============================== */
@@ -154,7 +174,7 @@
     height: 93vh;
 }
 
-.scatter-plot-container {
+.scatter-plot-container div {
     display: flex;
     height: 100%;
     align-items: center;

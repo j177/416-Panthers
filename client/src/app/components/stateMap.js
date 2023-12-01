@@ -1,4 +1,3 @@
-
 "use client"
 
 import { useEffect, useState, useContext } from 'react'
@@ -7,10 +6,10 @@ import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import axios from 'axios'
 
-import { PageData } from '../contexts/context'
+import { GlobalData } from '../contexts/context'
 
 export default function StateMap() {
-    const { state } = useContext(PageData)
+    const { state } = useContext(GlobalData)
 
     const [defaultPlan, setDefaultPlan] = useState()
     const [stateBoundary, setStateBoundary] = useState()

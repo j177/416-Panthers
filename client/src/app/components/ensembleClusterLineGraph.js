@@ -1,5 +1,6 @@
-// Variables: data, title, xLabel, yLabel, width, height
 import LineGraph from "./lineGraph"
+
+import { convertToDisplayString } from "../misc/convertToDisplayString"
 
 export default function EnsembleClusterLineGraph({ ensembles, distanceMeasure }) {
     const x = ensembles.map(ensemble => ensemble.numPlans)
@@ -13,8 +14,7 @@ export default function EnsembleClusterLineGraph({ ensembles, distanceMeasure })
         name: 'Ensemble Size vs # of Clusters'
     }]
 
-    const distanceMeasureName = distanceMeasure.charAt(0).toUpperCase() + 
-                                distanceMeasure.slice(1).replace(/([a-z])([A-Z])/g, '$1 $2')
+    const distanceMeasureName = convertToDisplayString(distanceMeasure)
     const title = 'Ensemble Size vs # of Clusters <br> (' + distanceMeasureName + ')'
     const xLabel = 'Ensemble Size'
     const yLabel = '# of Clusters'

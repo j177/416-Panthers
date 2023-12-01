@@ -1,21 +1,12 @@
-// variables: title, xasix, yaxis, width, height
 import React, { useState } from 'react';
 import Plot from 'react-plotly.js';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
-import StatePageScatterPlotPopup from './statePageScatterPlotPopup';
 
-export default function ScatterPlot({ data, title, xLabel, yLabel, width, height }) {
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-
+export default function ScatterPlot({ data, title, xLabel, yLabel }) {    
     return (
         <div>
             <Plot 
-                data={data}
-                layout={{
+                data = {data}
+                layout = {{
                     title: title,
                     titlefont: {
                         size: '15'
@@ -26,25 +17,11 @@ export default function ScatterPlot({ data, title, xLabel, yLabel, width, height
                     yaxis: {
                         title: yLabel
                     },
-                    width: width,
-                    height: height
+                    width: '800',
+                    height: '400'
                 }}
-                config={{ displayModeBar: false }}
-                onClick={handleShow}
+                config = {{displayModeBar: false}}
             />
-            <Modal show={show} onHide={handleClose} dialogClassName = "modal-dialog modal-lg">
-                <Modal.Header closeButton >
-                    <Modal.Title>Modal heading</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    <StatePageScatterPlotPopup/>
-                </Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Close
-                    </Button>
-                </Modal.Footer>
-            </Modal>
         </div>
     );
 }
