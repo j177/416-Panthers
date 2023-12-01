@@ -223,11 +223,27 @@ public class MainController {
         return new ResponseEntity<>(jsonArray, HttpStatus.OK);
     }
 
-    @GetMapping("/plan")
-    Map<String, Object> getPlan(@RequestParam("ids") List<Integer> ids) {
-        org.bson.Document result = mongoTemplate.getCollection("plan").find().first();
+    @GetMapping("/district-plans")
+    ResponseEntity<String> getDistrictPlans(@RequestParam("ids") List<Integer> ids) {
+        Query query = new Query(Criteria.where("_id").in(ids));
+        List<Document> docs = mongoTemplate
+                .find(query, Document.class, "district_plan");
 
-        return result;
+        if (docs.isEmpty()) {
+            System.out.println("No documents found.");
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+        String jsonArray = "";
+        try {
+            ObjectMapper objectMapper = new ObjectMapper();
+            jsonArray = objectMapper.writeValueAsString(docs);
+        } catch (JsonProcessingException e) {
+            System.out.println("Conversion to JSON went wrong.");
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
+        return new ResponseEntity<>(jsonArray, HttpStatus.OK);
     }
 
     @GetMapping("/plans")

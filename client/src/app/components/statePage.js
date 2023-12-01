@@ -5,7 +5,7 @@ import { Button, Modal, Dropdown, Table } from 'react-bootstrap'
 import axios from 'axios'
 import qs from 'qs'
 
-import { PageData } from '../contexts/context'
+import { GlobalData } from '../contexts/context'
 
 import StateMap from './stateMap.js'
 import EnsembleClusterLineGraph from './ensembleClusterLineGraph'
@@ -15,7 +15,7 @@ import DistrictPlanVisuals from './districtPlanVisuals'
 import { DistanceMeasures } from '../constants/distanceMeasureConstants'
 
 export default function StatePage() {
-    const { ensemble, distanceMeasure, cluster } = useContext(PageData)
+    const { ensemble, distanceMeasure, cluster } = useContext(GlobalData)
 
     let visualsToDisplay
     if (cluster) {
@@ -52,9 +52,9 @@ export default function StatePage() {
 }
 
 function EnsembleVisuals() {
-    const { state, setState, setEnsemble, setDistanceMeasure } = useContext(PageData)
+    const { state, setState, setEnsemble, setDistanceMeasure } = useContext(GlobalData)
 
-    const [ensembles, setEnsembles] = useState() /* Ensemble objects for the state */
+    const [ensembles, setEnsembles] = useState()
     const [visualsFor, setVisualsFor] = useState(DistanceMeasures.OPTIMAL_TRANSPORT) /* The distance measure displayed by the visuals */
 
     useEffect(() => {

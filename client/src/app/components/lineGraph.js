@@ -1,4 +1,3 @@
-// variables: title, xaxis, yaxis, data
 import Plot from "react-plotly.js";
 
 export default function LineGraph({ data, title, xLabel, yLabel, width, height }) {

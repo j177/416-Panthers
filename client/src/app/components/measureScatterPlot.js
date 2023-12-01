@@ -1,27 +1,25 @@
-//variables: xValues, yValues
 import { useEffect, useState, useContext } from "react"
 import axios from "axios"
 import qs from "qs"
 
-import { PageData } from "../contexts/context"
+import { GlobalData } from "../contexts/context"
 
 import ScatterPlot from "./scatterPlot"
 
-export default function StatePageScatterPlot() {
-	const { ensemble } = useContext(PageData)
+export default function MeasureScatterPlot() {
+	const { ensemble, distanceMeasure } = useContext(GlobalData)
 
 	const [points, setPoints] = useState([])
 
     useEffect(() => {
 		const getPoints = async () => {
-            try {				
-				const key = "typeofdistmeasure" + ensemble._id
-
+            try {
+				const clusterIds = ensemble[distanceMeasure].clusterIds
 				const getClusterPoints = async () => {
 					try {
 						const result = await axios.get("http://localhost:8080/cluster-points", {
 							params: {
-								ids: [0,1,2,3,4,5,6,7,8,9]
+								clusterIds
 							},
 							paramsSerializer: params => {
 								return qs.stringify(params, { arrayFormat: 'repeat' })
@@ -29,17 +27,18 @@ export default function StatePageScatterPlot() {
 						})
 
 						setPoints(result.data)
-
 						//localStorage.setItem(key, JSON.stringify(result.data));
 					} catch (error) {
 						console.log("Error fetching cluster points: ", error)
 					}
 				}
 
-				const storedData = localStorage.getItem(key)
-				storedData ? setPoints(JSON.parse(storedData))
-				 		   : getClusterPoints()
+				// const key = "typeofdistmeasure" + ensemble._id
+				// const storedData = localStorage.getItem(key)
+				// storedData ? setPoints(JSON.parse(storedData))
+				//  		   : getClusterPoints()
 
+				getClusterPoints()
             } catch (error) {
                 console.log("Error fetching points: ", error)
             }
