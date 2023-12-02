@@ -5,7 +5,7 @@ import { useContext } from 'react'
 import StateMap from './stateMap.js'
 import EnsembleVisuals from './ensembleComponents/ensembleVisuals'
 import ClusterVisuals from './clusterComponents/clusterVisuals'
-import DistrictPlanVisuals from './districtPlanVisuals'
+import DistrictPlanVisuals from './districtPlanComponents/districtPlanVisuals'
 import { GlobalData } from '../contexts/context'
 
 export default function StatePage() {

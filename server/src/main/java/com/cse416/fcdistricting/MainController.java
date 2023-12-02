@@ -47,21 +47,6 @@ public class MainController {
         return new ResponseEntity<>(jsonArray, HttpStatus.OK);
     }
 
-    @GetMapping("/state-boundary")
-    ResponseEntity<String> getStateBoundary(@RequestParam("id") int id) {
-        Query query = new Query(Criteria.where("_id").is(id));
-        Document doc = mongoTemplate.findOne(query, Document.class, "state_boundary");
-
-        if (doc == null) {
-            System.out.println("No documents found.");
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
-
-        String jsonForm = doc.toJson();
-
-        return new ResponseEntity<>(jsonForm, HttpStatus.OK);
-    }
-
     @GetMapping("/state")
     ResponseEntity<String> getState(@RequestParam("state") String state) {
         Query query = new Query(Criteria.where("name").is(state));
