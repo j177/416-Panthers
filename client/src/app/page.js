@@ -32,9 +32,7 @@ export default function Home() {
                                         districtPlan, setDistrictPlan }}>
             <div className = "main">
                 <Navigation />
-                <div className = "map-container">
-                    {pageToDisplay}
-                </div>
+                {pageToDisplay}
             </div>
         </GlobalData.Provider>
     )
