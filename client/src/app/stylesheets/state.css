@@ -173,11 +173,3 @@
 .cluster-data-container {
     height: 93vh;
 }
-
-.scatter-plot-container div {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
