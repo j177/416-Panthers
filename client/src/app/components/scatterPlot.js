@@ -1,6 +1,6 @@
 import Plot from 'react-plotly.js'
 
-export default function ScatterPlot({ data, title, xLabel, yLabel, width, height }) {   
+export default function ScatterPlot({ data, title, xLabel, yLabel, width, height, onClick }) {   
     const layout = {
         title: title,
         titlefont: {
@@ -17,7 +17,6 @@ export default function ScatterPlot({ data, title, xLabel, yLabel, width, height
     }
 
     const config = {
-        displayModeBar: false
     }
     
     return (
@@ -26,6 +25,7 @@ export default function ScatterPlot({ data, title, xLabel, yLabel, width, height
                 data = {data}
                 layout = {layout}
                 config = {config}
+                onClick = {onClick}
             />
         </div>
     )
