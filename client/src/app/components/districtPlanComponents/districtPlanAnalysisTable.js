@@ -49,8 +49,8 @@ export default function DistrictPlanAnalysisTable({ districtPlans }) {
                             <td onClick = {() => setDistrictPlan(districtPlan)}>
                                 <span>{districtPlan._id}</span>
                             </td>
-                            <td>{districtPlan.rSeats}</td>
-                            <td>{districtPlan.dSeats}</td>
+                            <td>{districtPlan.rDistricts}</td>
+                            <td>{districtPlan.dDistricts}</td>
                             <td>{districtPlan.white_od}</td>
                             <td>{districtPlan.black_od}</td>
                             <td>{districtPlan.hispanic_od}</td>

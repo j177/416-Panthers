@@ -15,16 +15,12 @@ export default function ScatterPlot({ data, title, xLabel, yLabel, width, height
         width: width,
         height: height
     }
-
-    const config = {
-    }
     
     return (
         <div>
             <Plot 
                 data = {data}
                 layout = {layout}
-                config = {config}
                 onClick = {onClick}
             />
         </div>
