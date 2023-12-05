@@ -9,7 +9,7 @@ import { GlobalData } from '@/app/contexts/context.js'
 import { TabNames } from '@/app/constants/tabConstants'
 
 export default function DistrictPlanVisuals() {
-    const { cluster, setCluster, districtPlan, setDistrictPlan } = useContext(GlobalData)
+    const { cluster, setCluster, setDistrictPlan } = useContext(GlobalData)
 
     const [districtPlans, setDistrictPlans] = useState()
     const [activeTab, setActiveTab] = useState(TabNames.DP_ANALYSIS)
