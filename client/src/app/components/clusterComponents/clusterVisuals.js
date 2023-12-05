@@ -6,7 +6,7 @@ import { useContext, useState, useEffect } from 'react'
 
 import ClusterAnalysisTable from './clusterAnalysisTable.js'
 import MDSPlot from './mdsPlot.js'
-import MeasureScatterPlot from './measureScatterPlot.js'
+import MeasurePlot from './measurePlot.js'
 import RDSplitsBarGraph from './rdSplitsBarGraph.js'
 import { TabNames } from '@/app/constants/tabConstants.js'
 import { GlobalData } from '@/app/contexts/context.js'
@@ -69,7 +69,7 @@ export default function ClusterVisuals() {
                     <MDSPlot clusters = {clusters} />
                 </Tab>
                 <Tab eventKey = {TabNames.MEASURE} title = {TabNames.MEASURE}>
-                    <MeasureScatterPlot />
+                    <MeasurePlot />
                 </Tab>
                 <Tab eventKey = {TabNames.RD_SPLITS} title = {TabNames.RD_SPLITS}>
                     <RDSplitsBarGraph clusters = {clusters} />

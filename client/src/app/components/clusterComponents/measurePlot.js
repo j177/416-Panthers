@@ -5,46 +5,46 @@ import { useEffect, useState, useContext } from "react"
 import ScatterPlot from "../scatterPlot"
 import { GlobalData } from "@/app/contexts/context"
 
-export default function MeasureScatterPlot() {
+export default function MeasurePlot() {
 	const { ensemble, distanceMeasure } = useContext(GlobalData)
 
 	const [points, setPoints] = useState([])
 
-    useEffect(() => {
-		const getPoints = async () => {
-            try {
-				const clusterIds = ensemble[distanceMeasure].clusterIds
-				const getClusterPoints = async () => {
-					try {
-						const result = await axios.get("http://localhost:8080/cluster-points", {
-							params: {
-								clusterIds
-							},
-							paramsSerializer: params => {
-								return qs.stringify(params, { arrayFormat: 'repeat' })
-							}
-						})
+    // useEffect(() => {
+	// 	const getPoints = async () => {
+    //         try {
+	// 			const clusterIds = ensemble[distanceMeasure].clusterIds
+	// 			const getClusterPoints = async () => {
+	// 				try {
+	// 					const result = await axios.get("http://localhost:8080/cluster-points", {
+	// 						params: {
+	// 							clusterIds
+	// 						},
+	// 						paramsSerializer: params => {
+	// 							return qs.stringify(params, { arrayFormat: 'repeat' })
+	// 						}
+	// 					})
 
-						setPoints(result.data)
-						//localStorage.setItem(key, JSON.stringify(result.data));
-					} catch (error) {
-						console.log("Error fetching cluster points: ", error)
-					}
-				}
+	// 					setPoints(result.data)
+	// 					//localStorage.setItem(key, JSON.stringify(result.data));
+	// 				} catch (error) {
+	// 					console.log("Error fetching cluster points: ", error)
+	// 				}
+	// 			}
 
-				// const key = "typeofdistmeasure" + ensemble._id
-				// const storedData = localStorage.getItem(key)
-				// storedData ? setPoints(JSON.parse(storedData))
-				//  		   : getClusterPoints()
+	// 			// const key = "typeofdistmeasure" + ensemble._id
+	// 			// const storedData = localStorage.getItem(key)
+	// 			// storedData ? setPoints(JSON.parse(storedData))
+	// 			//  		   : getClusterPoints()
 
-				getClusterPoints()
-            } catch (error) {
-                console.log("Error fetching points: ", error)
-            }
-        }
+	// 			getClusterPoints()
+    //         } catch (error) {
+    //             console.log("Error fetching points: ", error)
+    //         }
+    //     }
 
-        getPoints()
-	}, [])
+    //     getPoints()
+	// }, [])
 
     const getRandomNumber = (a, b) => {
         if (a > b) {
