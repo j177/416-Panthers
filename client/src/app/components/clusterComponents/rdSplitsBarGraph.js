@@ -32,11 +32,13 @@ export default function RDSplitsBarGraph({ clusters }) {
 			}),
 			borderColor: 'rgba(75, 192, 192, 1)',
 			borderWidth: 1,
+			barThickness: 70,
 			data: rdSplits.map((split) => split.quantity)
 		}]
 	}
 
 	const options = {
+		maintainAspectRatio: false,
 		scales: {
 			x: {
 				stacked: true,
@@ -75,7 +77,7 @@ export default function RDSplitsBarGraph({ clusters }) {
 							fillStyle: 'rgba(75, 192, 192, 0.5)',
 							strokeStyle: 'rgba(75, 192, 192, 1)',
 							lineWidth: 1,
-						}];
+						}]
 					},
 					boxWidth: 0
 				}
@@ -86,7 +88,9 @@ export default function RDSplitsBarGraph({ clusters }) {
 	return (
 		<div>
 			<ClusterDropdown clusters = {clusters} setCluster = {setCluster}/>
-			<Bar data = {data} options = {options} />
+			<div className = "rd-split-graph-container">
+				<Bar data = {data} options = {options} height = {"100%"} />
+			</div>
 		</div>
 	)
 }

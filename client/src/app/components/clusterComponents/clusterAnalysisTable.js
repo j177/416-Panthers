@@ -32,23 +32,23 @@ export default function ClusterAnalysisTable({ clusters }) {
                 <thead>
                     <tr>
                         <th colSpan = {1}>Cluster</th>
-                        <th colSpan = {3}>Average % of voters by party</th>
-                        <th colSpan = {7}>Average % of voters by race</th>
+                        <th colSpan = {2}>% of voters by party</th>
+                        <th colSpan = {7}>% of population by race</th>
                     </tr>
                 </thead>
                 <thead>
                     <tr>
                         <th>Id</th>
                         <th>Republican</th>
-                        <th>Democrat</th>
-                        <th>Other</th>
+                        <th>Democratic</th>
                         <th>White</th>
                         <th>Black</th>
                         <th>Hispanic</th>
                         <th>Asian</th>
                         <th>Native</th>
                         <th>Pacific</th>
-                        <th>Minority</th>
+                        <th>Other</th>
+                        <th>Mixed</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -61,14 +61,14 @@ export default function ClusterAnalysisTable({ clusters }) {
                             </td>
                             <td>{cluster.republican}%</td>
                             <td>{cluster.democrat}%</td>
-                            <td>{cluster.other}%</td>
                             <td>{cluster.white}%</td>
                             <td>{cluster.black}%</td>
                             <td>{cluster.hispanic}%</td>
                             <td>{cluster.asian}%</td>
                             <td>{cluster.native}%</td>
                             <td>{cluster.pacific}%</td>
-                            <td>{cluster.minority}%</td>
+                            <td>{cluster.other}%</td>
+                            <td>{cluster.mixed}%</td>
                         </tr>
                     ))}
                 </tbody>

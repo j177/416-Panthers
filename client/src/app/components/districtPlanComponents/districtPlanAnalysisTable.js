@@ -27,25 +27,20 @@ export default function DistrictPlanAnalysisTable({ districtPlans }) {
             <Table striped bordered hover>
                 <thead>
                     <tr>
-                        <th colSpan = {2}>District Plan</th>
-                        <th colSpan = {3}>% of voters by party</th>
-                        <th colSpan = {7}>% of voters by race</th>
+                        <th colSpan = {1}>District Plan</th>
+                        <th colSpan = {2}># of districts by party</th>
+                        <th colSpan = {4}># of opportunity districts</th>
                     </tr>
                 </thead>
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>R/D Split</th>
                         <th>Republican</th>
                         <th>Democrat</th>
-                        <th>Other</th>
                         <th>White</th>
                         <th>Black</th>
                         <th>Hispanic</th>
                         <th>Asian</th>
-                        <th>Native</th>
-                        <th>Pacific</th>
-                        <th>Minority</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -54,17 +49,12 @@ export default function DistrictPlanAnalysisTable({ districtPlans }) {
                             <td onClick = {() => setDistrictPlan(districtPlan)}>
                                 <span>{districtPlan._id}</span>
                             </td>
-                            <td>{districtPlan.rSeats} / {districtPlan.dSeats}</td>
-                            <td>{districtPlan.republican}%</td>
-                            <td>{districtPlan.democrat}%</td>
-                            <td>{districtPlan.other}%</td>
-                            <td>{districtPlan.white}%</td>
-                            <td>{districtPlan.black}%</td>
-                            <td>{districtPlan.hispanic}%</td>
-                            <td>{districtPlan.asian}%</td>
-                            <td>{districtPlan.native}%</td>
-                            <td>{districtPlan.pacific}%</td>
-                            <td>{districtPlan.minority}%</td>
+                            <td>{districtPlan.rSeats}</td>
+                            <td>{districtPlan.dSeats}</td>
+                            <td>{districtPlan.white_od}</td>
+                            <td>{districtPlan.black_od}</td>
+                            <td>{districtPlan.hispanic_od}</td>
+                            <td>{districtPlan.asian_od}</td>
                         </tr>
                     ))}
                 </tbody>
