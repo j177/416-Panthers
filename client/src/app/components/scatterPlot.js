@@ -4,13 +4,25 @@ export default function ScatterPlot({ data, title, xLabel, yLabel, width, height
     const layout = {
         title: title,
         titlefont: {
-            size: '20'
+            size: '18'
         },
-        xaxis: { 
-            title: xLabel
+        xaxis: {
+            title: xLabel,
+            tickfont: {
+                size: 14
+            },
+            titlefont: {
+                size: 16
+            }
         },
         yaxis: {
-            title: yLabel
+            title: yLabel,
+            tickfont: {
+                size: 14
+            },
+            titlefont: {
+                size: 16
+            }
         },
         width: width,
         height: height

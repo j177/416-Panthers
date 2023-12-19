@@ -7,12 +7,13 @@ import EnsembleVisuals from './ensembleComponents/ensembleVisuals'
 import ClusterVisuals from './clusterComponents/clusterVisuals'
 import DistrictPlanVisuals from './districtPlanComponents/districtPlanVisuals'
 import { GlobalData } from '../contexts/context'
+import { ClusterFrom } from '../constants/clusterFromData'
 
 export default function StatePage() {
     const { ensemble, distanceMeasure, cluster } = useContext(GlobalData)
 
     let visualsToDisplay
-    if (cluster) {
+    if (cluster && cluster.from === ClusterFrom.TABLE) {
         visualsToDisplay = 
             <div className = "dp-data-container">
                 <DistrictPlanVisuals />

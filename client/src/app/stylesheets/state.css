@@ -9,13 +9,29 @@
     text-align: center;
 }
 
+.td-right {
+    text-align: right;
+}
+
+.right-align {
+    width: 100%;
+    text-align: right;
+}
+
 .place-holder {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightgray;
+    font-size: 2rem;
+    font-weight: 900;
+    color: lightgray;
     width: 100%;
     height: 100%;
+}
+
+.nav-tabs .nav-link {
+    color: blue;
+    font-weight: bold;
 }
 
 /* =============================== */
@@ -52,6 +68,17 @@
 }
 
 /* Ensemble Table */
+/* =============================== */
+
+/* =============================== */
+/* Ensemble Legend */
+
+.ensemble-legend {
+    margin-left: 3%;
+    font-size: 0.75rem;
+}
+
+/* Ensemble Legend */
 /* =============================== */
 
 /* =============================== */
@@ -106,7 +133,29 @@
 /* =============================== */
 
 /* =============================== */
-/* DP Table Visuals  */
+/* DP Summary  */
+
+.dp-summary-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: left;
+    margin-top: 3%;
+}
+
+.dp-ensemble-summary .body {
+    margin-top: 3%;
+}
+
+.dp-ensemble-summary .header {
+    font-size: 1.25rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.dp-ensemble-summary tr {
+    font-size: 1rem;
+}
 
 .dp-table span {
     color: blue;
@@ -118,8 +167,82 @@
     text-align: center;
 }
 
-.dp-table td {
+.state-summary-legend b {
+    margin-left: 1vw;
+    font-size: 0.75rem;
+}
+
+.compare-plans-container {
+    margin-top: 7%;
+    margin-left: 3%;
+    font-size: 1.15rem;
+}
+
+.comparison-dropdown-menu {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.comparison-dropdowns {
+    margin-top: 3%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.comparison-container {
+    margin-left: 3%;
+    margin-top: 15%;
+}
+
+.comparison-tip {
+    margin-top: 3%;
+    font-size: 0.85rem;
+}
+
+.compare-on {
+    background-color: blue;
+}
+
+.compare-off {
+    background-color: red;
+}
+
+.comparison-title {
+    margin-top: 3%;
+    font-size: 1.15rem;
+    text-decoration: underline;
     text-align: center;
+}
+
+.comparison-table {
+    margin-top: 5%;
+}
+
+.comparison-legend {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.comparison-legend div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.purple-square {
+    width: 15px;
+    height: 15px;
+    background-color: purple;
+    border: 1px solid black;
+}
+
+.orange-square {
+    width: 15px;
+    height: 15px;
+    background-color: orange;
+    border: 1px solid black;
 }
 
 /* DP Table Visuals */
@@ -136,8 +259,31 @@
     width: 100%;
 }
 
+.scatter-plot-container .dropdown-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: left;
+}
+
+.x-dropdown {
+    margin-left: 2vw;
+}
+
+.y-dropdown {
+    margin-left: 2vw;
+}
+
 .cluster-plot-container {
     height: 350px;
+    width: 800px;
+    border: solid 3px black;
+    padding: 5px;
+    margin-top: 2%;
+}
+
+.cluster-plot-container-large {
+    height: 600px;
     width: 800px;
     border: solid 3px black;
     padding: 5px;
@@ -152,6 +298,11 @@
     margin-top: 2%;
 }
 
+.scatter-plot-container .button-container {
+    margin-top: 3%;
+    width: 94%;
+}
+
 /* Scatter Plot */
 /* =============================== */
 
@@ -162,13 +313,22 @@
     margin-left: 75%;
 }
 
-.cluster-dropdown .dropdown-toggle {
+.dropdown .dropdown-toggle {
     background-color: white;
     color: black;
 }
 
 .rd-split-graph-container {
+    display: flex;
     height: 80vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.rd-split-graph-container div {
+    height: 80vh;
+    width: 47vw;
 }
 
 /* RD Splits Bar Graph */

@@ -15,6 +15,7 @@ export default function Home() {
     const [distanceMeasure, setDistanceMeasure] = useState()
     const [cluster, setCluster] = useState()
     const [districtPlan, setDistrictPlan] = useState()
+    const [districtPlanIds, setDistrictPlanIds] = useState([])
 
     let pageToDisplay
     if (state) {
@@ -29,7 +30,8 @@ export default function Home() {
                                         ensemble, setEnsemble,
                                         distanceMeasure, setDistanceMeasure,
                                         cluster, setCluster,
-                                        districtPlan, setDistrictPlan }}>
+                                        districtPlan, setDistrictPlan,
+                                        districtPlanIds, setDistrictPlanIds }}>
             <div className = "main">
                 <Navigation />
                 {pageToDisplay}

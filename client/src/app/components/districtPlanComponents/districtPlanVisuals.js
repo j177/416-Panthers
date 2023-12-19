@@ -4,12 +4,12 @@ import axios from 'axios'
 import qs from 'qs'
 import { useContext, useState, useEffect } from 'react'
 
-import DistrictPlanAnalysisTable from './districtPlanAnalysisTable'
+import DistrictPlanSummary from './districtPlanSummary'
 import { GlobalData } from '@/app/contexts/context.js'
 import { TabNames } from '@/app/constants/tabConstants'
 
 export default function DistrictPlanVisuals() {
-    const { cluster, setCluster, setDistrictPlan } = useContext(GlobalData)
+    const { cluster, setCluster, setDistrictPlan, setDistrictPlanIds } = useContext(GlobalData)
 
     const [districtPlans, setDistrictPlans] = useState()
     const [activeTab, setActiveTab] = useState(TabNames.DP_ANALYSIS)
@@ -19,7 +19,7 @@ export default function DistrictPlanVisuals() {
             try {
                 const districtPlans = await axios.get("http://localhost:8080/district-plans", {
                     params: {
-                        ids: cluster.dpIds
+                        ids: cluster.cluster.dpIds
                     },
                     paramsSerializer: params => {
                         return qs.stringify(params, { arrayFormat: 'repeat' })
@@ -39,6 +39,7 @@ export default function DistrictPlanVisuals() {
         if (tab === TabNames.BACK_TAB) {
             setCluster()
             setDistrictPlan()
+            setDistrictPlanIds([])
         } else {
             setActiveTab(tab)
         }
@@ -60,7 +61,7 @@ export default function DistrictPlanVisuals() {
                 <Tab eventKey = {TabNames.BACK_TAB} title = {TabNames.BACK_TAB}>
                 </Tab>
                 <Tab eventKey = {TabNames.DP_ANALYSIS} title = {TabNames.DP_ANALYSIS}>
-                    <DistrictPlanAnalysisTable districtPlans = {districtPlans} />
+                    <DistrictPlanSummary districtPlans = {districtPlans} />
                 </Tab>
             </Tabs>
         </>

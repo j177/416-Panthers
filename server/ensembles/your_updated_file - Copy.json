@@ -1,0 +1,122 @@
+[
+  {
+    "id": 0,
+    "rdSplits": [
+      {
+        "rDistricts": 8,
+        "dDistricts": 6,
+        "quantity": 36
+      },
+      {
+        "rDistricts": 7,
+        "dDistricts": 7,
+        "quantity": 22
+      },
+      {
+        "rDistricts": 9,
+        "dDistricts": 5,
+        "quantity": 14
+      },
+      {
+        "rDistricts": 5,
+        "dDistricts": 9,
+        "quantity": 2
+      },
+      {
+        "rDistricts": 6,
+        "dDistricts": 8,
+        "quantity": 7
+      }
+    ],
+    "republican": 48.57,
+    "democrat": 51.43,
+    "white": 72.38,
+    "black": 13.5,
+    "hispanic": 5.6,
+    "asian": 3.3,
+    "native": 0.47,
+    "pacific": 0.03,
+    "other": 0.37,
+    "mixed": 4.36
+  },
+  {
+    "id": 1,
+    "rdSplits": [
+      {
+        "rDistricts": 7,
+        "dDistricts": 7,
+        "quantity": 33
+      },
+      {
+        "rDistricts": 8,
+        "dDistricts": 6,
+        "quantity": 33
+      },
+      {
+        "rDistricts": 6,
+        "dDistricts": 8,
+        "quantity": 11
+      },
+      {
+        "rDistricts": 10,
+        "dDistricts": 4,
+        "quantity": 1
+      },
+      {
+        "rDistricts": 9,
+        "dDistricts": 5,
+        "quantity": 8
+      }
+    ],
+    "republican": 48.57,
+    "democrat": 51.43,
+    "white": 72.38,
+    "black": 13.5,
+    "hispanic": 5.6,
+    "asian": 3.3,
+    "native": 0.47,
+    "pacific": 0.03,
+    "other": 0.37,
+    "mixed": 4.36
+  },
+  {
+    "id": 2,
+    "rdSplits": [
+      {
+        "rDistricts": 9,
+        "dDistricts": 5,
+        "quantity": 16
+      },
+      {
+        "rDistricts": 8,
+        "dDistricts": 6,
+        "quantity": 38
+      },
+      {
+        "rDistricts": 5,
+        "dDistricts": 9,
+        "quantity": 1
+      },
+      {
+        "rDistricts": 7,
+        "dDistricts": 7,
+        "quantity": 23
+      },
+      {
+        "rDistricts": 6,
+        "dDistricts": 8,
+        "quantity": 5
+      }
+    ],
+    "republican": 48.57,
+    "democrat": 51.43,
+    "white": 72.38,
+    "black": 13.5,
+    "hispanic": 5.6,
+    "asian": 3.3,
+    "native": 0.47,
+    "pacific": 0.03,
+    "other": 0.37,
+    "mixed": 4.36
+  }
+]

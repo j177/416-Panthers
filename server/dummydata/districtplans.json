@@ -1,802 +1,3002 @@
 [
   {
     "_id": 0,
-    "rDistricts": 4,
-    "dDistricts": 1,
-    "republican": 46.8,
-    "democrat": 53.5,
-    "white_od": 6,
-    "black_od": 2,
-    "hispanic_od": 1,
-    "asian_od": 2,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 5.6,
-      "y": -1.57
+      "x": -5.62,
+      "y": 0.26
     },
     "planId": 0
   },
   {
     "_id": 1,
-    "rDistricts": 3,
-    "dDistricts": 2,
-    "republican": 48.6,
-    "democrat": 45.5,
-    "white_od": 5,
-    "black_od": 3,
-    "hispanic_od": 0,
-    "asian_od": 2,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": -0.62,
-      "y": 0.12
+      "x": -1.31,
+      "y": -1.66
     },
     "planId": 1
   },
   {
     "_id": 2,
-    "rDistricts": 5,
-    "dDistricts": 5,
-    "republican": 47.1,
-    "democrat": 46.2,
-    "white_od": 4,
-    "black_od": 3,
-    "hispanic_od": 1,
-    "asian_od": 1,
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 3.55,
-      "y": 0.99
+      "x": -5.11,
+      "y": -2.01
     },
     "planId": 2
   },
   {
     "_id": 3,
-    "rDistricts": 1,
-    "dDistricts": 3,
-    "republican": 47.7,
-    "democrat": 54.3,
-    "white_od": 5,
-    "black_od": 1,
-    "hispanic_od": 0,
-    "asian_od": 0,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 1.86,
-      "y": 1.1
+      "x": -0.01,
+      "y": -1.11
     },
     "planId": 3
   },
   {
     "_id": 4,
-    "rDistricts": 4,
-    "dDistricts": 2,
-    "republican": 45.6,
-    "democrat": 47.7,
-    "white_od": 4,
-    "black_od": 3,
-    "hispanic_od": 0,
-    "asian_od": 1,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 4.9,
-      "y": -3.49
+      "x": 3.8,
+      "y": -0.6
     },
     "planId": 4
   },
   {
     "_id": 5,
-    "rDistricts": 1,
-    "dDistricts": 1,
-    "republican": 50.4,
-    "democrat": 45.3,
-    "white_od": 4,
-    "black_od": 3,
-    "hispanic_od": 1,
-    "asian_od": 1,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 4.64,
-      "y": -1
+      "x": 1.98,
+      "y": 0.2
     },
     "planId": 5
   },
   {
     "_id": 6,
-    "rDistricts": 1,
-    "dDistricts": 2,
-    "republican": 53.8,
-    "democrat": 45,
-    "white_od": 5,
-    "black_od": 3,
-    "hispanic_od": 0,
-    "asian_od": 0,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": -0.21,
-      "y": 3.95
+      "x": -2.64,
+      "y": -0.32
     },
     "planId": 6
   },
   {
     "_id": 7,
-    "rDistricts": 2,
-    "dDistricts": 4,
-    "republican": 48.1,
-    "democrat": 52.3,
-    "white_od": 3,
-    "black_od": 1,
-    "hispanic_od": 2,
-    "asian_od": 1,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 2.05,
-      "y": 3.35
+      "x": -5.8,
+      "y": -3.53
     },
     "planId": 7
   },
   {
     "_id": 8,
-    "rDistricts": 3,
-    "dDistricts": 2,
-    "republican": 51.9,
-    "democrat": 47.3,
-    "white_od": 3,
-    "black_od": 1,
-    "hispanic_od": 0,
-    "asian_od": 0,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": -4.15,
-      "y": 2.35
+      "x": -2.17,
+      "y": 1.56
     },
     "planId": 8
   },
   {
     "_id": 9,
-    "rDistricts": 1,
-    "dDistricts": 5,
-    "republican": 54,
-    "democrat": 54.7,
-    "white_od": 5,
-    "black_od": 2,
-    "hispanic_od": 0,
-    "asian_od": 0,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 4.11,
-      "y": 3.51
+      "x": 3.07,
+      "y": -1.72
     },
     "planId": 9
   },
   {
     "_id": 10,
-    "rDistricts": 1,
+    "rDistricts": 8,
     "dDistricts": 6,
-    "republican": 51.5,
-    "democrat": 51,
-    "white_od": 4,
-    "black_od": 3,
-    "hispanic_od": 0,
-    "asian_od": 2,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": -0.48,
-      "y": 1.45
+      "x": 3.48,
+      "y": -3.36
     },
     "planId": 10
   },
   {
     "_id": 11,
-    "rDistricts": 4,
-    "dDistricts": 1,
-    "republican": 47.5,
-    "democrat": 47.5,
-    "white_od": 5,
-    "black_od": 2,
-    "hispanic_od": 1,
-    "asian_od": 2,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 1.84,
-      "y": -2.14
+      "x": 2.94,
+      "y": -2.62
     },
     "planId": 11
   },
   {
     "_id": 12,
-    "rDistricts": 5,
-    "dDistricts": 2,
-    "republican": 50.1,
-    "democrat": 50.1,
-    "white_od": 6,
-    "black_od": 1,
-    "hispanic_od": 0,
-    "asian_od": 0,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": -2.44,
-      "y": -1.49
+      "x": 0.32,
+      "y": -1.3
     },
     "planId": 12
   },
   {
     "_id": 13,
-    "rDistricts": 5,
-    "dDistricts": 1,
-    "republican": 50.5,
-    "democrat": 54,
-    "white_od": 6,
-    "black_od": 3,
-    "hispanic_od": 2,
-    "asian_od": 0,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 3.56,
-      "y": -1.78
+      "x": -0.52,
+      "y": 3.57
     },
     "planId": 13
   },
   {
     "_id": 14,
-    "rDistricts": 5,
-    "dDistricts": 2,
-    "republican": 50.5,
-    "democrat": 47.1,
-    "white_od": 4,
-    "black_od": 2,
-    "hispanic_od": 0,
-    "asian_od": 0,
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": -0.48,
-      "y": 1
+      "x": -0.34,
+      "y": 0.19
     },
     "planId": 14
   },
   {
     "_id": 15,
-    "rDistricts": 3,
-    "dDistricts": 5,
-    "republican": 54.9,
-    "democrat": 51.5,
-    "white_od": 6,
-    "black_od": 3,
-    "hispanic_od": 1,
-    "asian_od": 0,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": -3.53,
-      "y": -0.07
+      "x": 4.78,
+      "y": -2.42
     },
     "planId": 15
   },
   {
     "_id": 16,
-    "rDistricts": 4,
-    "dDistricts": 4,
-    "republican": 45.1,
-    "democrat": 54,
-    "white_od": 3,
-    "black_od": 2,
-    "hispanic_od": 2,
-    "asian_od": 1,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 1.46,
-      "y": 0.57
+      "x": -5.99,
+      "y": -2.46
     },
     "planId": 16
   },
   {
     "_id": 17,
     "rDistricts": 6,
-    "dDistricts": 5,
-    "republican": 50.2,
-    "democrat": 50.3,
-    "white_od": 5,
-    "black_od": 2,
-    "hispanic_od": 0,
-    "asian_od": 1,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": -3.27,
-      "y": -0.14
+      "x": -3.64,
+      "y": -1.75
     },
     "planId": 17
   },
   {
     "_id": 18,
-    "rDistricts": 2,
-    "dDistricts": 2,
-    "republican": 49.5,
-    "democrat": 45.9,
-    "white_od": 5,
-    "black_od": 1,
-    "hispanic_od": 1,
-    "asian_od": 1,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 5.13,
-      "y": -2.1
+      "x": 2.27,
+      "y": 0.88
     },
     "planId": 18
   },
   {
     "_id": 19,
-    "rDistricts": 6,
-    "dDistricts": 1,
-    "republican": 53,
-    "democrat": 45.5,
-    "white_od": 3,
-    "black_od": 2,
-    "hispanic_od": 1,
-    "asian_od": 0,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": -0.98,
-      "y": 1.41
+      "x": 5.86,
+      "y": -0.89
     },
     "planId": 19
   },
   {
     "_id": 20,
-    "rDistricts": 5,
-    "dDistricts": 3,
-    "republican": 48.4,
-    "democrat": 48.2,
-    "white_od": 6,
-    "black_od": 1,
-    "hispanic_od": 1,
-    "asian_od": 1,
+    "rDistricts": 10,
+    "dDistricts": 4,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 3.8,
-      "y": 0.79
+      "x": 0.19,
+      "y": 2.21
     },
     "planId": 20
   },
   {
     "_id": 21,
-    "rDistricts": 1,
-    "dDistricts": 3,
-    "republican": 45.1,
-    "democrat": 54.1,
-    "white_od": 3,
-    "black_od": 3,
-    "hispanic_od": 0,
-    "asian_od": 0,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 0.99,
-      "y": 2.61
+      "x": -3.3,
+      "y": -2.2
     },
     "planId": 21
   },
   {
     "_id": 22,
-    "rDistricts": 2,
-    "dDistricts": 6,
-    "republican": 52.9,
-    "democrat": 49.6,
-    "white_od": 3,
-    "black_od": 1,
-    "hispanic_od": 0,
-    "asian_od": 2,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 3.91,
-      "y": -2.93
+      "x": -2.48,
+      "y": 0.44
     },
     "planId": 22
   },
   {
     "_id": 23,
-    "rDistricts": 5,
-    "dDistricts": 6,
-    "republican": 53.7,
-    "democrat": 54.7,
-    "white_od": 3,
-    "black_od": 1,
-    "hispanic_od": 1,
-    "asian_od": 1,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": -0.17,
-      "y": -2.68
+      "x": -4.0,
+      "y": -1.75
     },
     "planId": 23
   },
   {
     "_id": 24,
-    "rDistricts": 2,
-    "dDistricts": 3,
-    "republican": 46.6,
-    "democrat": 50.8,
-    "white_od": 4,
-    "black_od": 3,
-    "hispanic_od": 0,
-    "asian_od": 0,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 5.13,
-      "y": 2.32
+      "x": 4.67,
+      "y": 3.23
     },
     "planId": 24
   },
   {
     "_id": 25,
-    "rDistricts": 1,
-    "dDistricts": 5,
-    "republican": 53.9,
-    "democrat": 54.2,
-    "white_od": 5,
-    "black_od": 1,
-    "hispanic_od": 1,
-    "asian_od": 1,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 4.04,
-      "y": -0.29
+      "x": -0.52,
+      "y": -2.4
     },
     "planId": 25
   },
   {
     "_id": 26,
-    "rDistricts": 1,
-    "dDistricts": 3,
-    "republican": 52.7,
-    "democrat": 51.7,
-    "white_od": 3,
-    "black_od": 1,
-    "hispanic_od": 0,
-    "asian_od": 0,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": -0.77,
-      "y": 0.97
+      "x": -4.17,
+      "y": 0.68
     },
     "planId": 26
   },
   {
     "_id": 27,
-    "rDistricts": 4,
-    "dDistricts": 2,
-    "republican": 48.6,
-    "democrat": 54.7,
-    "white_od": 3,
-    "black_od": 1,
-    "hispanic_od": 2,
-    "asian_od": 0,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 1.12,
-      "y": 2.14
+      "x": 0.16,
+      "y": -0.98
     },
     "planId": 27
   },
   {
     "_id": 28,
-    "rDistricts": 4,
-    "dDistricts": 4,
-    "republican": 45.6,
-    "democrat": 45.9,
-    "white_od": 5,
-    "black_od": 1,
-    "hispanic_od": 2,
-    "asian_od": 1,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 1.54,
-      "y": 0.98
+      "x": -2.36,
+      "y": 1.04
     },
     "planId": 28
   },
   {
     "_id": 29,
-    "rDistricts": 6,
-    "dDistricts": 4,
-    "republican": 53.4,
-    "democrat": 50.4,
-    "white_od": 3,
-    "black_od": 1,
-    "hispanic_od": 1,
-    "asian_od": 0,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 1.28,
-      "y": 3.66
+      "x": -0.16,
+      "y": 2.11
     },
     "planId": 29
   },
   {
     "_id": 30,
-    "rDistricts": 3,
-    "dDistricts": 6,
-    "republican": 45.5,
-    "democrat": 50.5,
-    "white_od": 6,
-    "black_od": 1,
-    "hispanic_od": 0,
-    "asian_od": 1,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 2.1,
-      "y": 2.75
+      "x": -0.23,
+      "y": 0.89
     },
     "planId": 30
   },
   {
     "_id": 31,
-    "rDistricts": 6,
-    "dDistricts": 1,
-    "republican": 54.2,
-    "democrat": 52.2,
-    "white_od": 4,
-    "black_od": 1,
-    "hispanic_od": 1,
-    "asian_od": 1,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 3.27,
-      "y": 1.15
+      "x": 4.17,
+      "y": -0.01
     },
     "planId": 31
   },
   {
     "_id": 32,
-    "rDistricts": 4,
-    "dDistricts": 1,
-    "republican": 50.2,
-    "democrat": 49.4,
-    "white_od": 6,
-    "black_od": 2,
-    "hispanic_od": 1,
-    "asian_od": 0,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": -1.73,
-      "y": 0.98
+      "x": -5.79,
+      "y": 3.77
     },
     "planId": 32
   },
   {
     "_id": 33,
-    "rDistricts": 5,
-    "dDistricts": 5,
-    "republican": 48.2,
-    "democrat": 49.1,
-    "white_od": 5,
-    "black_od": 3,
-    "hispanic_od": 0,
-    "asian_od": 0,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 1.92,
-      "y": -0.03
+      "x": -0.14,
+      "y": -1.92
     },
     "planId": 33
   },
   {
     "_id": 34,
-    "rDistricts": 3,
-    "dDistricts": 5,
-    "republican": 52.3,
-    "democrat": 48.5,
-    "white_od": 3,
-    "black_od": 3,
-    "hispanic_od": 1,
-    "asian_od": 1,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": -5.67,
-      "y": -1.22
+      "x": 5.89,
+      "y": -0.63
     },
     "planId": 34
   },
   {
     "_id": 35,
-    "rDistricts": 5,
-    "dDistricts": 3,
-    "republican": 54.6,
-    "democrat": 49.7,
-    "white_od": 6,
-    "black_od": 2,
-    "hispanic_od": 0,
-    "asian_od": 1,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": -1.17,
-      "y": 3.62
+      "x": 5.87,
+      "y": 0.76
     },
     "planId": 35
   },
   {
     "_id": 36,
-    "rDistricts": 6,
-    "dDistricts": 2,
-    "republican": 49.5,
-    "democrat": 45.1,
-    "white_od": 4,
-    "black_od": 1,
-    "hispanic_od": 0,
-    "asian_od": 1,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 2.75,
-      "y": 0.74
+      "x": 2.49,
+      "y": -0.56
     },
     "planId": 36
   },
   {
     "_id": 37,
-    "rDistricts": 2,
-    "dDistricts": 2,
-    "republican": 53.2,
-    "democrat": 53.7,
-    "white_od": 5,
-    "black_od": 2,
-    "hispanic_od": 0,
-    "asian_od": 0,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 2.7,
-      "y": 3.53
+      "x": 4.2,
+      "y": 2.13
     },
     "planId": 37
   },
   {
     "_id": 38,
-    "rDistricts": 6,
-    "dDistricts": 3,
-    "republican": 45.5,
-    "democrat": 54.4,
-    "white_od": 3,
-    "black_od": 2,
-    "hispanic_od": 0,
-    "asian_od": 1,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 4.94,
-      "y": -0.25
+      "x": 4.17,
+      "y": -2.27
     },
     "planId": 38
   },
   {
     "_id": 39,
-    "rDistricts": 6,
-    "dDistricts": 2,
-    "republican": 49.7,
-    "democrat": 48.9,
-    "white_od": 3,
-    "black_od": 2,
-    "hispanic_od": 0,
-    "asian_od": 2,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 2.34,
-      "y": 0.37
+      "x": -4.16,
+      "y": 2.72
     },
     "planId": 39
   },
   {
     "_id": 40,
-    "rDistricts": 5,
-    "dDistricts": 2,
-    "republican": 51.2,
-    "democrat": 46,
-    "white_od": 4,
-    "black_od": 1,
-    "hispanic_od": 0,
-    "asian_od": 1,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 0.54,
-      "y": 0.54
+      "x": 5.57,
+      "y": -3.18
     },
     "planId": 40
   },
   {
     "_id": 41,
-    "rDistricts": 4,
-    "dDistricts": 1,
-    "republican": 50.4,
-    "democrat": 46.9,
-    "white_od": 6,
-    "black_od": 2,
-    "hispanic_od": 0,
-    "asian_od": 1,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 3.24,
-      "y": -2.47
+      "x": 5.47,
+      "y": 2.71
     },
     "planId": 41
   },
   {
     "_id": 42,
     "rDistricts": 6,
-    "dDistricts": 1,
-    "republican": 50.6,
-    "democrat": 49.9,
-    "white_od": 4,
-    "black_od": 1,
-    "hispanic_od": 1,
-    "asian_od": 2,
+    "dDistricts": 8,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 3.54,
-      "y": 2.07
+      "x": 0.87,
+      "y": -0.7
     },
     "planId": 42
   },
   {
     "_id": 43,
-    "rDistricts": 2,
-    "dDistricts": 2,
-    "republican": 49.1,
-    "democrat": 50,
-    "white_od": 3,
-    "black_od": 3,
-    "hispanic_od": 0,
-    "asian_od": 2,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 4.98,
-      "y": -3.14
+      "x": 0.57,
+      "y": 3.78
     },
     "planId": 43
   },
   {
     "_id": 44,
-    "rDistricts": 5,
-    "dDistricts": 4,
-    "republican": 46.4,
-    "democrat": 53.1,
-    "white_od": 5,
-    "black_od": 2,
-    "hispanic_od": 1,
-    "asian_od": 1,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 3.53,
-      "y": 1.36
+      "x": -0.37,
+      "y": -2.22
     },
     "planId": 44
   },
   {
     "_id": 45,
-    "rDistricts": 4,
+    "rDistricts": 9,
     "dDistricts": 5,
-    "republican": 54.5,
-    "democrat": 45.2,
-    "white_od": 4,
-    "black_od": 1,
-    "hispanic_od": 0,
-    "asian_od": 1,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": -5.79,
-      "y": 0.14
+      "x": 2.15,
+      "y": 0.2
     },
     "planId": 45
   },
   {
     "_id": 46,
-    "rDistricts": 2,
-    "dDistricts": 1,
-    "republican": 46.5,
-    "democrat": 48.9,
-    "white_od": 4,
-    "black_od": 2,
-    "hispanic_od": 2,
-    "asian_od": 2,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 0.08,
-      "y": 1.79
+      "x": 3.06,
+      "y": 0.24
     },
     "planId": 46
   },
   {
     "_id": 47,
-    "rDistricts": 2,
-    "dDistricts": 4,
-    "republican": 50.2,
-    "democrat": 51.9,
-    "white_od": 3,
-    "black_od": 3,
-    "hispanic_od": 0,
-    "asian_od": 1,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": -1.48,
-      "y": 2.84
+      "x": -1.82,
+      "y": -1.23
     },
     "planId": 47
   },
   {
     "_id": 48,
-    "rDistricts": 1,
-    "dDistricts": 4,
-    "republican": 47.8,
-    "democrat": 55,
-    "white_od": 6,
-    "black_od": 3,
-    "hispanic_od": 1,
-    "asian_od": 2,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": 1.86,
-      "y": 2.53
+      "x": -2.94,
+      "y": -0.64
     },
     "planId": 48
   },
   {
     "_id": 49,
-    "rDistricts": 6,
-    "dDistricts": 2,
-    "republican": 52.3,
-    "democrat": 49.1,
-    "white_od": 4,
-    "black_od": 1,
-    "hispanic_od": 0,
-    "asian_od": 2,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
     "mds": {
-      "x": -5.95,
-      "y": -3.56
+      "x": -2.37,
+      "y": -0.2
     },
     "planId": 49
+  },
+  {
+    "_id": 50,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -2.43,
+      "y": 3.91
+    },
+    "planId": 50
+  },
+  {
+    "_id": 51,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -4.69,
+      "y": -2.32
+    },
+    "planId": 51
+  },
+  {
+    "_id": 52,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -3.08,
+      "y": -1.51
+    },
+    "planId": 52
+  },
+  {
+    "_id": 53,
+    "rDistricts": 10,
+    "dDistricts": 4,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 5.65,
+      "y": 3.82
+    },
+    "planId": 53
+  },
+  {
+    "_id": 54,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -2.04,
+      "y": -1.3
+    },
+    "planId": 54
+  },
+  {
+    "_id": 55,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 1.29,
+      "y": 0.06
+    },
+    "planId": 55
+  },
+  {
+    "_id": 56,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 5.5,
+      "y": -3.49
+    },
+    "planId": 56
+  },
+  {
+    "_id": 57,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 1.16,
+      "y": 0.39
+    },
+    "planId": 57
+  },
+  {
+    "_id": 58,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 2.17,
+      "y": -0.08
+    },
+    "planId": 58
+  },
+  {
+    "_id": 59,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 1.61,
+      "y": -1.48
+    },
+    "planId": 59
+  },
+  {
+    "_id": 60,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 2.58,
+      "y": -0.79
+    },
+    "planId": 60
+  },
+  {
+    "_id": 61,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -1.88,
+      "y": -0.55
+    },
+    "planId": 61
+  },
+  {
+    "_id": 62,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 2.16,
+      "y": -3.21
+    },
+    "planId": 62
+  },
+  {
+    "_id": 63,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 1.69,
+      "y": -2.16
+    },
+    "planId": 63
+  },
+  {
+    "_id": 64,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -2.99,
+      "y": 0.46
+    },
+    "planId": 64
+  },
+  {
+    "_id": 65,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -0.78,
+      "y": -1.04
+    },
+    "planId": 65
+  },
+  {
+    "_id": 66,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 2.98,
+      "y": -0.07
+    },
+    "planId": 66
+  },
+  {
+    "_id": 67,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -3.83,
+      "y": 1.59
+    },
+    "planId": 67
+  },
+  {
+    "_id": 68,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -5.54,
+      "y": -2.29
+    },
+    "planId": 68
+  },
+  {
+    "_id": 69,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -2.67,
+      "y": -1.93
+    },
+    "planId": 69
+  },
+  {
+    "_id": 70,
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 4.59,
+      "y": -3.45
+    },
+    "planId": 70
+  },
+  {
+    "_id": 71,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 4.17,
+      "y": 1.43
+    },
+    "planId": 71
+  },
+  {
+    "_id": 72,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 5.79,
+      "y": 3.93
+    },
+    "planId": 72
+  },
+  {
+    "_id": 73,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 0.93,
+      "y": -3.36
+    },
+    "planId": 73
+  },
+  {
+    "_id": 74,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 2.51,
+      "y": -0.06
+    },
+    "planId": 74
+  },
+  {
+    "_id": 75,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -0.8,
+      "y": 1.08
+    },
+    "planId": 75
+  },
+  {
+    "_id": 76,
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -0.79,
+      "y": 2.59
+    },
+    "planId": 76
+  },
+  {
+    "_id": 77,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -2.4,
+      "y": -1.72
+    },
+    "planId": 77
+  },
+  {
+    "_id": 78,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -3.54,
+      "y": 1.48
+    },
+    "planId": 78
+  },
+  {
+    "_id": 79,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 2.6,
+      "y": 2.17
+    },
+    "planId": 79
+  },
+  {
+    "_id": 80,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 4.83,
+      "y": -1.14
+    },
+    "planId": 80
+  },
+  {
+    "_id": 81,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -5.65,
+      "y": -2.26
+    },
+    "planId": 81
+  },
+  {
+    "_id": 82,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -4.24,
+      "y": -1.21
+    },
+    "planId": 82
+  },
+  {
+    "_id": 83,
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 2.97,
+      "y": 3.61
+    },
+    "planId": 83
+  },
+  {
+    "_id": 84,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 2.54,
+      "y": -2.98
+    },
+    "planId": 84
+  },
+  {
+    "_id": 85,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 1.87,
+      "y": 3.1
+    },
+    "planId": 85
+  },
+  {
+    "_id": 86,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -3.88,
+      "y": 3.76
+    },
+    "planId": 86
+  },
+  {
+    "_id": 87,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -4.26,
+      "y": -1.34
+    },
+    "planId": 87
+  },
+  {
+    "_id": 88,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -3.21,
+      "y": -1.65
+    },
+    "planId": 88
+  },
+  {
+    "_id": 89,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 4.34,
+      "y": -1.19
+    },
+    "planId": 89
+  },
+  {
+    "_id": 90,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -0.46,
+      "y": 2.14
+    },
+    "planId": 90
+  },
+  {
+    "_id": 91,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -4.5,
+      "y": 3.89
+    },
+    "planId": 91
+  },
+  {
+    "_id": 92,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -3.26,
+      "y": 3.92
+    },
+    "planId": 92
+  },
+  {
+    "_id": 93,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 4.79,
+      "y": -1.09
+    },
+    "planId": 93
+  },
+  {
+    "_id": 94,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 1.64,
+      "y": 3.87
+    },
+    "planId": 94
+  },
+  {
+    "_id": 95,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -1.42,
+      "y": 2.53
+    },
+    "planId": 95
+  },
+  {
+    "_id": 96,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -0.1,
+      "y": -0.15
+    },
+    "planId": 96
+  },
+  {
+    "_id": 97,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 4.02,
+      "y": -2.32
+    },
+    "planId": 97
+  },
+  {
+    "_id": 98,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -4.02,
+      "y": 2.1
+    },
+    "planId": 98
+  },
+  {
+    "_id": 99,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -2.15,
+      "y": 2.9
+    },
+    "planId": 99
+  },
+  {
+    "_id": 100,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 1.09,
+      "y": -1.86
+    },
+    "planId": 100
+  },
+  {
+    "_id": 101,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -4.6,
+      "y": 3.88
+    },
+    "planId": 101
+  },
+  {
+    "_id": 102,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 0.54,
+      "y": 0.04
+    },
+    "planId": 102
+  },
+  {
+    "_id": 103,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -3.28,
+      "y": 2.77
+    },
+    "planId": 103
+  },
+  {
+    "_id": 104,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 5.92,
+      "y": 3.99
+    },
+    "planId": 104
+  },
+  {
+    "_id": 105,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 0.22,
+      "y": -3.95
+    },
+    "planId": 105
+  },
+  {
+    "_id": 106,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -3.69,
+      "y": 2.96
+    },
+    "planId": 106
+  },
+  {
+    "_id": 107,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -4.41,
+      "y": -0.16
+    },
+    "planId": 107
+  },
+  {
+    "_id": 108,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 3.69,
+      "y": 0.19
+    },
+    "planId": 108
+  },
+  {
+    "_id": 109,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -3.92,
+      "y": 2.74
+    },
+    "planId": 109
+  },
+  {
+    "_id": 110,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -1.82,
+      "y": -0.77
+    },
+    "planId": 110
+  },
+  {
+    "_id": 111,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -5.22,
+      "y": 2.38
+    },
+    "planId": 111
+  },
+  {
+    "_id": 112,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -1.72,
+      "y": -0.79
+    },
+    "planId": 112
+  },
+  {
+    "_id": 113,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 0.05,
+      "y": 3.13
+    },
+    "planId": 113
+  },
+  {
+    "_id": 114,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -4.53,
+      "y": -1.3
+    },
+    "planId": 114
+  },
+  {
+    "_id": 115,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 3.31,
+      "y": 0.91
+    },
+    "planId": 115
+  },
+  {
+    "_id": 116,
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 3.84,
+      "y": 3.85
+    },
+    "planId": 116
+  },
+  {
+    "_id": 117,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -1.36,
+      "y": 1.57
+    },
+    "planId": 117
+  },
+  {
+    "_id": 118,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 5.07,
+      "y": 1.55
+    },
+    "planId": 118
+  },
+  {
+    "_id": 119,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 2.03,
+      "y": 0.73
+    },
+    "planId": 119
+  },
+  {
+    "_id": 120,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -2.09,
+      "y": 2.84
+    },
+    "planId": 120
+  },
+  {
+    "_id": 121,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 2.4,
+      "y": 3.8
+    },
+    "planId": 121
+  },
+  {
+    "_id": 122,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 1.97,
+      "y": 0.01
+    },
+    "planId": 122
+  },
+  {
+    "_id": 123,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -3.91,
+      "y": -3.03
+    },
+    "planId": 123
+  },
+  {
+    "_id": 124,
+    "rDistricts": 5,
+    "dDistricts": 9,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 1.97,
+      "y": 3.27
+    },
+    "planId": 124
+  },
+  {
+    "_id": 125,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 1.06,
+      "y": -1.25
+    },
+    "planId": 125
+  },
+  {
+    "_id": 126,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -1.77,
+      "y": 3.89
+    },
+    "planId": 126
+  },
+  {
+    "_id": 127,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 2.88,
+      "y": -0.75
+    },
+    "planId": 127
+  },
+  {
+    "_id": 128,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -0.58,
+      "y": -0.88
+    },
+    "planId": 128
+  },
+  {
+    "_id": 129,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -5.86,
+      "y": -3.38
+    },
+    "planId": 129
+  },
+  {
+    "_id": 130,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 2.73,
+      "y": -0.06
+    },
+    "planId": 130
+  },
+  {
+    "_id": 131,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -3.87,
+      "y": -2.47
+    },
+    "planId": 131
+  },
+  {
+    "_id": 132,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 1.73,
+      "y": 2.41
+    },
+    "planId": 132
+  },
+  {
+    "_id": 133,
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -1.73,
+      "y": 2.36
+    },
+    "planId": 133
+  },
+  {
+    "_id": 134,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 2.68,
+      "y": -1.81
+    },
+    "planId": 134
+  },
+  {
+    "_id": 135,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 1.22,
+      "y": -3.03
+    },
+    "planId": 135
+  },
+  {
+    "_id": 136,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -3.93,
+      "y": 2.83
+    },
+    "planId": 136
+  },
+  {
+    "_id": 137,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -2.34,
+      "y": -2.92
+    },
+    "planId": 137
+  },
+  {
+    "_id": 138,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -5.69,
+      "y": 1.96
+    },
+    "planId": 138
+  },
+  {
+    "_id": 139,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -3.45,
+      "y": 1.38
+    },
+    "planId": 139
+  },
+  {
+    "_id": 140,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -0.32,
+      "y": 0.98
+    },
+    "planId": 140
+  },
+  {
+    "_id": 141,
+    "rDistricts": 10,
+    "dDistricts": 4,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -3.59,
+      "y": -3.1
+    },
+    "planId": 141
+  },
+  {
+    "_id": 142,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 0.54,
+      "y": 0.08
+    },
+    "planId": 142
+  },
+  {
+    "_id": 143,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -2.12,
+      "y": -3.51
+    },
+    "planId": 143
+  },
+  {
+    "_id": 144,
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 1.09,
+      "y": -1.14
+    },
+    "planId": 144
+  },
+  {
+    "_id": 145,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -1.78,
+      "y": 3.26
+    },
+    "planId": 145
+  },
+  {
+    "_id": 146,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 1.08,
+      "y": -1.89
+    },
+    "planId": 146
+  },
+  {
+    "_id": 147,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -4.2,
+      "y": 1.25
+    },
+    "planId": 147
+  },
+  {
+    "_id": 148,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 3.64,
+      "y": 3.52
+    },
+    "planId": 148
+  },
+  {
+    "_id": 149,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -0.17,
+      "y": 1.83
+    },
+    "planId": 149
+  },
+  {
+    "_id": 150,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 1.24,
+      "y": -2.4
+    },
+    "planId": 150
+  },
+  {
+    "_id": 151,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -2.84,
+      "y": -3.42
+    },
+    "planId": 151
+  },
+  {
+    "_id": 152,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -3.84,
+      "y": -2.93
+    },
+    "planId": 152
+  },
+  {
+    "_id": 153,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 2.21,
+      "y": -0.98
+    },
+    "planId": 153
+  },
+  {
+    "_id": 154,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 4.34,
+      "y": 3.86
+    },
+    "planId": 154
+  },
+  {
+    "_id": 155,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -4.98,
+      "y": -0.94
+    },
+    "planId": 155
+  },
+  {
+    "_id": 156,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 3.03,
+      "y": -3.66
+    },
+    "planId": 156
+  },
+  {
+    "_id": 157,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -4.26,
+      "y": 0.18
+    },
+    "planId": 157
+  },
+  {
+    "_id": 158,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -5.96,
+      "y": 1.67
+    },
+    "planId": 158
+  },
+  {
+    "_id": 159,
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 2.79,
+      "y": -2.9
+    },
+    "planId": 159
+  },
+  {
+    "_id": 160,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 5.68,
+      "y": -4.0
+    },
+    "planId": 160
+  },
+  {
+    "_id": 161,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 2.96,
+      "y": 1.27
+    },
+    "planId": 161
+  },
+  {
+    "_id": 162,
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 4.32,
+      "y": -1.26
+    },
+    "planId": 162
+  },
+  {
+    "_id": 163,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -5.88,
+      "y": -2.19
+    },
+    "planId": 163
+  },
+  {
+    "_id": 164,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -1.74,
+      "y": -2.2
+    },
+    "planId": 164
+  },
+  {
+    "_id": 165,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 3.64,
+      "y": -2.71
+    },
+    "planId": 165
+  },
+  {
+    "_id": 166,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 0.74,
+      "y": -2.22
+    },
+    "planId": 166
+  },
+  {
+    "_id": 167,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -3.17,
+      "y": 2.56
+    },
+    "planId": 167
+  },
+  {
+    "_id": 168,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 3.65,
+      "y": 2.82
+    },
+    "planId": 168
+  },
+  {
+    "_id": 169,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -1.63,
+      "y": 0.8
+    },
+    "planId": 169
+  },
+  {
+    "_id": 170,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -4.1,
+      "y": -2.4
+    },
+    "planId": 170
+  },
+  {
+    "_id": 171,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 1.29,
+      "y": 2.84
+    },
+    "planId": 171
+  },
+  {
+    "_id": 172,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 3.55,
+      "y": 3.53
+    },
+    "planId": 172
+  },
+  {
+    "_id": 173,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 0.31,
+      "y": -3.08
+    },
+    "planId": 173
+  },
+  {
+    "_id": 174,
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 4.55,
+      "y": -0.3
+    },
+    "planId": 174
+  },
+  {
+    "_id": 175,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 1.12,
+      "y": -1.74
+    },
+    "planId": 175
+  },
+  {
+    "_id": 176,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -0.23,
+      "y": -3.5
+    },
+    "planId": 176
+  },
+  {
+    "_id": 177,
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -2.87,
+      "y": -3.88
+    },
+    "planId": 177
+  },
+  {
+    "_id": 178,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 3.0,
+      "y": -1.31
+    },
+    "planId": 178
+  },
+  {
+    "_id": 179,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -2.5,
+      "y": 3.67
+    },
+    "planId": 179
+  },
+  {
+    "_id": 180,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -4.83,
+      "y": 3.21
+    },
+    "planId": 180
+  },
+  {
+    "_id": 181,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -5.15,
+      "y": 1.32
+    },
+    "planId": 181
+  },
+  {
+    "_id": 182,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -4.99,
+      "y": -3.44
+    },
+    "planId": 182
+  },
+  {
+    "_id": 183,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 1.36,
+      "y": -0.3
+    },
+    "planId": 183
+  },
+  {
+    "_id": 184,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -0.65,
+      "y": 3.16
+    },
+    "planId": 184
+  },
+  {
+    "_id": 185,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 4.31,
+      "y": -0.03
+    },
+    "planId": 185
+  },
+  {
+    "_id": 186,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 2.76,
+      "y": 1.86
+    },
+    "planId": 186
+  },
+  {
+    "_id": 187,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -1.59,
+      "y": 1.04
+    },
+    "planId": 187
+  },
+  {
+    "_id": 188,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -1.27,
+      "y": -1.25
+    },
+    "planId": 188
+  },
+  {
+    "_id": 189,
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -0.95,
+      "y": -3.31
+    },
+    "planId": 189
+  },
+  {
+    "_id": 190,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 5.15,
+      "y": 1.22
+    },
+    "planId": 190
+  },
+  {
+    "_id": 191,
+    "rDistricts": 10,
+    "dDistricts": 4,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -2.8,
+      "y": 3.84
+    },
+    "planId": 191
+  },
+  {
+    "_id": 192,
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -3.3,
+      "y": 3.05
+    },
+    "planId": 192
+  },
+  {
+    "_id": 193,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -1.02,
+      "y": 0.82
+    },
+    "planId": 193
+  },
+  {
+    "_id": 194,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -3.46,
+      "y": 1.78
+    },
+    "planId": 194
+  },
+  {
+    "_id": 195,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -5.19,
+      "y": -1.44
+    },
+    "planId": 195
+  },
+  {
+    "_id": 196,
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -5.69,
+      "y": -0.91
+    },
+    "planId": 196
+  },
+  {
+    "_id": 197,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -1.29,
+      "y": -0.02
+    },
+    "planId": 197
+  },
+  {
+    "_id": 198,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 5.92,
+      "y": 3.82
+    },
+    "planId": 198
+  },
+  {
+    "_id": 199,
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 4.66,
+      "y": -0.79
+    },
+    "planId": 199
+  },
+  {
+    "_id": 200,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 3.61,
+      "y": -0.53
+    },
+    "planId": 200
+  },
+  {
+    "_id": 201,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 4.79,
+      "y": -1.2
+    },
+    "planId": 201
+  },
+  {
+    "_id": 202,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -0.14,
+      "y": -3.78
+    },
+    "planId": 202
+  },
+  {
+    "_id": 203,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -2.61,
+      "y": 3.35
+    },
+    "planId": 203
+  },
+  {
+    "_id": 204,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 1.27,
+      "y": 0.71
+    },
+    "planId": 204
+  },
+  {
+    "_id": 205,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -2.83,
+      "y": 3.28
+    },
+    "planId": 205
+  },
+  {
+    "_id": 206,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 4.65,
+      "y": 2.46
+    },
+    "planId": 206
+  },
+  {
+    "_id": 207,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 3.43,
+      "y": 1.2
+    },
+    "planId": 207
+  },
+  {
+    "_id": 208,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 3.02,
+      "y": 2.53
+    },
+    "planId": 208
+  },
+  {
+    "_id": 209,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 2.19,
+      "y": -0.07
+    },
+    "planId": 209
+  },
+  {
+    "_id": 210,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -1.79,
+      "y": -2.83
+    },
+    "planId": 210
+  },
+  {
+    "_id": 211,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 4.83,
+      "y": 3.63
+    },
+    "planId": 211
+  },
+  {
+    "_id": 212,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 5.26,
+      "y": -0.68
+    },
+    "planId": 212
+  },
+  {
+    "_id": 213,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 4.91,
+      "y": 0.42
+    },
+    "planId": 213
+  },
+  {
+    "_id": 214,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -5.84,
+      "y": 1.64
+    },
+    "planId": 214
+  },
+  {
+    "_id": 215,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 0.55,
+      "y": 1.98
+    },
+    "planId": 215
+  },
+  {
+    "_id": 216,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -5.3,
+      "y": 2.94
+    },
+    "planId": 216
+  },
+  {
+    "_id": 217,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -5.19,
+      "y": -2.42
+    },
+    "planId": 217
+  },
+  {
+    "_id": 218,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -2.81,
+      "y": -0.31
+    },
+    "planId": 218
+  },
+  {
+    "_id": 219,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -0.73,
+      "y": -1.46
+    },
+    "planId": 219
+  },
+  {
+    "_id": 220,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -0.5,
+      "y": 2.78
+    },
+    "planId": 220
+  },
+  {
+    "_id": 221,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 4.35,
+      "y": -1.16
+    },
+    "planId": 221
+  },
+  {
+    "_id": 222,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -1.37,
+      "y": 1.08
+    },
+    "planId": 222
+  },
+  {
+    "_id": 223,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -4.36,
+      "y": 0.13
+    },
+    "planId": 223
+  },
+  {
+    "_id": 224,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 2.97,
+      "y": -2.59
+    },
+    "planId": 224
+  },
+  {
+    "_id": 225,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -3.0,
+      "y": -0.23
+    },
+    "planId": 225
+  },
+  {
+    "_id": 226,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -4.45,
+      "y": 3.97
+    },
+    "planId": 226
+  },
+  {
+    "_id": 227,
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 5.57,
+      "y": 0.61
+    },
+    "planId": 227
+  },
+  {
+    "_id": 228,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -4.11,
+      "y": 0.05
+    },
+    "planId": 228
+  },
+  {
+    "_id": 229,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 4.99,
+      "y": -2.23
+    },
+    "planId": 229
+  },
+  {
+    "_id": 230,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -5.34,
+      "y": -2.36
+    },
+    "planId": 230
+  },
+  {
+    "_id": 231,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 0.67,
+      "y": 2.64
+    },
+    "planId": 231
+  },
+  {
+    "_id": 232,
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 4.35,
+      "y": 3.2
+    },
+    "planId": 232
+  },
+  {
+    "_id": 233,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 5.39,
+      "y": 2.11
+    },
+    "planId": 233
+  },
+  {
+    "_id": 234,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -4.48,
+      "y": -0.11
+    },
+    "planId": 234
+  },
+  {
+    "_id": 235,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -5.16,
+      "y": -1.64
+    },
+    "planId": 235
+  },
+  {
+    "_id": 236,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -4.48,
+      "y": 0.48
+    },
+    "planId": 236
+  },
+  {
+    "_id": 237,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 1.79,
+      "y": 0.27
+    },
+    "planId": 237
+  },
+  {
+    "_id": 238,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -0.72,
+      "y": 3.16
+    },
+    "planId": 238
+  },
+  {
+    "_id": 239,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 3.92,
+      "y": -1.51
+    },
+    "planId": 239
+  },
+  {
+    "_id": 240,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -0.86,
+      "y": -0.13
+    },
+    "planId": 240
+  },
+  {
+    "_id": 241,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -4.37,
+      "y": -3.11
+    },
+    "planId": 241
+  },
+  {
+    "_id": 242,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -0.08,
+      "y": 1.72
+    },
+    "planId": 242
+  },
+  {
+    "_id": 243,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -6.0,
+      "y": -2.73
+    },
+    "planId": 243
+  },
+  {
+    "_id": 244,
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -3.19,
+      "y": -1.97
+    },
+    "planId": 244
+  },
+  {
+    "_id": 245,
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -4.76,
+      "y": -3.71
+    },
+    "planId": 245
+  },
+  {
+    "_id": 246,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 3.0,
+      "y": 3.89
+    },
+    "planId": 246
+  },
+  {
+    "_id": 247,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": 1.18,
+      "y": -3.2
+    },
+    "planId": 247
+  },
+  {
+    "_id": 248,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -3.24,
+      "y": -0.48
+    },
+    "planId": 248
+  },
+  {
+    "_id": 249,
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "mds": {
+      "x": -0.04,
+      "y": -2.38
+    },
+    "planId": 249
   }
 ]

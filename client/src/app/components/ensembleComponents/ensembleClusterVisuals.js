@@ -106,7 +106,7 @@ function EnsembleClusterTable({ ensembles, distanceMeasure }) {
             <tbody>
                 {ensembles.map((ensemble, index) =>
                     <tr key = {index}>
-                        <td>{ensemble.numPlans}</td>
+                        <td>{ensemble.numPlans.toLocaleString()}</td>
                         <td>{ensemble[distanceMeasure].clusterIds.length}</td>
                     </tr>
                 )}
