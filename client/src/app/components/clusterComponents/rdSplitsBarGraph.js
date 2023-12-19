@@ -18,13 +18,13 @@ export default function RDSplitsBarGraph({ clusters }) {
 	)
 
 	const data = {
-		labels: rdSplits.map((split) => `${split.rSeats}/${split.dSeats}`),
+		labels: rdSplits.map((split) => `${split.rDistricts}/${split.dDistricts}`),
 		datasets: [{
 			label: BarGraphData.YLABEL,
 			backgroundColor: rdSplits.map((split) => {
-				if (split.rSeats > split.dSeats) {
+				if (split.rDistricts > split.dDistricts) {
 					return 'blue'
-				} else if (split.rSeats < split.dSeats) {
+				} else if (split.rDistricts < split.dDistricts) {
 					return 'red'
 				} else {
 					return '#12fc46'
@@ -98,7 +98,7 @@ export default function RDSplitsBarGraph({ clusters }) {
 }
 
 function ClusterDropdown({ clusters, setCluster }) {
-	const [selectedValue, setSelectedValue] = useState(0)
+	const [selectedValue, setSelectedValue] = useState(clusters[0]._id)
 
 	const handleClick = (clusterId, cluster) => {
 		setSelectedValue(clusterId)
