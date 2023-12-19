@@ -13,10 +13,10 @@
     2,
     3,
     4,
-    5,
-    6
+    5
   ]
-},{
+},
+{
   "_id": 1,
   "name": "New York",
   "center": {
@@ -26,15 +26,14 @@
   "boundaryId": 1,
   "planId": 1,
   "ensembleIds": [
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13
+    2,
+    3,
+    1,
+    0,
+    4
   ]
-},{
+},
+{
   "_id": 2,
   "name": "Pennsylvania",
   "center": {
@@ -44,12 +43,10 @@
   "boundaryId": 2,
   "planId": 2,
   "ensembleIds": [
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20
+    4,
+    2,
+    1,
+    0,
+    3
   ]
 }]
