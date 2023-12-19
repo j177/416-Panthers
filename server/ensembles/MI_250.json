@@ -1,0 +1,3752 @@
+[
+  {
+    "_id": "mi_0",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.689,
+      "y": 0.137
+    },
+    "planId": "mi_0"
+  },
+  {
+    "_id": "mi_1",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 0,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.447,
+      "y": -0.221
+    },
+    "planId": "mi_1"
+  },
+  {
+    "_id": "mi_2",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.041,
+      "y": 0.117
+    },
+    "planId": "mi_2"
+  },
+  {
+    "_id": "mi_3",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.006,
+      "y": 0.745
+    },
+    "planId": "mi_3"
+  },
+  {
+    "_id": "mi_4",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.604,
+      "y": -0.308
+    },
+    "planId": "mi_4"
+  },
+  {
+    "_id": "mi_5",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.667,
+      "y": 0.018
+    },
+    "planId": "mi_5"
+  },
+  {
+    "_id": "mi_6",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.234,
+      "y": 0.576
+    },
+    "planId": "mi_6"
+  },
+  {
+    "_id": "mi_7",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.266,
+      "y": -0.564
+    },
+    "planId": "mi_7"
+  },
+  {
+    "_id": "mi_8",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.216,
+      "y": 0.252
+    },
+    "planId": "mi_8"
+  },
+  {
+    "_id": "mi_9",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.506,
+      "y": 0.501
+    },
+    "planId": "mi_9"
+  },
+  {
+    "_id": "mi_10",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.085,
+      "y": 0.351
+    },
+    "planId": "mi_10"
+  },
+  {
+    "_id": "mi_11",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.189,
+      "y": 0.45
+    },
+    "planId": "mi_11"
+  },
+  {
+    "_id": "mi_12",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.26,
+      "y": 0.583
+    },
+    "planId": "mi_12"
+  },
+  {
+    "_id": "mi_13",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.479,
+      "y": 0.513
+    },
+    "planId": "mi_13"
+  },
+  {
+    "_id": "mi_14",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.411,
+      "y": 0.244
+    },
+    "planId": "mi_14"
+  },
+  {
+    "_id": "mi_15",
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.607,
+      "y": 0.351
+    },
+    "planId": "mi_15"
+  },
+  {
+    "_id": "mi_16",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.209,
+      "y": 0.327
+    },
+    "planId": "mi_16"
+  },
+  {
+    "_id": "mi_17",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.524,
+      "y": 0.436
+    },
+    "planId": "mi_17"
+  },
+  {
+    "_id": "mi_18",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.095,
+      "y": 0.118
+    },
+    "planId": "mi_18"
+  },
+  {
+    "_id": "mi_19",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.092,
+      "y": 0.225
+    },
+    "planId": "mi_19"
+  },
+  {
+    "_id": "mi_20",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.541,
+      "y": 0.17
+    },
+    "planId": "mi_20"
+  },
+  {
+    "_id": "mi_21",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.168,
+      "y": -0.081
+    },
+    "planId": "mi_21"
+  },
+  {
+    "_id": "mi_22",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.596,
+      "y": -0.43
+    },
+    "planId": "mi_22"
+  },
+  {
+    "_id": "mi_23",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.224,
+      "y": -0.641
+    },
+    "planId": "mi_23"
+  },
+  {
+    "_id": "mi_24",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.052,
+      "y": -0.372
+    },
+    "planId": "mi_24"
+  },
+  {
+    "_id": "mi_25",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.045,
+      "y": 0.332
+    },
+    "planId": "mi_25"
+  },
+  {
+    "_id": "mi_26",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 8,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.39,
+      "y": -0.323
+    },
+    "planId": "mi_26"
+  },
+  {
+    "_id": "mi_27",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.511,
+      "y": -0.534
+    },
+    "planId": "mi_27"
+  },
+  {
+    "_id": "mi_28",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.127,
+      "y": -0.65
+    },
+    "planId": "mi_28"
+  },
+  {
+    "_id": "mi_29",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.087,
+      "y": -0.717
+    },
+    "planId": "mi_29"
+  },
+  {
+    "_id": "mi_30",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.508,
+      "y": -0.313
+    },
+    "planId": "mi_30"
+  },
+  {
+    "_id": "mi_31",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 0,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.246,
+      "y": -0.354
+    },
+    "planId": "mi_31"
+  },
+  {
+    "_id": "mi_32",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.644,
+      "y": 0.186
+    },
+    "planId": "mi_32"
+  },
+  {
+    "_id": "mi_33",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.231,
+      "y": -0.627
+    },
+    "planId": "mi_33"
+  },
+  {
+    "_id": "mi_34",
+    "rDistricts": 5,
+    "dDistricts": 9,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.343,
+      "y": -0.482
+    },
+    "planId": "mi_34"
+  },
+  {
+    "_id": "mi_35",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.41,
+      "y": 0.553
+    },
+    "planId": "mi_35"
+  },
+  {
+    "_id": "mi_36",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.626,
+      "y": 0.107
+    },
+    "planId": "mi_36"
+  },
+  {
+    "_id": "mi_37",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 0,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.086,
+      "y": -0.656
+    },
+    "planId": "mi_37"
+  },
+  {
+    "_id": "mi_38",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.075,
+      "y": 0.239
+    },
+    "planId": "mi_38"
+  },
+  {
+    "_id": "mi_39",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.146,
+      "y": -0.728
+    },
+    "planId": "mi_39"
+  },
+  {
+    "_id": "mi_40",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.141,
+      "y": 0.22
+    },
+    "planId": "mi_40"
+  },
+  {
+    "_id": "mi_41",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.574,
+      "y": -0.055
+    },
+    "planId": "mi_41"
+  },
+  {
+    "_id": "mi_42",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.164,
+      "y": -0.67
+    },
+    "planId": "mi_42"
+  },
+  {
+    "_id": "mi_43",
+    "rDistricts": 5,
+    "dDistricts": 9,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.025,
+      "y": -0.679
+    },
+    "planId": "mi_43"
+  },
+  {
+    "_id": "mi_44",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.258,
+      "y": -0.052
+    },
+    "planId": "mi_44"
+  },
+  {
+    "_id": "mi_45",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.271,
+      "y": 0.426
+    },
+    "planId": "mi_45"
+  },
+  {
+    "_id": "mi_46",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.715,
+      "y": 0.152
+    },
+    "planId": "mi_46"
+  },
+  {
+    "_id": "mi_47",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 0,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.661,
+      "y": -0.073
+    },
+    "planId": "mi_47"
+  },
+  {
+    "_id": "mi_48",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 0,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.406,
+      "y": -0.562
+    },
+    "planId": "mi_48"
+  },
+  {
+    "_id": "mi_49",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.131,
+      "y": -0.701
+    },
+    "planId": "mi_49"
+  },
+  {
+    "_id": "mi_50",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.565,
+      "y": 0.037
+    },
+    "planId": "mi_50"
+  },
+  {
+    "_id": "mi_51",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.106,
+      "y": 0.508
+    },
+    "planId": "mi_51"
+  },
+  {
+    "_id": "mi_52",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.175,
+      "y": 0.372
+    },
+    "planId": "mi_52"
+  },
+  {
+    "_id": "mi_53",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.55,
+      "y": 0.439
+    },
+    "planId": "mi_53"
+  },
+  {
+    "_id": "mi_54",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.355,
+      "y": -0.036
+    },
+    "planId": "mi_54"
+  },
+  {
+    "_id": "mi_55",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.111,
+      "y": 0.409
+    },
+    "planId": "mi_55"
+  },
+  {
+    "_id": "mi_56",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.515,
+      "y": -0.239
+    },
+    "planId": "mi_56"
+  },
+  {
+    "_id": "mi_57",
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.469,
+      "y": -0.421
+    },
+    "planId": "mi_57"
+  },
+  {
+    "_id": "mi_58",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 0,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.016,
+      "y": -0.334
+    },
+    "planId": "mi_58"
+  },
+  {
+    "_id": "mi_59",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.494,
+      "y": -0.052
+    },
+    "planId": "mi_59"
+  },
+  {
+    "_id": "mi_60",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.42,
+      "y": 0.393
+    },
+    "planId": "mi_60"
+  },
+  {
+    "_id": "mi_61",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.541,
+      "y": 0.084
+    },
+    "planId": "mi_61"
+  },
+  {
+    "_id": "mi_62",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.622,
+      "y": 0.283
+    },
+    "planId": "mi_62"
+  },
+  {
+    "_id": "mi_63",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.72,
+      "y": -0.037
+    },
+    "planId": "mi_63"
+  },
+  {
+    "_id": "mi_64",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.309,
+      "y": 0.064
+    },
+    "planId": "mi_64"
+  },
+  {
+    "_id": "mi_65",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.271,
+      "y": -0.248
+    },
+    "planId": "mi_65"
+  },
+  {
+    "_id": "mi_66",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.14,
+      "y": -0.513
+    },
+    "planId": "mi_66"
+  },
+  {
+    "_id": "mi_67",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.725,
+      "y": 0.0
+    },
+    "planId": "mi_67"
+  },
+  {
+    "_id": "mi_68",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 7,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.018,
+      "y": -0.446
+    },
+    "planId": "mi_68"
+  },
+  {
+    "_id": "mi_69",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.619,
+      "y": 0.182
+    },
+    "planId": "mi_69"
+  },
+  {
+    "_id": "mi_70",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.617,
+      "y": -0.372
+    },
+    "planId": "mi_70"
+  },
+  {
+    "_id": "mi_71",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.193,
+      "y": 0.701
+    },
+    "planId": "mi_71"
+  },
+  {
+    "_id": "mi_72",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.154,
+      "y": -0.671
+    },
+    "planId": "mi_72"
+  },
+  {
+    "_id": "mi_73",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.671,
+      "y": 0.225
+    },
+    "planId": "mi_73"
+  },
+  {
+    "_id": "mi_74",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.435,
+      "y": 0.606
+    },
+    "planId": "mi_74"
+  },
+  {
+    "_id": "mi_75",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.144,
+      "y": -0.004
+    },
+    "planId": "mi_75"
+  },
+  {
+    "_id": "mi_76",
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 7,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.669,
+      "y": 0.271
+    },
+    "planId": "mi_76"
+  },
+  {
+    "_id": "mi_77",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.269,
+      "y": 0.677
+    },
+    "planId": "mi_77"
+  },
+  {
+    "_id": "mi_78",
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.625,
+      "y": 0.384
+    },
+    "planId": "mi_78"
+  },
+  {
+    "_id": "mi_79",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.501,
+      "y": -0.436
+    },
+    "planId": "mi_79"
+  },
+  {
+    "_id": "mi_80",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.283,
+      "y": 0.385
+    },
+    "planId": "mi_80"
+  },
+  {
+    "_id": "mi_81",
+    "rDistricts": 10,
+    "dDistricts": 4,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.173,
+      "y": 0.64
+    },
+    "planId": "mi_81"
+  },
+  {
+    "_id": "mi_82",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.106,
+      "y": 0.713
+    },
+    "planId": "mi_82"
+  },
+  {
+    "_id": "mi_83",
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.317,
+      "y": -0.115
+    },
+    "planId": "mi_83"
+  },
+  {
+    "_id": "mi_84",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.326,
+      "y": 0.447
+    },
+    "planId": "mi_84"
+  },
+  {
+    "_id": "mi_85",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.063,
+      "y": -0.591
+    },
+    "planId": "mi_85"
+  },
+  {
+    "_id": "mi_86",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.246,
+      "y": -0.691
+    },
+    "planId": "mi_86"
+  },
+  {
+    "_id": "mi_87",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.383,
+      "y": -0.292
+    },
+    "planId": "mi_87"
+  },
+  {
+    "_id": "mi_88",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 2,
+    "mds": {
+      "x": -0.49,
+      "y": -0.556
+    },
+    "planId": "mi_88"
+  },
+  {
+    "_id": "mi_89",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.46,
+      "y": -0.329
+    },
+    "planId": "mi_89"
+  },
+  {
+    "_id": "mi_90",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 0,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.613,
+      "y": -0.273
+    },
+    "planId": "mi_90"
+  },
+  {
+    "_id": "mi_91",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.475,
+      "y": -0.527
+    },
+    "planId": "mi_91"
+  },
+  {
+    "_id": "mi_92",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.635,
+      "y": -0.35
+    },
+    "planId": "mi_92"
+  },
+  {
+    "_id": "mi_93",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.17,
+      "y": -0.259
+    },
+    "planId": "mi_93"
+  },
+  {
+    "_id": "mi_94",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.541,
+      "y": -0.19
+    },
+    "planId": "mi_94"
+  },
+  {
+    "_id": "mi_95",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.056,
+      "y": -0.127
+    },
+    "planId": "mi_95"
+  },
+  {
+    "_id": "mi_96",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.399,
+      "y": 0.551
+    },
+    "planId": "mi_96"
+  },
+  {
+    "_id": "mi_97",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.467,
+      "y": 0.138
+    },
+    "planId": "mi_97"
+  },
+  {
+    "_id": "mi_98",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 0,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.662,
+      "y": -0.274
+    },
+    "planId": "mi_98"
+  },
+  {
+    "_id": "mi_99",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.05,
+      "y": 0.004
+    },
+    "planId": "mi_99"
+  },
+  {
+    "_id": "mi_100",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.353,
+      "y": 0.379
+    },
+    "planId": "mi_100"
+  },
+  {
+    "_id": "mi_101",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 3,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.645,
+      "y": -0.2
+    },
+    "planId": "mi_101"
+  },
+  {
+    "_id": "mi_102",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.442,
+      "y": 0.105
+    },
+    "planId": "mi_102"
+  },
+  {
+    "_id": "mi_103",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.247,
+      "y": 0.015
+    },
+    "planId": "mi_103"
+  },
+  {
+    "_id": "mi_104",
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.045,
+      "y": 0.524
+    },
+    "planId": "mi_104"
+  },
+  {
+    "_id": "mi_105",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 0,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.161,
+      "y": -0.552
+    },
+    "planId": "mi_105"
+  },
+  {
+    "_id": "mi_106",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.316,
+      "y": -0.129
+    },
+    "planId": "mi_106"
+  },
+  {
+    "_id": "mi_107",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.437,
+      "y": 0.457
+    },
+    "planId": "mi_107"
+  },
+  {
+    "_id": "mi_108",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.429,
+      "y": -0.4
+    },
+    "planId": "mi_108"
+  },
+  {
+    "_id": "mi_109",
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.092,
+      "y": 0.627
+    },
+    "planId": "mi_109"
+  },
+  {
+    "_id": "mi_110",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.367,
+      "y": 0.596
+    },
+    "planId": "mi_110"
+  },
+  {
+    "_id": "mi_111",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.098,
+      "y": 0.7
+    },
+    "planId": "mi_111"
+  },
+  {
+    "_id": "mi_112",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.419,
+      "y": 0.271
+    },
+    "planId": "mi_112"
+  },
+  {
+    "_id": "mi_113",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.702,
+      "y": -0.177
+    },
+    "planId": "mi_113"
+  },
+  {
+    "_id": "mi_114",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.542,
+      "y": 0.484
+    },
+    "planId": "mi_114"
+  },
+  {
+    "_id": "mi_115",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.49,
+      "y": -0.506
+    },
+    "planId": "mi_115"
+  },
+  {
+    "_id": "mi_116",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.038,
+      "y": -0.703
+    },
+    "planId": "mi_116"
+  },
+  {
+    "_id": "mi_117",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.634,
+      "y": 0.377
+    },
+    "planId": "mi_117"
+  },
+  {
+    "_id": "mi_118",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.073,
+      "y": -0.318
+    },
+    "planId": "mi_118"
+  },
+  {
+    "_id": "mi_119",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.711,
+      "y": 0.11
+    },
+    "planId": "mi_119"
+  },
+  {
+    "_id": "mi_120",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.614,
+      "y": -0.146
+    },
+    "planId": "mi_120"
+  },
+  {
+    "_id": "mi_121",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.325,
+      "y": -0.598
+    },
+    "planId": "mi_121"
+  },
+  {
+    "_id": "mi_122",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.019,
+      "y": -0.727
+    },
+    "planId": "mi_122"
+  },
+  {
+    "_id": "mi_123",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.134,
+      "y": -0.343
+    },
+    "planId": "mi_123"
+  },
+  {
+    "_id": "mi_124",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.182,
+      "y": -0.184
+    },
+    "planId": "mi_124"
+  },
+  {
+    "_id": "mi_125",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.581,
+      "y": 0.2
+    },
+    "planId": "mi_125"
+  },
+  {
+    "_id": "mi_126",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.582,
+      "y": 0.377
+    },
+    "planId": "mi_126"
+  },
+  {
+    "_id": "mi_127",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.077,
+      "y": -0.598
+    },
+    "planId": "mi_127"
+  },
+  {
+    "_id": "mi_128",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.392,
+      "y": -0.112
+    },
+    "planId": "mi_128"
+  },
+  {
+    "_id": "mi_129",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.727,
+      "y": -0.095
+    },
+    "planId": "mi_129"
+  },
+  {
+    "_id": "mi_130",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.287,
+      "y": -0.661
+    },
+    "planId": "mi_130"
+  },
+  {
+    "_id": "mi_131",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.487,
+      "y": 0.483
+    },
+    "planId": "mi_131"
+  },
+  {
+    "_id": "mi_132",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.093,
+      "y": 0.657
+    },
+    "planId": "mi_132"
+  },
+  {
+    "_id": "mi_133",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.62,
+      "y": 0.116
+    },
+    "planId": "mi_133"
+  },
+  {
+    "_id": "mi_134",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 3,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.712,
+      "y": 0.01
+    },
+    "planId": "mi_134"
+  },
+  {
+    "_id": "mi_135",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.447,
+      "y": 0.31
+    },
+    "planId": "mi_135"
+  },
+  {
+    "_id": "mi_136",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.077,
+      "y": 0.741
+    },
+    "planId": "mi_136"
+  },
+  {
+    "_id": "mi_137",
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.068,
+      "y": -0.078
+    },
+    "planId": "mi_137"
+  },
+  {
+    "_id": "mi_138",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.219,
+      "y": 0.692
+    },
+    "planId": "mi_138"
+  },
+  {
+    "_id": "mi_139",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.517,
+      "y": 0.275
+    },
+    "planId": "mi_139"
+  },
+  {
+    "_id": "mi_140",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.388,
+      "y": -0.092
+    },
+    "planId": "mi_140"
+  },
+  {
+    "_id": "mi_141",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.065,
+      "y": -0.722
+    },
+    "planId": "mi_141"
+  },
+  {
+    "_id": "mi_142",
+    "rDistricts": 5,
+    "dDistricts": 9,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.178,
+      "y": -0.579
+    },
+    "planId": "mi_142"
+  },
+  {
+    "_id": "mi_143",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 0,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.641,
+      "y": 0.292
+    },
+    "planId": "mi_143"
+  },
+  {
+    "_id": "mi_144",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.201,
+      "y": 0.423
+    },
+    "planId": "mi_144"
+  },
+  {
+    "_id": "mi_145",
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.084,
+      "y": -0.173
+    },
+    "planId": "mi_145"
+  },
+  {
+    "_id": "mi_146",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.529,
+      "y": 0.031
+    },
+    "planId": "mi_146"
+  },
+  {
+    "_id": "mi_147",
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.27,
+      "y": 0.657
+    },
+    "planId": "mi_147"
+  },
+  {
+    "_id": "mi_148",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.355,
+      "y": 0.589
+    },
+    "planId": "mi_148"
+  },
+  {
+    "_id": "mi_149",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 0,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.215,
+      "y": 0.537
+    },
+    "planId": "mi_149"
+  },
+  {
+    "_id": "mi_150",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.726,
+      "y": 0.093
+    },
+    "planId": "mi_150"
+  },
+  {
+    "_id": "mi_151",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 0,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.587,
+      "y": -0.158
+    },
+    "planId": "mi_151"
+  },
+  {
+    "_id": "mi_152",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.559,
+      "y": -0.356
+    },
+    "planId": "mi_152"
+  },
+  {
+    "_id": "mi_153",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.457,
+      "y": -0.542
+    },
+    "planId": "mi_153"
+  },
+  {
+    "_id": "mi_154",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.183,
+      "y": -0.353
+    },
+    "planId": "mi_154"
+  },
+  {
+    "_id": "mi_155",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.519,
+      "y": -0.49
+    },
+    "planId": "mi_155"
+  },
+  {
+    "_id": "mi_156",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.592,
+      "y": -0.018
+    },
+    "planId": "mi_156"
+  },
+  {
+    "_id": "mi_157",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.305,
+      "y": -0.519
+    },
+    "planId": "mi_157"
+  },
+  {
+    "_id": "mi_158",
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.304,
+      "y": 0.504
+    },
+    "planId": "mi_158"
+  },
+  {
+    "_id": "mi_159",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.326,
+      "y": 0.666
+    },
+    "planId": "mi_159"
+  },
+  {
+    "_id": "mi_160",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.358,
+      "y": -0.568
+    },
+    "planId": "mi_160"
+  },
+  {
+    "_id": "mi_161",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.057,
+      "y": -0.519
+    },
+    "planId": "mi_161"
+  },
+  {
+    "_id": "mi_162",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.512,
+      "y": 0.533
+    },
+    "planId": "mi_162"
+  },
+  {
+    "_id": "mi_163",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.398,
+      "y": 0.453
+    },
+    "planId": "mi_163"
+  },
+  {
+    "_id": "mi_164",
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.276,
+      "y": -0.664
+    },
+    "planId": "mi_164"
+  },
+  {
+    "_id": "mi_165",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.29,
+      "y": 0.212
+    },
+    "planId": "mi_165"
+  },
+  {
+    "_id": "mi_166",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.4,
+      "y": 0.142
+    },
+    "planId": "mi_166"
+  },
+  {
+    "_id": "mi_167",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 0,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.313,
+      "y": 0.492
+    },
+    "planId": "mi_167"
+  },
+  {
+    "_id": "mi_168",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.709,
+      "y": -0.162
+    },
+    "planId": "mi_168"
+  },
+  {
+    "_id": "mi_169",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.423,
+      "y": -0.589
+    },
+    "planId": "mi_169"
+  },
+  {
+    "_id": "mi_170",
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.414,
+      "y": -0.561
+    },
+    "planId": "mi_170"
+  },
+  {
+    "_id": "mi_171",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.395,
+      "y": -0.446
+    },
+    "planId": "mi_171"
+  },
+  {
+    "_id": "mi_172",
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.546,
+      "y": -0.389
+    },
+    "planId": "mi_172"
+  },
+  {
+    "_id": "mi_173",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.343,
+      "y": 0.006
+    },
+    "planId": "mi_173"
+  },
+  {
+    "_id": "mi_174",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.23,
+      "y": 0.29
+    },
+    "planId": "mi_174"
+  },
+  {
+    "_id": "mi_175",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.478,
+      "y": 0.377
+    },
+    "planId": "mi_175"
+  },
+  {
+    "_id": "mi_176",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.59,
+      "y": -0.098
+    },
+    "planId": "mi_176"
+  },
+  {
+    "_id": "mi_177",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.079,
+      "y": 0.708
+    },
+    "planId": "mi_177"
+  },
+  {
+    "_id": "mi_178",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.237,
+      "y": -0.457
+    },
+    "planId": "mi_178"
+  },
+  {
+    "_id": "mi_179",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.038,
+      "y": 0.026
+    },
+    "planId": "mi_179"
+  },
+  {
+    "_id": "mi_180",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.107,
+      "y": 0.608
+    },
+    "planId": "mi_180"
+  },
+  {
+    "_id": "mi_181",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 7,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.19,
+      "y": 0.059
+    },
+    "planId": "mi_181"
+  },
+  {
+    "_id": "mi_182",
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.404,
+      "y": 0.255
+    },
+    "planId": "mi_182"
+  },
+  {
+    "_id": "mi_183",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.684,
+      "y": -0.093
+    },
+    "planId": "mi_183"
+  },
+  {
+    "_id": "mi_184",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.723,
+      "y": 0.045
+    },
+    "planId": "mi_184"
+  },
+  {
+    "_id": "mi_185",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.201,
+      "y": -0.695
+    },
+    "planId": "mi_185"
+  },
+  {
+    "_id": "mi_186",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.371,
+      "y": 0.172
+    },
+    "planId": "mi_186"
+  },
+  {
+    "_id": "mi_187",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.603,
+      "y": 0.265
+    },
+    "planId": "mi_187"
+  },
+  {
+    "_id": "mi_188",
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.115,
+      "y": 0.513
+    },
+    "planId": "mi_188"
+  },
+  {
+    "_id": "mi_189",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 0,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.24,
+      "y": 0.212
+    },
+    "planId": "mi_189"
+  },
+  {
+    "_id": "mi_190",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.528,
+      "y": -0.121
+    },
+    "planId": "mi_190"
+  },
+  {
+    "_id": "mi_191",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.372,
+      "y": 0.058
+    },
+    "planId": "mi_191"
+  },
+  {
+    "_id": "mi_192",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.463,
+      "y": 0.562
+    },
+    "planId": "mi_192"
+  },
+  {
+    "_id": "mi_193",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 2,
+    "mds": {
+      "x": -0.4,
+      "y": -0.258
+    },
+    "planId": "mi_193"
+  },
+  {
+    "_id": "mi_194",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.568,
+      "y": -0.455
+    },
+    "planId": "mi_194"
+  },
+  {
+    "_id": "mi_195",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.547,
+      "y": 0.349
+    },
+    "planId": "mi_195"
+  },
+  {
+    "_id": "mi_196",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.306,
+      "y": 0.637
+    },
+    "planId": "mi_196"
+  },
+  {
+    "_id": "mi_197",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.248,
+      "y": 0.682
+    },
+    "planId": "mi_197"
+  },
+  {
+    "_id": "mi_198",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.656,
+      "y": -0.051
+    },
+    "planId": "mi_198"
+  },
+  {
+    "_id": "mi_199",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.725,
+      "y": -0.082
+    },
+    "planId": "mi_199"
+  },
+  {
+    "_id": "mi_200",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.192,
+      "y": 0.637
+    },
+    "planId": "mi_200"
+  },
+  {
+    "_id": "mi_201",
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.697,
+      "y": 0.183
+    },
+    "planId": "mi_201"
+  },
+  {
+    "_id": "mi_202",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.625,
+      "y": 0.336
+    },
+    "planId": "mi_202"
+  },
+  {
+    "_id": "mi_203",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.68,
+      "y": -0.207
+    },
+    "planId": "mi_203"
+  },
+  {
+    "_id": "mi_204",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.196,
+      "y": -0.426
+    },
+    "planId": "mi_204"
+  },
+  {
+    "_id": "mi_205",
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.291,
+      "y": -0.48
+    },
+    "planId": "mi_205"
+  },
+  {
+    "_id": "mi_206",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.592,
+      "y": -0.446
+    },
+    "planId": "mi_206"
+  },
+  {
+    "_id": "mi_207",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.637,
+      "y": 0.065
+    },
+    "planId": "mi_207"
+  },
+  {
+    "_id": "mi_208",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 0,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.118,
+      "y": -0.511
+    },
+    "planId": "mi_208"
+  },
+  {
+    "_id": "mi_209",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.705,
+      "y": 0.052
+    },
+    "planId": "mi_209"
+  },
+  {
+    "_id": "mi_210",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.347,
+      "y": 0.535
+    },
+    "planId": "mi_210"
+  },
+  {
+    "_id": "mi_211",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.485,
+      "y": -0.011
+    },
+    "planId": "mi_211"
+  },
+  {
+    "_id": "mi_212",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.579,
+      "y": -0.238
+    },
+    "planId": "mi_212"
+  },
+  {
+    "_id": "mi_213",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.71,
+      "y": -0.145
+    },
+    "planId": "mi_213"
+  },
+  {
+    "_id": "mi_214",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.191,
+      "y": -0.393
+    },
+    "planId": "mi_214"
+  },
+  {
+    "_id": "mi_215",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.45,
+      "y": 0.553
+    },
+    "planId": "mi_215"
+  },
+  {
+    "_id": "mi_216",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.23,
+      "y": -0.241
+    },
+    "planId": "mi_216"
+  },
+  {
+    "_id": "mi_217",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.12,
+      "y": 0.427
+    },
+    "planId": "mi_217"
+  },
+  {
+    "_id": "mi_218",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.553,
+      "y": -0.418
+    },
+    "planId": "mi_218"
+  },
+  {
+    "_id": "mi_219",
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.3,
+      "y": -0.266
+    },
+    "planId": "mi_219"
+  },
+  {
+    "_id": "mi_220",
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 7,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.014,
+      "y": 0.644
+    },
+    "planId": "mi_220"
+  },
+  {
+    "_id": "mi_221",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.297,
+      "y": -0.387
+    },
+    "planId": "mi_221"
+  },
+  {
+    "_id": "mi_222",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.293,
+      "y": 0.156
+    },
+    "planId": "mi_222"
+  },
+  {
+    "_id": "mi_223",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.02,
+      "y": 0.397
+    },
+    "planId": "mi_223"
+  },
+  {
+    "_id": "mi_224",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.498,
+      "y": 0.405
+    },
+    "planId": "mi_224"
+  },
+  {
+    "_id": "mi_225",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.019,
+      "y": -0.506
+    },
+    "planId": "mi_225"
+  },
+  {
+    "_id": "mi_226",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.249,
+      "y": -0.556
+    },
+    "planId": "mi_226"
+  },
+  {
+    "_id": "mi_227",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.336,
+      "y": -0.307
+    },
+    "planId": "mi_227"
+  },
+  {
+    "_id": "mi_228",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.676,
+      "y": -0.234
+    },
+    "planId": "mi_228"
+  },
+  {
+    "_id": "mi_229",
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.005,
+      "y": 0.705
+    },
+    "planId": "mi_229"
+  },
+  {
+    "_id": "mi_230",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.129,
+      "y": -0.192
+    },
+    "planId": "mi_230"
+  },
+  {
+    "_id": "mi_231",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.691,
+      "y": -0.135
+    },
+    "planId": "mi_231"
+  },
+  {
+    "_id": "mi_232",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.308,
+      "y": -0.648
+    },
+    "planId": "mi_232"
+  },
+  {
+    "_id": "mi_233",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": -0.376,
+      "y": -0.609
+    },
+    "planId": "mi_233"
+  },
+  {
+    "_id": "mi_234",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.427,
+      "y": -0.477
+    },
+    "planId": "mi_234"
+  },
+  {
+    "_id": "mi_235",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.031,
+      "y": 0.575
+    },
+    "planId": "mi_235"
+  },
+  {
+    "_id": "mi_236",
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.038,
+      "y": -0.141
+    },
+    "planId": "mi_236"
+  },
+  {
+    "_id": "mi_237",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.696,
+      "y": 0.185
+    },
+    "planId": "mi_237"
+  },
+  {
+    "_id": "mi_238",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 6,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.192,
+      "y": 0.688
+    },
+    "planId": "mi_238"
+  },
+  {
+    "_id": "mi_239",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.528,
+      "y": -0.298
+    },
+    "planId": "mi_239"
+  },
+  {
+    "_id": "mi_240",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.635,
+      "y": -0.341
+    },
+    "planId": "mi_240"
+  },
+  {
+    "_id": "mi_241",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 2,
+    "mds": {
+      "x": -0.45,
+      "y": -0.168
+    },
+    "planId": "mi_241"
+  },
+  {
+    "_id": "mi_242",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.613,
+      "y": -0.398
+    },
+    "planId": "mi_242"
+  },
+  {
+    "_id": "mi_243",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.298,
+      "y": 0.582
+    },
+    "planId": "mi_243"
+  },
+  {
+    "_id": "mi_244",
+    "rDistricts": 6,
+    "dDistricts": 8,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 1,
+    "mds": {
+      "x": 0.365,
+      "y": 0.625
+    },
+    "planId": "mi_244"
+  },
+  {
+    "_id": "mi_245",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.484,
+      "y": 0.264
+    },
+    "planId": "mi_245"
+  },
+  {
+    "_id": "mi_246",
+    "rDistricts": 8,
+    "dDistricts": 6,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.587,
+      "y": 0.299
+    },
+    "planId": "mi_246"
+  },
+  {
+    "_id": "mi_247",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 1,
+    "hispOppDistricts": 0,
+    "blackDistricts": 4,
+    "hispDistricts": 0,
+    "asianDistricts": 0,
+    "mds": {
+      "x": 0.342,
+      "y": -0.644
+    },
+    "planId": "mi_247"
+  },
+  {
+    "_id": "mi_248",
+    "rDistricts": 7,
+    "dDistricts": 7,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 1,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.225,
+      "y": 0.161
+    },
+    "planId": "mi_248"
+  },
+  {
+    "_id": "mi_249",
+    "rDistricts": 9,
+    "dDistricts": 5,
+    "blackOppDistricts": 0,
+    "hispOppDistricts": 0,
+    "blackDistricts": 5,
+    "hispDistricts": 2,
+    "asianDistricts": 0,
+    "mds": {
+      "x": -0.579,
+      "y": 0.457
+    },
+    "planId": "mi_249"
+  }
+]

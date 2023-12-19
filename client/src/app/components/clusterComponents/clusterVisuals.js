@@ -6,13 +6,15 @@ import { useContext, useState, useEffect } from 'react'
 
 import ClusterAnalysisTable from './clusterAnalysisTable.js'
 import MDSPlot from './mdsPlot.js'
-import MeasurePlot from './measurePlot.js'
+import NonMDSPlot from './nonMDSPlot.js'
 import RDSplitsBarGraph from './rdSplitsBarGraph.js'
 import { TabNames } from '@/app/constants/tabConstants.js'
 import { GlobalData } from '@/app/contexts/context.js'
 
 export default function ClusterVisuals() {
-    const { ensemble, setEnsemble, distanceMeasure, setDistanceMeasure } = useContext(GlobalData)
+    const { ensemble, setEnsemble } = useContext(GlobalData)
+    const { distanceMeasure, setDistanceMeasure } = useContext(GlobalData)
+    const { setCluster, setDistrictPlan } = useContext(GlobalData)
 
     const [clusters, setClusters] = useState()
     const [activeTab, setActiveTab] = useState(TabNames.CLUSTER_ANALYSIS)
@@ -45,7 +47,9 @@ export default function ClusterVisuals() {
         } else {
             setActiveTab(tab)
         }
-    };
+        setCluster()
+        setDistrictPlan()
+    }
 
     if (!clusters) {
         return
@@ -66,10 +70,10 @@ export default function ClusterVisuals() {
                     <ClusterAnalysisTable clusters = {clusters} />
                 </Tab>
                 <Tab eventKey = {TabNames.MDS} title = {TabNames.MDS}>
-                    <MDSPlot clusters = {clusters} />
+                    <MDSPlot clusters = {clusters} activeTab = {activeTab} />
                 </Tab>
-                <Tab eventKey = {TabNames.MEASURE} title = {TabNames.MEASURE}>
-                    <MeasurePlot />
+                <Tab eventKey = {TabNames.NON_MDS} title = {TabNames.NON_MDS}>
+                    <NonMDSPlot clusters = {clusters} activeTab = {activeTab} />
                 </Tab>
                 <Tab eventKey = {TabNames.RD_SPLITS} title = {TabNames.RD_SPLITS}>
                     <RDSplitsBarGraph clusters = {clusters} />

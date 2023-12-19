@@ -7,6 +7,7 @@ import { useContext, useState } from 'react'
 
 import { GlobalData } from '@/app/contexts/context'
 import { TableData } from '@/app/constants/tableData'
+import { ClusterFrom } from '@/app/constants/clusterFromData'
 
 export default function ClusterAnalysisTable({ clusters }) {
     const { setCluster } = useContext(GlobalData)
@@ -55,7 +56,7 @@ export default function ClusterAnalysisTable({ clusters }) {
                     {clusters.slice(indexOfFirstItem, indexOfLastItem).map((cluster, index) => (
                         <tr key = {index}>
                             <td>
-                                <span onClick = {() => setCluster(cluster)}>
+                                <span onClick = {() => setCluster({cluster: cluster, from: ClusterFrom.TABLE})}>
                                     {cluster._id}
                                 </span>
                             </td>

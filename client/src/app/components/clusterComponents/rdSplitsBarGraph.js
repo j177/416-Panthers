@@ -89,7 +89,9 @@ export default function RDSplitsBarGraph({ clusters }) {
 		<div>
 			<ClusterDropdown clusters = {clusters} setCluster = {setCluster}/>
 			<div className = "rd-split-graph-container">
-				<Bar data = {data} options = {options} height = {"100%"} />
+				<div>
+					<Bar data = {data} options = {options} height = {BarGraphData.HEIGHT} />
+				</div>
 			</div>
 		</div>
 	)

@@ -16,6 +16,7 @@ export default function Navigation() {
 	const { distanceMeasure, setDistanceMeasure } = useContext(GlobalData)
 	const { cluster, setCluster } = useContext(GlobalData)
 	const { districtPlan, setDistrictPlan } = useContext(GlobalData)
+	const { setDistrictPlanIds } = useContext(GlobalData)
 
 	const handleMenuClick = () => {
 		setState()
@@ -23,6 +24,7 @@ export default function Navigation() {
 		setDistanceMeasure()
 		setCluster()
 		setDistrictPlan()
+		setDistrictPlanIds([])
 	}
 
 	const handleStateClick = (stateName) => {
@@ -60,7 +62,7 @@ export default function Navigation() {
 			displayString += ' / ' + convertToDisplayString(distanceMeasure)
 		}
 		if (cluster) {
-			displayString += ' / Cluster ' + cluster._id
+			displayString += ' / Cluster ' + cluster.cluster._id
 		}
 		if (districtPlan) {
 			displayString += ' / District Plan ' + districtPlan._id

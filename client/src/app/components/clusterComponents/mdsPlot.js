@@ -1,13 +1,26 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useContext } from "react"
 import axios from "axios"
 import qs from "qs"
 
 import ScatterPlot from "../scatterPlot"
 import { MDSPlotData } from "@/app/constants/mdsPlotData"
+import { GlobalData } from "@/app/contexts/context"
+import { ClusterFrom } from "@/app/constants/clusterFromData"
+import { TabNames } from "@/app/constants/tabConstants"
 
-export default function MDSPlot({ clusters }) {
+export default function MDSPlot({ clusters, activeTab }) {
     const [clusterId, setClusterId] = useState()
+    const [districtPlanId, setDistrictPlanId] = useState()
     const [districtPlans, setDistrictPlans] = useState()
+    const {setCluster, setDistrictPlan} = useContext(GlobalData)
+
+    useEffect(() => {
+        if (activeTab !== TabNames.MDS) {
+            setClusterId()
+            setDistrictPlanId()
+            setDistrictPlans()
+        }
+    }, [activeTab])
 
     useEffect(() => {
         if (!clusterId) {
@@ -33,14 +46,25 @@ export default function MDSPlot({ clusters }) {
         }
     
         getDistrictPlans()
+        setCluster({cluster: clusters.find(cluster => cluster._id === clusterId), from: ClusterFrom.PLOT })
     }, [clusterId])
+
+    console.log(districtPlanId)
+    useEffect(() => {
+        if (!districtPlanId) {
+            return
+        }
+
+        setDistrictPlan(districtPlans.find(dp => dp._id === districtPlanId))
+    }, [districtPlanId, districtPlans])
 
     const clusterPoints = clusters.map(cluster => ({
         id: cluster._id,
         name: 'Cluster ' + cluster._id,
         x: cluster.mds.x,
         y: cluster.mds.y,
-        size: cluster.mds.size * 10
+        size: cluster.mds.size * 10,
+        length: cluster.dpIds.length
     }))
 
     let dpPlot
@@ -52,10 +76,10 @@ export default function MDSPlot({ clusters }) {
             y: districtPlan.mds.y
         }))
 
-        dpPlot = <MDSDistrictPlanPlot points = {dpPoints} />
+        dpPlot = <MDSDistrictPlanPlot points = {dpPoints} setDistrictPlanId = {setDistrictPlanId} />
     }
     else {
-        dpPlot = <div className = "place-holder"><i>Select a cluster point</i></div>
+        dpPlot = <div className = "place-holder"><i>Click a cluster point</i></div>
     }
 
 	return (
@@ -72,7 +96,7 @@ export default function MDSPlot({ clusters }) {
 
 function MDSClusterPlot({ points, setClusterId }) {
     const ids = points.map(point => point.id)
-    const names = points.map(point => point.name)
+    const namesAndLengths = points.map(point => [point.name, point.length])
     const xValues = points.map(point => point.x)
     const yValues = points.map(point => point.y)
     const sizeValues = points.map(point => point.size)
@@ -82,11 +106,11 @@ function MDSClusterPlot({ points, setClusterId }) {
         y: yValues,
         mode: 'markers',
         type: 'scatter',
-        text: names,
+        text: namesAndLengths,
         ids: ids,
-        hovertemplate: '<b>%{text}</b><extra></extra>',
+        hovertemplate: '<b>%{text[0]} <br> (%{x}, %{y}) <br> %{text[1]} district plans</b><extra></extra>',
         marker: {
-            color: '#57fa7b',
+            color: 'purple',
             size: sizeValues
         }
     }]
@@ -115,7 +139,7 @@ function MDSClusterPlot({ points, setClusterId }) {
     )
 }
 
-function MDSDistrictPlanPlot({ points }) {
+function MDSDistrictPlanPlot({ points, setDistrictPlanId }) {
     const ids = points.map(point => point.id)
     const names = points.map(point => point.name)
     const xValues = points.map(point => point.x)
@@ -128,9 +152,9 @@ function MDSDistrictPlanPlot({ points }) {
         type: 'scatter',
         text: names,
             ids: ids,
-            hovertemplate: '<b>%{text}</b><extra></extra>',
+            hovertemplate: '<b>%{text} <br> (%{x}, %{y})</b><extra></extra>',
             marker: {
-                color: '#57fa7b'
+                color: 'purple'
             }
     }]
     const title = MDSPlotData.DP_TITLE
@@ -138,6 +162,10 @@ function MDSDistrictPlanPlot({ points }) {
     const yLabel = MDSPlotData.DP_YLABEL
     const width = MDSPlotData.DP_WIDTH
     const height = MDSPlotData.DP_HEIGHT
+
+    const handleClick = (event) => {
+        setDistrictPlanId(event.points[0].id)
+    }
 
     return (
         <div>
@@ -148,6 +176,7 @@ function MDSDistrictPlanPlot({ points }) {
                 yLabel = {yLabel}
                 width = {width}
                 height = {height}
+                onClick = {handleClick}
             />
         </div>
     )

@@ -49,6 +49,9 @@ export default function EnsembleVisuals() {
                     setEnsemble = {setEnsemble}
                     setDistanceMeasure = {setDistanceMeasure} />
             </div>
+            <div className = "ensemble-legend">
+                <b><i>*DPs = District Plans</i></b>
+            </div>
             <div>
                 <EnsembleClusterVisuals ensembles = {ensembles} />
             </div>
