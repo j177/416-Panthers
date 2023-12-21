@@ -1,7 +1,7 @@
 # 416-Panthers
 
 About: Gerrymandering capstone project developed with Next.js, Bootstrap and Spring. 
-Allows a user to view district plans of New York, Pennsylvania, New York generated with MGGG ReCom Algorithm and 2022 Federal Congressional Districts and precinct data
+Allows a user to view district plans of New York, Pennsylvania, New York generated with MGGG ReCom Algorithm and 2022 Federal Congressional Districts and precinct data.
 District plans have demographic data, Republican/Democratic splits to analyze gerrymandering.
 Further analysis is provided from clustering and distance measures (optimal transport and hamming distance).
 
