@@ -14,4 +14,4 @@ Preprocessing: https://github.com/rikakal/preprocessing-git
 Seawulf: https://github.com/j177/panthers_seawulf 
 
 Demo: Created with ScreenToGif
-<img src='https://imgur.com/JxE95nx.gif' title='Video Demo' width='' alt='Video Demo' />
+<img src='https://i.imgur.com/JxE95nx.mp4' title='Video Demo' width='' alt='Video Demo' />
